@@ -41,7 +41,8 @@
         color: #ffffff;
     }
     main,
-    .section .row,.row-four {
+    .section .row,
+    .row-four {
         margin-top: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -61,8 +62,26 @@
     .hero p {
         margin: 0.5rem auto;
     }
-    .section .text,p {
+    .section h2 {
+        font-size: 22px;
+    }
+    .section .text,
+    p {
         width: 100%;
     }
-    
+    .client-column {
+        width: 100%;
+    }
+    .two-row {
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+    .two-row .form {
+        width: 100%;
+        padding: .5rem;
+    }
+    .form input,
+    .form textarea {
+        width: 100%;
+    }
 }

@@ -1,0 +1,60 @@
+.two-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.8rem auto;
+    padding: 0.5rem 0.7rem;
+}
+ 
+.two-row .image {
+    padding: 0.5rem;
+}
+.two-row .image img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.two-row .form {
+    background: #ffffff;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 8px;
+}
+.form .text {
+    width: 100%;
+    text-align: left;
+    line-height: 2.5rem;
+}
+.form input {
+    outline: none;
+    border: 1px solid rgb(0, 197, 202);
+    padding: 0.8rem 1rem;
+    margin: 0.7rem auto;
+    border-radius: 8px;
+    width: 90%;
+}
+.form textarea {
+    width: 90%;
+    height: 90px;
+    outline: none;
+    border: 1px solid rgb(0, 197, 202);
+    padding: 0.8rem 1rem;
+    margin: 0.7rem auto;
+    border-radius: 8px;
+    font-family: Sans-Serif;
+}
+.form input:focus {
+    border: 1px solid rgb(38, 192, 0);
+}
+.form .send-btn {
+    width: 120px;
+    outline: none;
+    border: none;
+    margin: 0.5rem auto;
+    padding: 0.7rem 1rem;
+    background: rgb(19, 97, 0);
+    color: #ffffff;
+    border-radius: 10px;
+}

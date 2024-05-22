@@ -163,6 +163,7 @@ main .hero {
     overflow-y: auto;
 }
 .hero .main-text {
+    margin-right: 0.6rem;
     margin: 0.5rem 0;
     color: #222222;
 }
@@ -174,6 +175,7 @@ h2 {
     font-size: 30px;
     text-align: left;
     justify-content: left;
+    padding-left: 2rem;
 }
 .hero p {
     color: #073500;
@@ -256,6 +258,66 @@ main .hide {
     display: none;
 }
 
+/* FOOTER STYLING HERE */
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0.7rem;
+    background: rgb(238, 238, 238);
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    bottom: 0;
+}
+footer .social {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem auto;
+    align-items: center;
+    text-align: center;
+    border-bottom: .1px solid rgb(0,179,234);
+}
+.social a {
+    text-decoration: none;
+    margin: 0.3rem 1rem;
+    display: block;
+    border-radius: 50%;
+}
+.social a img {
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+    margin: 0.5rem;
+}
+footer strong {
+    margin: 0.3rem auto;
+    color: #000000;
+    font-weight: 800;
+}
+footer strong span {
+    color: rgb(24, 0, 253);
+}
+footer p {
+    color: rgb(21, 21, 21);
+    font-weight: 500;
+    margin: 0.3rem auto;
+}
+footer p a {
+    margin: 0.2rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    color: rgb(0, 196, 63);
+    transition: 0.3s ease-in;
+}
+footer p a:hover {
+    translate: scale(1.1);
+    color: rgb(196, 61, 0);
+}
 
 /* Adding Animations */
 @keyframes heroAnimation {

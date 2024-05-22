@@ -1,6 +1,6 @@
 import Layouts from "./layouts/Layouts";
 import Home from "./pages/Home";
-
+import Contact from "./pages/Contact"
 const MyRoutes = [
     {
         path: "/",
@@ -21,7 +21,11 @@ const MyRoutes = [
     },
     {
         path: "/contact",
-        element: <Home />
+        element: (
+            <Layouts>
+                <Contact />
+            </Layouts>
+        )
     }
 ];
 
