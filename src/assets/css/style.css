@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "poppin-bold";
+    src: url("fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "poppin-thin";
+    src: url("fonts/Poppins-Light.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "ghs";
+    src: url("fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: bold;
+}
+
+.section {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.section h2 {
+    color: rgb(1, 149, 226);
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0.2rem 0;
+}
+.section h3 {
+    color: rgb(0, 91, 20);
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0.5rem auto;
+}
+.section .text {
+    color: rgb(0, 34, 7);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    text-transform: capitalize;
+    margin: 0.2rem auto;
+    font-family: poppin-thin;
+}
+.section .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+}
+.row .col {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0.1px solid rgb(0, 207, 150);
+}
+.col img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0.1rem auto;
+}
+.col h4 {
+    color: rgb(119, 15, 255);
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0.2rem auto;
+}
+.col .p-text {
+    color: rgb(0, 112, 115);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    justify-content: left;
+    text-transform: capitalize;
+    margin: 0.2rem 0.5rem;
+    font-family: poppin-thin;
+}
+/* SERVICE SECTION COMPLETED */
+.section .one-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 0.2rem 2.5rem;
+    overflow-x: auto;
+}
+.one-column img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/*  WHY US DESIGNING */
+.row-four {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+}
+.row-four .column {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0.1px solid rgb(0, 207, 150);
+}
+.column h4 {
+    color: rgb(0, 226, 229);
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0.2rem auto;
+}
+.column img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0.1rem auto;
+}
+.column .p-text {
+    color: rgb(67, 67, 67);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    justify-content: left;
+    text-transform: capitalize;
+    margin: 0.2rem 0.5rem;
+    font-family: poppin-thin;
+}

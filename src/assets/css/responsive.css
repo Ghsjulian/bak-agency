@@ -1,0 +1,68 @@
+/*  CSS RESPONSIVE MEDIA QUERY  FOR MOBILE  DEVICE  */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem;
+    }
+    header .menu {
+        display: block;
+    }
+    header .contact {
+        display: none;
+    }
+    header nav {
+        position: fixed;
+        left: -40%;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        background: rgb(0, 31, 35);
+        padding: 0.5rem 1rem;
+        gap: 0;
+        z-index: 9999;
+        flex-direction: column;
+    }
+    .navbar {
+        width: 50%;
+        left: 0;
+        transition: 0.3s ease-in;
+    }
+
+    nav ul {
+        padding: 0.7rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    nav ul li {
+        margin: 0.6rem 0.2rem;
+        display: block;
+    }
+    nav ul li a {
+        display: inline-block;
+        color: #ffffff;
+    }
+    main,
+    .section .row,.row-four {
+        margin-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    main .hero {
+        padding: 1.5rem 0.5rem;
+    }
+    main .hero .hero-text {
+        width: 100%;
+        margin: 0.5rem 0;
+        font-size: 22px;
+        padding: 0;
+    }
+    main .hero-img {
+        width: 100%;
+    }
+    .hero p {
+        margin: 0.5rem auto;
+    }
+    .section .text,p {
+        width: 100%;
+    }
+    
+}
