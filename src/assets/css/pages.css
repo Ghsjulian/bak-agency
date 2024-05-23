@@ -1,5 +1,5 @@
-#contact-form h2 {
-    margin-top: 3.8rem;
+#page h2 {
+    margin-top: 4.2rem;
 }
 .two-row {
     display: flex;
@@ -24,6 +24,9 @@
     text-align: center;
     padding: 0.7rem;
     border-radius: 8px;
+}
+.two-row #content {
+    background: transparent;
 }
 .form .text {
     width: 100%;

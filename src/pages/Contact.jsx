@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import deliveryman from "../assets/icons/deliveryman.png";
+import agent_3 from "../assets/images/agent_3.png";
 
 const Contact = () => {
     const [userName, setuserName] = useState("");
@@ -9,12 +9,15 @@ const Contact = () => {
         e.preventDefault();
         alert(userName);
     };
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" }), [];
+    });
     return (
-        <div data-aos="zoom-in" id="contact-form" className="section">
+        <div data-aos="zoom-in" id="page" className="section">
             <h2> Contact With Us </h2>
             <div className="two-row">
                 <div data-aos="zoom-in" className="image">
-                    <img src={deliveryman} />
+                    <img src={agent_3} />
                 </div>
                 <div data-aos="zoom-in" className="form">
                     <p className="text">

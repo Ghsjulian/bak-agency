@@ -12,9 +12,9 @@ import "aos/dist/aos.css";
 
 const Layouts = ({ children }) => {
     useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <>
             <Navbar />

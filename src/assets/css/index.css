@@ -132,6 +132,13 @@ nav ul li a:hover {
     border-bottom: 2px solid #0e60f0;
     transition: 0.3s ease-in;
 }
+.active {
+    font-weight: 900;
+    font-size: 14px;
+    color: #c25c02;
+    border-bottom: 2px solid #0e60f0;
+    transition: 0.3s ease-in;
+}
 main {
     transition: 0.3s ease-in all;
     padding: 5% 0;
