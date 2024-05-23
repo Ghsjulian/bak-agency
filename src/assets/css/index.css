@@ -140,13 +140,14 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    gap: 10px;
+    gap: 7px;
     background-image: url("../images/—Pngtree—e-commerce promotion fluid gradient_4610709.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 main section {
     width: 100%;
+    margin: 0;
 }
 
 main .hero {
@@ -277,7 +278,7 @@ footer .social {
     margin: 0.5rem auto;
     align-items: center;
     text-align: center;
-    border-bottom: .1px solid rgb(0,179,234);
+    border-bottom: 0.1px solid rgb(0, 179, 234);
 }
 .social a {
     text-decoration: none;

@@ -1,10 +1,13 @@
+#contact-form h2 {
+    margin-top: 3.8rem;
+}
 .two-row {
     display: flex;
     justify-content: space-around;
     margin: 1.8rem auto;
     padding: 0.5rem 0.7rem;
 }
- 
+
 .two-row .image {
     padding: 0.5rem;
 }

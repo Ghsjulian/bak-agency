@@ -6,7 +6,7 @@ import Untitled45 from "../assets/icons/Untitled45.png";
 import Untitled46 from "../assets/icons/Untitled46.png";
 const ArsenalSeo = () => {
     return (
-        <div className="section">
+        <div data-aos="zoom-in" className="section">
             <h2>Our SEO Tools</h2>
             <div className="one-column">
                 <img src={untitled42} />

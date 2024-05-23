@@ -3,7 +3,7 @@ import graphicdesign from "../assets/images/graphicdesign.png";
 
 const WhyUs = () => {
     return (
-        <div className="section">
+        <div data-aos="fade-up" className="section">
             <h2>Why Work With Us</h2>
             <div className="row-four">
                 <div className="column">

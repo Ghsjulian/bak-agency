@@ -98,8 +98,8 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 10px;
-    padding: 0.2rem 2.5rem;
+    gap: 8px;
+    padding: 0.2rem 1rem;
     overflow-x: auto;
 }
 .one-column img {
@@ -182,16 +182,19 @@ img {
     -webkit-filter: saturate(5);
     filter: saturate(5);
 }
+
 .client {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
     display: flex;
-    position: relative;
+    /*
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    */
     background: rgb(238, 238, 238);
     padding: 0.2rem 0.5rem;
-    overflow-x: auto;
 }
 .client .client-column {
     background: #ffffff;
@@ -201,6 +204,8 @@ img {
     margin: 0.2rem;
     text-align: center;
     align-items: center;
+    width: 30%;
+    overflow: hidden;
 }
 .client .client-column img {
     width: 100px;
@@ -221,6 +226,11 @@ img {
     text-transform: capitalize;
     margin: 0.2rem auto;
     font-family: poppin-thin;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 /* LOCATION STYLING */

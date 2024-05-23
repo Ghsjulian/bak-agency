@@ -9,7 +9,7 @@ import service from "../assets/images/service.png";
 
 const ServiceSection = () => {
     return (
-        <div className="section">
+        <div data-aos="zoom-in" className="section">
             <h2> What We Can Do ? </h2>
             <h3>Driving Digital Growth Through Expert SEO Solutions</h3>
             <p className="text">
@@ -18,7 +18,7 @@ const ServiceSection = () => {
                 contact us right now we'll response you as soon as possible.
             </p>
             <div className="row">
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={development} />
                     <h4>Web Development & Design</h4>
                     <p className="p-text">
@@ -30,7 +30,7 @@ const ServiceSection = () => {
                         us.
                     </p>
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={seo} />
                     <h4>SEO And Optimization</h4>
                     <p className="p-text">
@@ -42,7 +42,7 @@ const ServiceSection = () => {
                         us.
                     </p>
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={coding} />
                     <h4>Coding & IT Technology</h4>
                     <p className="p-text">
@@ -54,7 +54,7 @@ const ServiceSection = () => {
                         us.
                     </p>
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={time} />
                     <h4>Maintaining Time And Works</h4>
                     <p className="p-text">
@@ -66,7 +66,7 @@ const ServiceSection = () => {
                         us.
                     </p>
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={dashboard} />
                     <h4>Professional Dashboard Designing</h4>
                     <p className="p-text">
@@ -78,7 +78,7 @@ const ServiceSection = () => {
                         us.
                     </p>
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img src={task} />
                     <h4>Task And Pinned</h4>
                     <p className="p-text">

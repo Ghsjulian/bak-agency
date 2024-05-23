@@ -4,10 +4,10 @@ import project_1 from "../assets/images/project_1.jpg";
 
 const Projects = () => {
     return (
-        <div className="section">
+        <div data-aos="zoom-in" className="section">
             <h2>Our Project & Works</h2>
             <div className="row">
-                <div id="projects" className="col">
+                <div data-aos="zoom-in" id="projects" className="col">
                     <img src={project_1} />
                     <h4>Quick Shopping</h4>
                     <p className="p-text">
@@ -20,7 +20,7 @@ const Projects = () => {
                         View
                     </NavLink>
                 </div>
-                <div id="projects" className="col">
+                <div data-aos="zoom-in" id="projects" className="col">
                     <img src={project_1} />
                     <h4>Quick Shopping</h4>
                     <p className="p-text">
@@ -33,7 +33,7 @@ const Projects = () => {
                         View
                     </NavLink>
                 </div>
-                <div id="projects" className="col">
+                <div data-aos="zoom-in" id="projects" className="col">
                     <img src={project_1} />
                     <h4>Quick Shopping</h4>
                     <p className="p-text">

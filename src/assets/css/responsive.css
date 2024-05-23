@@ -70,7 +70,9 @@
         width: 100%;
     }
     .client-column {
+        white-space: nowrap;
         width: 100%;
+        right: 0;
     }
     .two-row {
         flex-direction: column;
@@ -78,7 +80,7 @@
     }
     .two-row .form {
         width: 100%;
-        padding: .5rem;
+        padding: 0.5rem;
     }
     .form input,
     .form textarea {

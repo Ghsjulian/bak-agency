@@ -3,7 +3,7 @@ import ghs from "../assets/images/ghs.png";
 
 const Clients = () => {
     return (
-        <div className="section">
+        <div data-aos="fade-up" className="section">
             <h2> Our Clients Review </h2>
             <div className="client">
                 <div className="client-column">
@@ -15,7 +15,7 @@ const Clients = () => {
                         agency. Hope you will get a best opportunity from it.
                         Thanks Bak-Agency!
                     </p>
-                </div>{" "}
+                </div>
                 <div className="client-column">
                     <img src={ghs} />
                     <h4>Ghs Julian</h4>
