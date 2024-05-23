@@ -179,8 +179,8 @@
 }
 /* CLIENTS STYLING AREA */
 img {
-    -webkit-filter: saturate(5);
-    filter: saturate(5);
+    -webkit-filter: saturate(2);
+    filter: saturate(2);
 }
 
 .client {

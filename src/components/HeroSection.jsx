@@ -9,18 +9,19 @@ import hero_4 from "../assets/images/hero_4.jpg";
 import hero_5 from "../assets/images/hero_5.jpg";
 import hero_6 from "../assets/images/hero_6.jpg";
 import agent_2 from "../assets/images/agent_3.png";
+import { useSite } from "../context/useAuth";
 
 const HeroSection = () => {
+    const { siteData, loading, error } = useSite();
+    if (siteData !== null) {
+        document.title = siteData.title;
+    
+    
     return (
         <main data-aos="zoom-in">
             <section data-aos="zoom-in" className="hero">
-                <h2 className="hero-text">Welcome to Our Bak-Agency</h2>
-                <p>
-                    Explore our latest products and offers. We provide best
-                    products and services in all over the country, to get touch
-                    us please order or contact with us. Our best services and
-                    products , that we sell is very good.
-                </p>
+                <h2 className="hero-text">{siteData.hero_header}</h2>
+                <p>{siteData.hero_description}</p>
                 <div className="btn-area">
                     <button id="shop">
                         See More
@@ -29,10 +30,11 @@ const HeroSection = () => {
                 </div>
             </section>
             <section data-aos="zoom-in" className="hero-img">
-                <img id="hero-logo" src={agent_2} />
+                <img id="hero-logo" src={siteData.hero_img} />
             </section>
         </main>
     );
+    }
 };
 
 export default HeroSection;

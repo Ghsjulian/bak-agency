@@ -15,13 +15,13 @@ const Layouts = ({ children }) => {
         AOS.init();
         AOS.refresh();
     }, []);
-    return (
-        <>
-            <Navbar />
-            {children}
-            <Footer />
-        </>
-    );
+        return (
+            <>
+                <Navbar />
+                {children}
+                <Footer />
+            </>
+        );
 };
 
 export default Layouts;
