@@ -1,7 +1,7 @@
 import React from "react";
 import ghs from "../assets/images/ghs.png";
 
-const Clients = () => {
+const Clients = ({data}) => {
     return (
         <div data-aos="fade-up" className="section">
             <h2> Our Clients Review </h2>

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import project_1 from "../assets/images/project_1.jpg";
 
-const Projects = () => {
+const Projects = ({data}) => {
     return (
         <div data-aos="zoom-in" className="section">
             <h2>Our Project & Works</h2>

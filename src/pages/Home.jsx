@@ -6,21 +6,27 @@ import WhyUs from "../components/WhyUs";
 import Projects from "../components/Projects";
 import Clients from "../components/Clients";
 import Location from "../components/Location";
+import { useSite } from "../context/useAuth";
+
 const Home = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     });
-    return (
-        <>
-            <HeroSection />
-            <ServiceSection />
-            <ArsenalSeo />
-            <WhyUs />
-            <Projects />
-            <Clients />
-            <Location />
-        </>
-    );
+    const { siteData, loading, error } = useSite();
+    if (siteData !== null) {
+        document.title = siteData.title;
+        return (
+            <>
+                <HeroSection data={siteData} />
+                <ServiceSection data={siteData} />
+                <ArsenalSeo data={siteData} />
+                <WhyUs data={siteData} />
+                <Projects data={siteData} />
+                <Clients data={siteData} />
+                <Location data={siteData} />
+            </>
+        );
+    }
 };
 
 export default Home;
