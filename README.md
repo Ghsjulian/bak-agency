@@ -1,8 +1,9 @@
 <center>
 
+<center>
 <img align="center" src="src/assets/images/myLogo2.png" width="250" height="250"><br>
 <h2 align="center">Ghs Julian</h2>
-
+</center>
 
 
 
