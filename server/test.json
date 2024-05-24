@@ -1,0 +1,12 @@
+{
+    "hero_section": [
+        {
+            "favicon": "favicon.ico",
+            "title": "Bak-Agency | Official Website",
+            "meta_tag": "The website meta tag will be displaing here",
+            "hero_title": "Welcome to our Bak-Agency",
+            "hero_description": "This is the main hero hero_description for the root of the website",
+            "hero_image": "assets//images/agent_3.png"
+        }
+    ]
+}
