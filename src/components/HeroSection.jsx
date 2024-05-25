@@ -15,8 +15,9 @@ const HeroSection = ({ data }) => {
     return (
         <main data-aos="zoom-in">
             <section data-aos="zoom-in" className="hero">
-                <h2 className="hero-text">{data.hero_header}</h2>
-                <p>{data.hero_description}</p>
+                <h2 className="hero-text">Welcome To Our Bak Agency</h2>
+                <p>Hello dear clientRather Than Losing Faith In People 
+It Is Pleasure To Be Lost In The Heart Of Nature </p>
                 <div className="btn-area">
                     <a href="#what-we-can-do" id="shop">
                         See More
@@ -25,7 +26,7 @@ const HeroSection = ({ data }) => {
                 </div>
             </section>
             <section siteData-aos="zoom-in" className="hero-img">
-                <img id="hero-logo" src={data.hero_img} />
+                <img id="hero-logo" src={agent_2} />
             </section>
             <div id="what-we-can-do"></div>
         </main>
