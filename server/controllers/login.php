@@ -21,7 +21,7 @@ class login extends __ghs__
   }
   public function session_user($token)
   {
-    $sql = "SELECT * FROM users WHERE token='$token'";
+    $sql = "SELECT * FROM ghs_admin WHERE login_token='$token'";
     $Data = $this->__select_one__($sql);
     return [
       "user_id" => $Data["user_id"],
@@ -40,23 +40,24 @@ class login extends __ghs__
     $user_pass = trim($password);
     $enc_password = sha1($user_pass);
     if ($user_email && $password) {
-      $sql = "SELECT user_email,user_password FROM users WHERE user_email='$user_email' AND user_password='$enc_password'";
+      $sql = "SELECT user_email,user_password FROM ghs_admin WHERE user_email='$user_email' AND user_password='$enc_password'";
       $query = $this->__login__($sql);
       if ($query) {
-        $sql2 = "SELECT * FROM users WHERE user_email='$user_email' AND user_password='$enc_password'";
+        $sql2 = "SELECT * FROM ghs_admin WHERE user_email='$user_email' AND user_password='$enc_password'";
         $Data = $this->__select_one__($sql2);
         $tok = $this->__encode_jwt__([
           "user_id" => $Data["user_id"],
           "user_name" => $Data["user_name"],
           "time" => time(),
         ]);
-        $SQL_3 = "UPDATE users SET token='$tok' WHERE user_email='$user_email' AND user_password='$enc_password'";
+        $SQL_3 = "UPDATE ghs_admin SET login_token='$tok' WHERE user_email='$user_email' AND user_password='$enc_password'";
         $product = $this->__insert__($SQL_3);
         $session = $this->session_user($tok, $this);
         $token = $tok;
         $status = "success";
         $message = "Login Successfully";
       } else {
+        $ghs = $enc_password;
         $status = "error";
         $message = "Login Failed, Invalid Credentials";
       }
