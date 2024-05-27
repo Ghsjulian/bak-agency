@@ -37,14 +37,27 @@ class CustomizeSite extends __ghs__
 
   public function UpdateHeroSection()
   {
-    $file = $_FILES["favicon"];
-    $fileName = $file["name"];
-    $fileTmpName = $file["tmp_name"];
-    $fileSize = $file["size"];
-    $fileType = $file["type"];
-    $fileError = $file["error"];
-
-   print_r($file);
+    $favicon = $_FILES["favicon"];
+    $logoimg = $_FILES["logoimg"];
+    $heroimg = $_FILES["heroimg"];
+    $meta_tag = $_POST["meta_tag"];
+    $title = $_POST["title"];
+    $hero_header = $_POST["hero_header"];
+    $hero_description = $_POST["hero_description"];
+    $target_dir = __DIR__ . "/../assets/images/";
+    $favicon_uploading = $target_dir . "favicon.png";
+    $heroimg_uploading = $target_dir . "hero_img.png";
+    $logoimg_uploading = $target_dir . "logo_img.png";
+    /*
+    if (move_uploaded_file($favicon["tmp_name"], $favicon_uploading)) {
+      echo "Favicon Uploaded";
+    }*/
+    $data = $this->__select_all__("SELECT * FROM hero_section");
+    print_r($data);
+    $SQL = "UPDATE `hero_section` SET
+    `title`='$title',`favicon`='$favicon_uploading',`meta_tag`='$meta_tag',`hero_header`='$hero_header',`hero_description`='$hero_description',`hero_img`='$heroimg_uploading' WHERE 1";
+    echo $SQL;
+    //$product = $this->__insert__($SQL);
   }
   public function changeAdminName()
   {
