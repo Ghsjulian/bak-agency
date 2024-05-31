@@ -37,9 +37,20 @@ class CustomizeSite extends __ghs__
 
   public function UpdateHeroSection()
   {
-    $favicon = $_FILES["favicon"];
-    $logoimg = $_FILES["logoimg"];
-    $heroimg = $_FILES["heroimg"];
+      $favicon;
+      $logoimg;
+      $heroimg;
+      if(isset($_FILES["favicon"])){
+          $favicon = $_FILES["favicon"];
+      }elseif ($_FILES["logoimg"]) {
+          $logoimg = $_FILES["logoimg"];
+      }elseif ($_FILES["heroimg"]) {
+          $heroimg = $_FILES["heroimg"];
+      } else {
+          $favicon = null;
+          $logoimg = null;
+          $heroimg = null;
+      }
     $meta_tag = $_POST["meta_tag"];
     $title = $_POST["title"];
     $hero_header = $_POST["hero_header"];
