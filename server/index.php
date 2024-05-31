@@ -1,9 +1,9 @@
 <?php
+
 require_once __DIR__ . "/assets/router/__router__.php";
 require_once __DIR__ . "/assets/__ghs__.php";
 
 $router = new Router();
-
 $home_path = [
   "/",
   "/home",
@@ -27,6 +27,7 @@ $router->post("/signup", "signup@index");
 $router->post("/site-info", "Sitedata@index");
 $router->post("/admin/edit-settings", "AdminSettings@index");
 $router->post("/admin/customize-site", "CustomizeSite@index");
+$router->post("/destroy", "Destroy@index");
 
 // DEFINED GET REQUEST HERE...
 $router->get("/users", "User@index");

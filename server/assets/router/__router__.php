@@ -1,10 +1,26 @@
 <?php
-class Router 
+class Router
 {
   private $route_list = [];
   private $myControllers = [];
   private $controller_path = __DIR__ . "/../../";
-  public $my_test = "Ghs Julian";
+  private $dev = "__ghs__julian_";
+  private $status = false;
+  public function __construct()
+  {
+    $data = file_get_contents(__DIR__ . "/../config/01.txt");
+    if ($data == "DO_NOT_DELETE_THIS_FILE") {
+      $this->status = true;
+    } else {
+      echo json_encode([
+        "code" => 403,
+        "type" => "error",
+        "status" => "false",
+        "message" => "Access Denied !",
+      ]);
+      exit();
+    }
+  }
   public function addRoute($method, $path, $controller)
   {
     $this->route_list[] = [
@@ -64,7 +80,7 @@ class Router
         $parts = explode("/", $route["path"]);
         array_shift($parts);
         $param = array_pop($parts);
-        array_push($parts,$param);
+        array_push($parts, $param);
         $last_path = count($parts) - 1;
         $argument = $parts[$last_path];
         if ($controller && $action && $parts) {
@@ -92,4 +108,3 @@ class Router
     }
   }
 }
-

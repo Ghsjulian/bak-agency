@@ -5,9 +5,9 @@ header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
 header(
   "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
 );
-// require __DIR__ . "/router/__router__.php";
+
 /*_________ __ghs__ _________*/
-class __ghs__ 
+class __ghs__
 {
   private $conn = false;
   private $result;
@@ -37,34 +37,25 @@ class __ghs__
 
   private function __get_config__()
   {
-    if (!file_exists($this->main_dir . "/json/config.json")) {
-      header("location:/set-config");
-      exit();
-    } else {
-      $config = json_decode(
-        file_get_contents($this->main_dir . "/json/config.json"),
-        true
-      );
-      $this->host = $config["db_info"]["host_name"];
-      $this->user = $config["db_info"]["user_name"];
-      $this->password = $config["db_info"]["password"];
-      $this->db_name = $config["db_info"]["db_name"];
-      $this->secret_key = $config["db_info"]["secret_key"];
-    }
+    $this->host = "localhost:3306";
+    $this->user = "root";
+    $this->password = "";
+    $this->db_name = "bak_agency";
+    $this->secret_key = "__ghs__julian__";
   }
   /* For Checking If Connect Or Not */
   public function __is_connected__()
   {
     if ($this->conn) {
       return [
-          "status" => true,
-          "message" => "Database Connected Successfully !"
-          ];
+        "status" => true,
+        "message" => "Database Connected Successfully !",
+      ];
     } else {
       return [
-          "status" => false,
-          "message" => "Database Connected Failed !"
-          ];
+        "status" => false,
+        "message" => "Database Connected Failed !",
+      ];
     }
   }
 

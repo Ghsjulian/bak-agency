@@ -37,20 +37,25 @@ class CustomizeSite extends __ghs__
 
   public function UpdateHeroSection()
   {
-      $favicon;
-      $logoimg;
-      $heroimg;
-      if(isset($_FILES["favicon"])){
-          $favicon = $_FILES["favicon"];
-      }elseif ($_FILES["logoimg"]) {
-          $logoimg = $_FILES["logoimg"];
-      }elseif ($_FILES["heroimg"]) {
-          $heroimg = $_FILES["heroimg"];
-      } else {
-          $favicon = null;
-          $logoimg = null;
-          $heroimg = null;
-      }
+    $defaultFiles = [
+      "file1" => "default_file1.txt",
+      "file2" => "default_file2.txt",
+      "file3" => "default_file3.txt",
+    ];
+
+    $files = [
+      "favicon" => $_FILES["favicon"] ?? null,
+      "logoimg" => $_FILES["logoimg"] ?? null,
+      "heroimg" => $_FILES["heroimg"] ?? null,
+    ];
+foreach ($files as $key => $value) {
+    if ($files[$key] == null) {
+        echo $files[$key];
+    }
+}
+    // Now you can use $files as an array of processed files
+    // with default files set if any of the original files were missing.
+    /*
     $meta_tag = $_POST["meta_tag"];
     $title = $_POST["title"];
     $hero_header = $_POST["hero_header"];
@@ -63,11 +68,13 @@ class CustomizeSite extends __ghs__
     if (move_uploaded_file($favicon["tmp_name"], $favicon_uploading)) {
       echo "Favicon Uploaded";
     }*/
+    /*
     $data = $this->__select_all__("SELECT * FROM hero_section");
     print_r($data);
     $SQL = "UPDATE `hero_section` SET
     `title`='$title',`favicon`='$favicon_uploading',`meta_tag`='$meta_tag',`hero_header`='$hero_header',`hero_description`='$hero_description',`hero_img`='$heroimg_uploading' WHERE 1";
     echo $SQL;
+    */
     //$product = $this->__insert__($SQL);
   }
   public function changeAdminName()
