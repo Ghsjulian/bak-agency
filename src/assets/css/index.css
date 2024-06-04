@@ -17,180 +17,6 @@
     font-style: bold;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root {
-    --bg: #f0faff;
-}
-html {
-    scroll-behavior: smooth;
-    font-size: 80%;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-h1,
-h2,
-h3,
-h4 {
-    font-family: poppin-bold;
-}
-input,
-button {
-    outline: none;
-}
-body {
-    overflow-y: auto;
-    background: var(--bg);
-    transition: 0.5s ease-in;
-    scroll-behavior: smooth;
-}
-/*
-header nav ul li {
-    position: relative;
-}
-.popup-menu--off,
-.ex--pop--off {
-    display: none;
-}
-.popup-menu {
-    visibility: visible;
-    position: absolute;
-    top: 100%;
-    text-align: center;
-    left: -1.2rem;
-    width: 170px;
-    display: block;
-    flex-direction: column;
-    z-index: 9990;
-    background: #fff;
-    color: #464646;
-    padding: 0.5rem 0;
-    border-radius: 5px;
-}
-.popup-menu a {
-    padding: 0.3rem 0.5rem;
-    margin: 0.3rem 0;
-    display: block;
-    text-align: center;
-}
-.popup-menu .ex--pop {
-    visibility: visible;
-    display: block;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    position: absolute;
-    width: 180px;
-    background: #fff;
-    border-radius: 5px;
-    top: 25%;
-    right: -105%;
-    padding: 0.3rem;
-}
-.ex--pop a {
-    padding: 0.3rem 0.5rem;
-    margin: 0.3rem 0;
-    display: block;
-    text-align: left;
-}
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    box-shadow:
-        2px 3px 5px rgba(178, 178, 178, 0.429),
-        -2px -3px -5px rgba(178, 178, 178, 0.429);
-    z-index: 999;
-    border-bottom: 0.1px solid rgba(0, 104, 179, 0.236);
-}
-header .logo {
-    color: #03936e;
-    font-family: poppin-bold;
-    font-weight: 900;
-    font-size: 18px;
-}
-
-header nav ul li a .cart {
-    width: 25px;
-    height: 20px;
-    object-fit: cover;
-    cursor: pointer;
-}
-header .menu {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    display: none;
-    cursor: pointer;
-}
-header button,
-.contact {
-    outline: none;
-    border: none;
-    background: #00b4c9;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 0.5rem 1.2rem;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-header .contact:hover {
-    background: #03bd00;
-    transform: scale(1.1);
-    transition: 0.2s ease-in;
-}
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.5rem;
-    margin: auto;
-}
-header nav {
-    padding: 0.5rem 0.7rem;
-}
-nav ul li {
-    display: block;
-    margin: 0 0.5rem;
-    align-items: center;
-    justify-content: center;
-}
-nav ul li a {
-    color: #0e60f0;
-    font-weight: 700;
-    transition: 0.3s ease-in;
-    outline: none;
-    padding: 0 0.5rem;
-    align-items: center;
-    justify-content: center;
-}
-nav ul li a:hover {
-    color: #c25c02;
-    border-bottom: 2px solid #0e60f0;
-    transition: 0.3s ease-in;
-}
-*/
-
-.active {
-    font-weight: 900;
-    font-size: 14px;
-    color: #c25c02;
-    border-bottom: 2px solid #0e60f0;
-    transition: 0.3s ease-in;
-}
 main {
     transition: 0.3s ease-in all;
     padding: 5% 0;
@@ -205,10 +31,9 @@ main {
     background-size: cover;
 }
 main section {
-    width: 100%;
-    margin: 0;
+    width: 100% ;
+    margin: 0 ;
 }
-
 main .hero {
     width: 100%;
     text-align: left;
@@ -227,7 +52,6 @@ main .hero {
     margin: 0.5rem 0;
     color: #222222;
 }
-
 .hero .hero-text,
 h2 {
     color: rgb(1, 149, 226);
@@ -294,7 +118,6 @@ main .hero-img img {
     font-weight: 800;
     transition: 0.3s ease-in;
 }
-
 .hero .btn-area #shop:hover {
     background: transparent;
     border: 1px solid #008c14;
@@ -305,7 +128,6 @@ main .hero-img img {
     border: 1px solid #d24e00;
     color: #d24e00;
 }
-
 .hero .btn-area #shop img,
 #view img {
     width: 20px;
@@ -317,7 +139,6 @@ main .hero-img img {
 main .hide {
     display: none;
 }
-
 /* FOOTER STYLING HERE */
 footer {
     position: relative;
@@ -380,7 +201,6 @@ footer p a:hover {
     translate: scale(1.1);
     color: rgb(196, 61, 0);
 }
-
 /* Adding Animations */
 @keyframes heroAnimation {
     0% {

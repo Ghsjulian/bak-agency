@@ -9,6 +9,7 @@ import hero_4 from "../assets/images/hero_4.jpg";
 import hero_5 from "../assets/images/hero_5.jpg";
 import hero_6 from "../assets/images/hero_6.jpg";
 import agent_2 from "../assets/images/agent_3.png";
+import "../assets/css/index.css"
 // import { useSite } from "../context/useAuth";
 
 const HeroSection = ({ data }) => {

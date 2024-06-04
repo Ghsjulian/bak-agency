@@ -43,7 +43,8 @@ const Navbar = () => {
                             >
                                 Blogs
                             </NavLink>
-                        </li><li>
+                        </li>
+                        <li>
                             <NavLink
                                 onClick={openNav}
                                 className={path == "/about" ? "active" : ""}
