@@ -1,9 +1,13 @@
 import Layouts from "./layouts/Layouts";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact"
-import About from "./pages/About"
-import Services from "./pages/Services"
-import Staffs from "./pages/Staffs"
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Staffs from "./pages/Staffs";
+/* Sub Pages Included Here */
+import Webdevelopment from "./pages/sub-pages/Webdevelopment";
+import GraphicsDesginer from "./pages/sub-pages/GraphicsDesginer";
+/* Sub Pages Included Here */
 
 const MyRoutes = [
     {
@@ -44,6 +48,22 @@ const MyRoutes = [
         element: (
             <Layouts>
                 <Staffs />
+            </Layouts>
+        )
+    },
+    {
+        path: "/services/web-development",
+        element: (
+            <Layouts>
+                <Webdevelopment />
+            </Layouts>
+        )
+    },
+    {
+        path: "/services/graphics-desginer",
+        element: (
+            <Layouts>
+                <GraphicsDesginer  />
             </Layouts>
         )
     }
