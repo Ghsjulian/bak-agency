@@ -47,6 +47,15 @@ const Header = () => {
                             <li className="nav-link">
                                 <NavLink
                                     onClick={closeNav}
+                                    className={path == "/about" ? "active" : ""}
+                                    to="/about"
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink
+                                    onClick={closeNav}
                                     className={path == "/blogd" ? "active" : ""}
                                     to="/blogs"
                                 >
@@ -54,86 +63,186 @@ const Header = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-link">
-                                <NavLink
-                                    onClick={closeNav}
-                                    className={path == "/about" ? "active" : ""}
-                                    to="/about"
-                                >
-                                    About Us
-                                </NavLink>
-                            </li>
-
-                            <li className="nav-link">
                                 <NavLink to="#">
-                                    Menu<i className="fas fa-caret-down"></i>
+                                    Services
+                                    <i className="fas fa-caret-down"></i>
                                 </NavLink>
                                 <div className="dropdown">
                                     <ul>
                                         <li className="dropdown-link">
-                                            <NavLink to="#">Link 1</NavLink>
-                                        </li>
-                                        <li className="dropdown-link">
-                                            <NavLink to="#">Link 2</NavLink>
-                                        </li>
-                                        <li className="dropdown-link">
                                             <NavLink to="#">
-                                                Link 3
+                                                Core Services
                                                 <i className="fas fa-caret-down"></i>
                                             </NavLink>
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                            Link 1
+                                                            Fullstack SEO &
+                                                            Local
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                            Link 2
+                                                            PPC & Google Adds
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                            Link 3
+                                                            Email Mareting
+                                                            Campagine
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                            More
-                                                            <i className="fas fa-caret-down"></i>
+                                                            Digital Strategy
                                                         </NavLink>
-                                                        <div className="dropdown second">
-                                                            <ul>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 1
-                                                                    </NavLink>
-                                                                </li>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 2
-                                                                    </NavLink>
-                                                                </li>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 3
-                                                                    </NavLink>
-                                                                </li>
-                                                                <div className="arrow"></div>
-                                                            </ul>
-                                                        </div>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Market Research
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Digital
+                                                            Transformation
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Brand Strateg
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Customer Insights
+                                                        </NavLink>
                                                     </li>
                                                     <div className="arrow"></div>
                                                 </ul>
                                             </div>
                                         </li>
+                                        {/* More Services */}
                                         <li className="dropdown-link">
-                                            <NavLink to="#">Link 4</NavLink>
+                                            <NavLink to="#">
+                                                Creative Services
+                                                <i className="fas fa-caret-down"></i>
+                                            </NavLink>
+                                            <div className="dropdown second">
+                                                <ul>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Graphics Desgin
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Video Production
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Copywrite Services
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Logo Desgin
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Branding
+                                                        </NavLink>
+                                                    </li>
+                                                    <div className="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        {/* More Services */}
+                                        <li className="dropdown-link">
+                                            <NavLink to="#">
+                                                Content Creation
+                                                <i className="fas fa-caret-down"></i>
+                                            </NavLink>
+                                            <div className="dropdown second">
+                                                <ul>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Blog Writing
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Copy Writing
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Product Descriptions
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Content Strategy
+                                                        </NavLink>
+                                                    </li>
+                                                    <div className="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        {/* More Services */}
+                                        <li className="dropdown-link">
+                                            <NavLink to="#">
+                                                Web Desgin & Development
+                                                <i className="fas fa-caret-down"></i>
+                                            </NavLink>
+                                            <div className="dropdown second">
+                                                <ul>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Responsive Desgin
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            E-Commerce Solutions
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Mobile App
+                                                            Development
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            CMS Integration
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            Custom Web Solutions
+                                                        </NavLink>
+                                                    </li>
+                                                    <li className="dropdown-link">
+                                                        <NavLink to="#">
+                                                            ADA Compliance
+                                                        </NavLink>
+                                                    </li>
+                                                    <div className="arrow"></div>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <div className="arrow"></div>
                                     </ul>
                                 </div>
                             </li>
+
+{/*
                             <li className="nav-link">
                                 <NavLink to="#">
                                     Services
@@ -206,6 +315,7 @@ const Header = () => {
                                     </ul>
                                 </div>
                             </li>
+                            */}
                         </ul>
                     </div>
                     <div className="log-sign">
