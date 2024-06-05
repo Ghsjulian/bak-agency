@@ -4,7 +4,7 @@ import axios from "axios";
 const ApiContext = createContext();
 
 const ApiProvider = ({ children }) => {
-    const baseURL = "http://localhost:8080/server/site-info";
+    const baseURL = "http://localhost:8080/site-info";
     const [siteData, setSiteData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -27,15 +27,15 @@ const ApiProvider = ({ children }) => {
         };
         fetchData();
     }, []);
-
+    
     if (loading) {
-        return; // or a loading spinner, etc.
+        return ; // or a loading spinner, etc.
     }
 
     if (error) {
-        return; // or an error message, etc.
+        return ; // or an error message, etc.
     }
-
+    
     return (
         <ApiContext.Provider value={{ siteData, loading, error }}>
             {children}
