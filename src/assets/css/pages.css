@@ -64,3 +64,60 @@
     color: #ffffff;
     border-radius: 10px;
 }
+.row .blogs {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+}
+.blogs h4 {
+    color: #044dca;
+}
+.blogs img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+.blogs p,
+.text-content {
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+}
+.blogs a {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: #00318e;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+/* VIew Blogs Styling....*/
+.view--blog {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.view--blog img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+.view--blog h3 {
+    margin: 0.3rem auto;
+}
+.view--blog .blog-content {
+    width: 60%;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin: 0.3rem auto;
+    line-height: 1.8rem;
+}

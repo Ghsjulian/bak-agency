@@ -29,12 +29,14 @@ const Footer = () => {
             <strong>
                 © Copyright All Reserve <span>2023-2024</span>
             </strong>
+            {/*
             <p>
                 Developed By -
                 <NavLink to="https://ghsresume.netlify.app" target="_blank">
                     Ghs Julian
                 </NavLink>
             </p>
+            */}
         </footer>
     );
 };

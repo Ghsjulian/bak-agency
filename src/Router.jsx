@@ -3,7 +3,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Staffs from "./pages/Staffs";
+import Blogs from "./pages/Blogs";
+import Viewblogs from "./components/Viewblogs";
 /* Sub Pages Included Here */
 import Webdevelopment from "./pages/sub-pages/Webdevelopment";
 import GraphicsDesginer from "./pages/sub-pages/GraphicsDesginer";
@@ -36,7 +37,7 @@ const MyRoutes = [
         )
     },
     {
-        path: "/service",
+        path: "/service/:name",
         element: (
             <Layouts>
                 <Services />
@@ -44,10 +45,18 @@ const MyRoutes = [
         )
     },
     {
-        path: "/staff",
+        path: "/blogs",
         element: (
             <Layouts>
-                <Staffs />
+                <Blogs />
+            </Layouts>
+        )
+    },
+    {
+        path: "/blogs/view/:blog-id",
+        element: (
+            <Layouts>
+                <Viewblogs />
             </Layouts>
         )
     },
@@ -63,7 +72,7 @@ const MyRoutes = [
         path: "/services/graphics-desginer",
         element: (
             <Layouts>
-                <GraphicsDesginer  />
+                <GraphicsDesginer />
             </Layouts>
         )
     }

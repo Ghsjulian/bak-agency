@@ -77,7 +77,9 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            to="service/Fullstack SEO & Local"
+                                                        >
                                                             Fullstack SEO &
                                                             Local
                                                         </NavLink>
@@ -242,7 +244,7 @@ const Header = () => {
                                 </div>
                             </li>
 
-{/*
+                            {/*
                             <li className="nav-link">
                                 <NavLink to="#">
                                     Services
