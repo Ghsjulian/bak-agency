@@ -10,7 +10,6 @@ import service from "../assets/images/service.png";
 const ServiceLayout = () => {
     return (
         <div data-aos="zoom-in" className="section">
-            <h2> What We Can Do ? </h2>
             <h3>Driving Digital Growth Through Expert SEO Solutions</h3>
             <p className="text">
                 Explore our main service and offer we provide the best service

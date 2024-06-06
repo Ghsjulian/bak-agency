@@ -5,6 +5,7 @@ class Router
   private $myControllers = [];
   private $controller_path = __DIR__ . "/../../";
   private $dev = "__ghs__julian_";
+  private $baseDir = "";
   private $status = false;
   public function __construct()
   {
@@ -20,6 +21,10 @@ class Router
       ]);
       exit();
     }
+  }
+  public function setbaseDir($path = "/")
+  {
+    $this->baseDir = $path;
   }
   public function addRoute($method, $path, $controller)
   {
@@ -66,6 +71,10 @@ class Router
     $method = $_SERVER["REQUEST_METHOD"];
     $path_path = $_SERVER["REQUEST_URI"];
     foreach ($this->route_list as $route) {
+      //print_r($path_path);
+      //echo "<br>";
+      //echo $route["path"];
+      //exit();
       if (
         ($route["method"] === $method && $route["path"] === $path_path) ||
         $route["path"] === $path_path . "/" ||
@@ -92,6 +101,7 @@ class Router
           call_user_func_array([$controller, $action], $parts); //$parts);
           $isExist = false;
           break;
+          exit();
         } else {
           $isExist = true;
         }

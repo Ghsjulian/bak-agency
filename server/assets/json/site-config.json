@@ -1,11 +1,12 @@
 {
+    "hero_section" : {
     "favicon": "favicon.ico",
     "title": "Bak-Agency | Official Website Bak-Agency | Get Best Service From Our Company",
     "meta_tag": "Free Online Agency , Bak-Agency, Find Your Best Online Service ",
-    "hero_img": "http://localhost:8080/assets/images/agent_3.png",
+    "hero_img": "http://localhost:8080/server/assets/images/agent_3.png",
     "hero_description": "Explore our latest products and offers. We provide best products and services in all over the country, to get touch us please order or contact with us. Our best services and products , that we sell is very good.",
-    "hero_header": "Welcome to Our Bak-Agency",
-
+    "hero_header": "Welcome to Our Bak-Agency"
+},
     "service_section": {
         "service_section_img": "service_section_image.png",
         "service_section_content": "This is service section text content will be written here."

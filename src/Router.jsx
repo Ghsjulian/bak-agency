@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ServiceLayout from "./components/ServiceLayout";
 import Blogs from "./pages/Blogs";
 import Viewblogs from "./components/Viewblogs";
 /* Sub Pages Included Here */
@@ -37,10 +38,18 @@ const MyRoutes = [
         )
     },
     {
-        path: "/service/:name",
+        path: "/service",
         element: (
             <Layouts>
                 <Services />
+            </Layouts>
+        )
+    },
+    {
+        path: "/service/:name",
+        element: (
+            <Layouts>
+                <ServiceLayout />
             </Layouts>
         )
     },
