@@ -77,9 +77,7 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink
-                                                            to="service/Fullstack SEO & Local"
-                                                        >
+                                                        <NavLink to="service/Fullstack SEO & Local">
                                                             Fullstack SEO &
                                                             Local
                                                         </NavLink>
@@ -321,7 +319,11 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="log-sign">
-                        <NavLink to="/contact" className="btn transparent">
+                        <NavLink
+                            onClick={closeNav}
+                            to="/contact"
+                            className="btn transparent"
+                        >
                             Contact
                         </NavLink>
                     </div>

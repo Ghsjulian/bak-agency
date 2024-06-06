@@ -1,17 +1,56 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import agent_3 from "../assets/images/agent_3.png";
 
 const Contact = () => {
+    const messageRef = useRef(null);
     const [userName, setuserName] = useState("");
+    const [telephone, setTelephone] = useState("");
     const [userEmail, setuserEmail] = useState("");
     const [userMessage, setuserMessage] = useState("");
-    const handleContact = e => {
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
+    const baseURL = "http://localhost:8080/server/client-contact";
+    const handleContact = async e => {
         e.preventDefault();
-        alert(userName);
+        if (userName && telephone && userEmail && userMessage) {
+            try {
+                axios
+                    .post(baseURL, {
+                        payloads: "__ghs_julian__",
+                        user_name: userName,
+                        user_phone: telephone,
+                        user_email: userEmail,
+                        user_message: userMessage
+                    })
+                    .then(response => {
+                        console.log(response.data)
+                        setData(response.data);
+                        messageRef.current.style.display = "block";
+                        messageRef.current.classList.remove("error");
+                        messageRef.current.classList.add("success");
+                        messageRef.current.textContent = response.data;
+                    });
+            } catch (error) {
+                console.log(error)
+                setError(error);
+                messageRef.current.style.display = "block";
+                messageRef.current.classList.remove("success");
+                messageRef.current.classList.add("error");
+                messageRef.current.textContent = error;
+            }
+        } else {
+            messageRef.current.style.display = "block";
+            messageRef.current.classList.remove("success");
+            messageRef.current.classList.add("error");
+            messageRef.current.textContent =
+                "Please Fill Out The Contact Form !";
+        }
+        setTimeout(() => {
+            messageRef.current.style.display = "none";
+            messageRef.current.textContent = "";
+        }, 3000);
     };
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" }), [];
-    });
+
     return (
         <div data-aos="zoom-in" id="page" className="section">
             <h2> Contact With Us </h2>
@@ -26,6 +65,11 @@ const Contact = () => {
                         get touch with us.
                     </p>
                     <h3>Fill Out This Form </h3>
+                    <span
+                        ref={messageRef}
+                        style={{ display: "none" }}
+                        className=""
+                    ></span>
                     <input
                         type="text"
                         onChange={e => {
@@ -33,6 +77,14 @@ const Contact = () => {
                         }}
                         placeholder="Enter Your Name"
                         value={userName}
+                    />
+                    <input
+                        type="number"
+                        onChange={e => {
+                            setTelephone(e.target.value);
+                        }}
+                        placeholder="Enter Your Phone Number"
+                        value={telephone}
                     />
                     <input
                         type="email"

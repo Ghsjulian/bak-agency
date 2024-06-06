@@ -33,11 +33,38 @@
     text-align: left;
     line-height: 2.5rem;
 }
+.form h3 {
+    margin: 1rem auto;
+}
+.form .error {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 0.1px solid #ea1800;
+    color: #ea1800;
+    background: #ea18003a;
+    padding: 0.5rem 0.7rem;
+}
+.form .success {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 0.1px solid #00a528;
+    color: #00a528;
+    background: #00a5283f;
+    padding: 0.5rem 0.7rem;
+}
 .form input {
     outline: none;
     border: 1px solid rgb(0, 197, 202);
     padding: 0.8rem 1rem;
-    margin: 0.7rem auto;
+    margin: 0.9rem auto;
     border-radius: 8px;
     width: 90%;
 }
