@@ -148,3 +148,30 @@
     margin: 0.3rem auto;
     line-height: 1.8rem;
 }
+
+/* Creating Service Layouts */
+.service-layouts {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.service-layouts img {
+    width: 40%;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+.service-layouts .service-description {
+    align-items: left;
+    text-align: left;
+    font-family: poppin-thin;
+    color: #004f13;
+    justify-content: left;
+    margin: 0.3rem auto;
+    line-height: 1.8rem;
+}
