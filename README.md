@@ -51,15 +51,15 @@
 
 ---
 
-<img align="center" src="images/Screenshot_2024-05-15-10-18-13-10_a2cf8efcdd42a8e6f7906303f104fb67.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-15-10-18-57-65_a2cf8efcdd42a8e6f7906303f104fb67.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-15-10-19-07-22_a2cf8efcdd42a8e6f7906303f104fb67.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-15-11-01-36-27_a2cf8efcdd42a8e6f7906303f104fb67.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-18-09-46-11-66_a2cf8efcdd42a8e6f7906303f104fb67.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-18-09-48-46-53_a87fd7db6caa850b517aa6fa9d2fcd0e.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-18-09-48-51-46_a87fd7db6caa850b517aa6fa9d2fcd0e.jpg" width="250" height="250"><br><br>
-<img align="center" src="images/Screenshot_2024-05-18-09-48-58-95_a87fd7db6caa850b517aa6fa9d2fcd0e.jpg" width="250" height="250"><br><br>
-
+<img align="center" src="src/assets/screenshots/screenshot4.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot1.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot2.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot3.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot3.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot5.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot6.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot7.png" width="330" height="300"><br><br>
+<img align="center" src="src/assets/screenshots/screenshot8.png" width="330" height="300"><br><br>
 
 ---
 
