@@ -22,12 +22,13 @@ foreach ($home_path as $path) {
 }
 
 // DEFINED POST REQUEST HERE...
-$router->post("/admin/login", "login@index");
+$router->post("/server/admin/login", "login@index");
 $router->post("/signup", "signup@index");
 $router->post("/server/site-info", "Sitedata@index");
 $router->post("/admin/edit-settings", "AdminSettings@index");
 $router->post("/admin/customize-site", "CustomizeSite@index");
 $router->post("/server/client-contact", "Contact@index");
+$router->post("/server/services", "Services@index");
 $router->post("/destroy", "Destroy@index");
 
 // DEFINED GET REQUEST HERE...
