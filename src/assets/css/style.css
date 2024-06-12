@@ -24,7 +24,7 @@
 .section h2 {
     color: rgb(1, 149, 226);
     font-weight: 900;
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -39,14 +39,15 @@
 }
 .section .text {
     color: rgb(0, 34, 7);
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2.2rem;
     text-align: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     text-transform: capitalize;
     margin: 0.2rem auto;
-    font-family: poppin-thin;
+    font-family: poppin-bold;
 }
 .section .row {
     display: grid;
@@ -77,15 +78,16 @@
     color: rgb(119, 15, 255);
     text-align: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 25px;
     margin: 0.2rem auto;
 }
 .col .p-text {
     color: rgb(0, 112, 115);
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 900;
+    font-size: 15px;
     text-align: left;
     justify-content: left;
+    line-height: 2rem;
     text-transform: capitalize;
     margin: 0.5rem 0.5rem;
     font-family: poppin-thin;

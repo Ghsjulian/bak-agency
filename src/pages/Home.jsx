@@ -13,12 +13,12 @@ const Home = () => {
 
         return (
             <>
-                <HeroSection />
-                <ServiceSection  />
-                <ArsenalSeo  />
+                <HeroSection/>
+                <ServiceSection/>
+                <ArsenalSeo/>
                 <WhyUs/>
-                <Projects />
-                <Location />
+                <Projects/>
+                <Location/>
             </>
         );
 };

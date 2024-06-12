@@ -100,7 +100,15 @@ section {
     display: flex;
     align-items: center;
 }
-
+.logo-container img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    margin: 0 .3rem;
+    padding: 1px;
+    background:#fff;
+    border-radius: 50%;
+}
 .nav-btn {
     flex: 3;
     display: flex;

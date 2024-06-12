@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { ApiProvider } from "./context/useAuth";
+// import { ApiProvider } from "./context/useAuth";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-   <ApiProvider>
+  {/* <ApiProvider> */} 
         <App />
-      </ApiProvider>
+      {/* </ApiProvider> */}
     </React.StrictMode>
 );

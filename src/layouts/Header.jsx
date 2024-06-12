@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import logo from "../assets/icons/logo.png"
 import "../assets/css/Navbar.css";
 
 const Header = () => {
@@ -27,6 +28,7 @@ const Header = () => {
                     id="check"
                 />
                 <div className="logo-container">
+                    <img src={logo} />
                     <h3 className="logo">
                         Bak-<span>Agency</span>
                     </h3>

@@ -7,7 +7,7 @@ import hero_2 from "../assets/images/hero_2.jpg";
 import hero_3 from "../assets/images/hero_3.jpg";
 import hero_4 from "../assets/images/hero_4.jpg";
 import hero_5 from "../assets/images/hero_5.jpg";
-import hero_6 from "../assets/images/hero_6.jpg";
+import hero__1 from "../assets/images/hero__4.png";
 import agent_2 from "../assets/images/agent_3.png";
 import "../assets/css/index.css";
 // import { useSite } from "../context/useAuth";
@@ -30,8 +30,8 @@ const HeroSection = () => {
                     </a>
                 </div>
             </section>
-            <section siteData-aos="zoom-in" className="hero-img">
-                <img id="hero-logo" src={agent_2} />
+            <section data-aos="zoom-in" className="hero-img">
+                <img id="hero-logo" src={hero__1} />
             </section>
             <div id="what-we-can-do"></div>
         </main>
