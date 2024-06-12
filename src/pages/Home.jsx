@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Location from "../components/Location";
 
 const Home = () => {
+    document.title = "Bak-Agency Official Website And Service Portal | Get Our Best Service"
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     });

@@ -8,6 +8,7 @@ import seo from "../assets/icons/seo.png";
 import service from "../assets/images/service.png";
 
 const Services = () => {
+    document.title = "Our Services - See our all services and know more about aur IT Farm"
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     });

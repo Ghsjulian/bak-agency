@@ -50,7 +50,7 @@
         height: 32px;
     }
     header .logo-container h3 {
-        font-size: 15px;
+        display: none;
     }
     main,
     .section .row,

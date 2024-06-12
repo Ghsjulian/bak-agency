@@ -30,7 +30,7 @@ const Header = () => {
                 <div className="logo-container">
                     <img src={logo} />
                     <h3 className="logo">
-                        Bak-<span>Agency</span>
+                        Bak-<span>Digital</span><span className="third--logo">Firm</span>
                     </h3>
                 </div>
 

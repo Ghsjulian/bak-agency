@@ -3,6 +3,7 @@ import axios from "axios"
 import agent_3 from "../assets/images/agent_3.png";
 
 const Contact = () => {
+    document.title = "Contact With Us - Contact with us anytime , and get our best opportunity"
     const messageRef = useRef(null);
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");

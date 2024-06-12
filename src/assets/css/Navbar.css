@@ -89,16 +89,20 @@ section {
 
 .container {
     max-width: 65rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin: 0 auto;
     display: flex;
     position: relative;
 }
 
 .logo-container {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
+}
+.logo-container h3 .third--logo {
+    color: #5ab6f3;
+    margin: 0 .3rem;
 }
 .logo-container img {
     width: 38px;
