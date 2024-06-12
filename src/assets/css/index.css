@@ -56,19 +56,19 @@ main .hero {
 h2 {
     color: rgb(1, 149, 226);
     font-weight: 900;
-    font-size: 30px;
-    text-align: left;
+    font-size: 2.5rem;
+    text-align: center;
     justify-content: left;
-    padding-left: 2rem;
+    padding-left: 2.2rem;
 }
 .hero p {
     color: #073500;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     text-transform: capitalize;
-    font-size: 16px;
-    line-height: 2rem;
-    margin: 0.7rem 2.5rem;
+    font-size: 20px;
+    line-height: 2.5rem;
+    margin: 0.7rem 2.6rem;
     font-family: ghs;
 }
 main .hero-img {
@@ -102,6 +102,7 @@ main .hero-img img {
     border-radius: 8px;
     font-weight: 800;
     transition: 0.3s ease-in;
+    font-family: ghs;
 }
 .hero .btn-area #view {
     margin: 0.5rem;

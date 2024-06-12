@@ -197,7 +197,7 @@ const Header = () => {
                                         {/* More Services */}
                                         <li className="dropdown-link">
                                             <NavLink to="#">
-                                                Web Desgin & Development
+                                                Web Development
                                                 <i className="fas fa-caret-down"></i>
                                             </NavLink>
                                             <div className="dropdown second">
@@ -214,7 +214,7 @@ const Header = () => {
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                            Mobile App
+                                                         App
                                                             Development
                                                         </NavLink>
                                                     </li>

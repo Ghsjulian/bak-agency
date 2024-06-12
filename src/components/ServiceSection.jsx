@@ -7,7 +7,7 @@ import dashboard from "../assets/icons/dashboard.png";
 import seo from "../assets/icons/seo.png";
 import service from "../assets/images/service.png";
 
-const ServiceSection = ({data}) => {
+const ServiceSection = () => {
     return (
         <div  data-aos="zoom-in" className="section">
             <h2> What We Can Do ? </h2>

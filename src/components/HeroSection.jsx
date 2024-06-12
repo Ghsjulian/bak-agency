@@ -12,13 +12,17 @@ import agent_2 from "../assets/images/agent_3.png";
 import "../assets/css/index.css";
 // import { useSite } from "../context/useAuth";
 
-const HeroSection = ({ data }) => {
+const HeroSection = () => {
     // console.log(data)
     return (
         <main data-aos="zoom-in">
             <section data-aos="zoom-in" className="hero">
-                <h2 className="hero-text">{data.hero_header}</h2>
-                <p>{data.hero_description}</p>
+                <h2 className="hero-text">
+                Elevate Your Digital Presence with Our Expertise
+                </h2>
+                <p>
+                Take your online presence to new heights with our expert digital services. From website design to SEO, social media, and content marketing, we'll help you build a strong online foundation that drives results. Learn more about our digital solutions and let's elevate your brand together !
+                    </p>
                 <div className="btn-area">
                     <a href="#what-we-can-do" id="shop">
                         See More
@@ -27,7 +31,7 @@ const HeroSection = ({ data }) => {
                 </div>
             </section>
             <section siteData-aos="zoom-in" className="hero-img">
-                <img id="hero-logo" src={data.hero_img} />
+                <img id="hero-logo" src={agent_2} />
             </section>
             <div id="what-we-can-do"></div>
         </main>

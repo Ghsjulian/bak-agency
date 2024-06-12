@@ -1,7 +1,7 @@
 import React from "react";
 import graphicdesign from "../assets/images/graphicdesign.png";
 
-const WhyUs = ({data}) => {
+const WhyUs = () => {
     return (
         <div data-aos="fade-up" className="section">
             <h2>Why Work With Us</h2>
