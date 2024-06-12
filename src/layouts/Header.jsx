@@ -55,15 +55,7 @@ const Header = () => {
                                     About
                                 </NavLink>
                             </li>
-                            <li className="nav-link">
-                                <NavLink
-                                    onClick={closeNav}
-                                    className={path == "/blogd" ? "active" : ""}
-                                    to="/blogs"
-                                >
-                                    Blogs
-                                </NavLink>
-                            </li>
+                       
                             <li className="nav-link">
                                 <NavLink to="#">
                                     Services
@@ -243,7 +235,15 @@ const Header = () => {
                                     </ul>
                                 </div>
                             </li>
-
+                            <li className="nav-link">
+                                <NavLink
+                                    onClick={closeNav}
+                                    className={path == "/blogd" ? "active" : ""}
+                                    to="/blogs"
+                                >
+                                    Blogs
+                                </NavLink>
+                            </li>
                             {/*
                             <li className="nav-link">
                                 <NavLink to="#">

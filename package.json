@@ -1,9 +1,12 @@
 {
   "name": "bak-agency",
+  "developer" : "Ghs Julian",
+  "developer_email": "ghsjulian@gmail.com",
+  "developer_portfolio" : "https://ghsresume.netlify.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage" : "http://localhost:8080",
+  "homepage" : "https://bakdif.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
