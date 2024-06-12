@@ -101,14 +101,17 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 8px;
+    gap: 10px;
     padding: 0.2rem 1rem;
+    margin: 0 .3rem;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .one-column img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    margin: 0 1rem;
 }
 
 /*  WHY US DESIGNING */
@@ -248,3 +251,54 @@ img {
     height: auto;
     object-fit: fill;
 }
+
+/* ------------------------------------------------------------------*/
+/*
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 5s infinite linear;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .one-column {
+    position: relative;
+    right: -0;
+    animation: slide 10s infinite;
+  }
+ /*
+  .one-column img {
+    scrollbar-width: none;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f;
+    position: relative;
+    animation: slide 3s infinite;
+  }
+  */
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+      right: 0;
+    }
+    100% {
+       transform: translateX(-100%); 
+      left: 0;
+    }
+  }

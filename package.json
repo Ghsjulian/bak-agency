@@ -1,12 +1,12 @@
 {
   "name": "bak-agency",
-  "developer" : "Ghs Julian",
+  "developer": "Ghs Julian",
   "developer_email": "ghsjulian@gmail.com",
-  "developer_portfolio" : "https://ghsresume.netlify.app",
+  "developer_portfolio": "https://ghsresume.netlify.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage" : "https://bakdif.com",
+  "homepage": "https://bakdif.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -18,7 +18,8 @@
     "axios": "^1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "react-slick": "^0.30.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
