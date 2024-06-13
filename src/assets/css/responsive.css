@@ -1,6 +1,6 @@
 /*  CSS RESPONSIVE MEDIA QUERY  FOR MOBILE  DEVICE  */
 @media (max-width: 768px) {
-  /*
+    /*
     header {
         padding: 0.8rem;
     }
@@ -43,14 +43,14 @@
     }
     */
     header {
-        padding: .5rem 0;
+        padding: 0.5rem 0;
     }
     header .logo-container img {
         width: 32px;
         height: 32px;
     }
     header .logo-container h3 {
-        display: none;
+        font-size: 18px;
     }
     main,
     .section .row,

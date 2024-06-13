@@ -154,13 +154,27 @@ footer {
     bottom: 0;
 }
 footer .three-row-footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    gap: 10px;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-bottom: 0.1px solid rgb(0, 179, 234);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    right: 0.7rem;
+    bottom: 1rem;
+    border-radius: 50%;
+    background: #0090d2;
+    z-index: 100000;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+        box-shadow: 10px 10px 30px #cccccc;
+        
+}
+.three-row-footer button {
+    outline: none;
+    border: none;
+    background: transparent;
+    display: block;
+    color: #fff;
 }
 footer .social {
     display: flex;

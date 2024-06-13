@@ -17,6 +17,9 @@ const Header = () => {
     const closeNav = () => {
         setIsChecked(false);
     };
+    const goToHome = ()=>{
+        navigate("/")
+    }
     return (
         <header>
             <div className="container">
@@ -27,7 +30,7 @@ const Header = () => {
                     name="check"
                     id="check"
                 />
-                <div className="logo-container">
+                <div onClick={goToHome} className="logo-container">
                     <img src={logo} />
                     <h3 className="logo">
                         Bak-<span>Digital</span><span className="third--logo">Firm</span>

@@ -7,12 +7,13 @@ import instagram from "../assets/icons/instagram.png";
 import github from "../assets/icons/github.png";
 
 const Footer = () => {
+    const goToTop = () =>{
+                window.scrollTo({ top: 0, behavior: "smooth" }), [];
+    }
     return (
         <footer className="footer">
-        <div className="three-row-footer">
-        <div className="col">Col</div>
-        <div className="col">Col</div>
-        <div className="col">Col</div>
+        <div onClick={goToTop} className="three-row-footer">
+       <button className="top-btn">Top</button>
         </div>
             <div className="social">
                 <NavLink to="/">
