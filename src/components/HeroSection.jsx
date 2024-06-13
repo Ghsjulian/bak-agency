@@ -11,6 +11,7 @@ import hero__1 from "../assets/images/hero__4.png";
 import agent_2 from "../assets/images/agent_3.png";
 import "../assets/css/index.css";
 // import { useSite } from "../context/useAuth";
+import MySlider from './Slider';
 
 const HeroSection = () => {
     // console.log(data)
@@ -18,11 +19,11 @@ const HeroSection = () => {
         <main data-aos="zoom-in">
             <section data-aos="zoom-in" className="hero">
                 <h2 className="hero-text">
-                Elevate Your Digital Presence with Our Expertise
+                    Elevate Your Digital Presence with Our Expertise
                 </h2>
                 <p>
-                Take your online presence to new heights with our expert digital services. From website design to SEO, social media, and content marketing, we'll help you build a strong online foundation that drives results. Learn more about our digital solutions and let's elevate your brand together !
-                    </p>
+                    Take your online presence to new heights with our expert digital services. From website design to SEO, social media, and content marketing, we'll help you build a strong online foundation that drives results. Learn more about our digital solutions and let's elevate your brand together !
+                </p>
                 <div className="btn-area">
                     <a href="#what-we-can-do" id="shop">
                         See More
@@ -31,7 +32,8 @@ const HeroSection = () => {
                 </div>
             </section>
             <section data-aos="zoom-in" className="hero-img">
-                <img id="hero-logo" src={hero__1} />
+                {/* <img id="hero-logo" src={hero__1} /> */}
+                <MySlider />
             </section>
             <div id="what-we-can-do"></div>
         </main>

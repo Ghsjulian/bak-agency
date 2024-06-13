@@ -84,6 +84,7 @@ h2 {
 
 main .hero-img {
     /* animation: zoom-in 7s linear backwards infinite; */
+    background: #ccc8c8;
 }
 
 main .hero-img img {
