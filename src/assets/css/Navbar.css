@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @font-face {
     font-family: "poppin-bold";
     src: url("fonts/Poppins-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "poppin-thin";
     src: url("fonts/Poppins-Light.ttf") format("truetype");
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "ghs";
     src: url("fonts/Lato-Bold.ttf") format("truetype");
@@ -23,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --clr-bg-header: #005124;
     --clr-btn: #004ace;
@@ -40,10 +44,12 @@ h3,
 h4 {
     font-family: poppin-bold;
 }
+
 input,
 button {
     outline: none;
 }
+
 body {
     font-size: 100%;
     overflow-y: auto;
@@ -51,6 +57,7 @@ body {
     transition: 0.5s ease-in;
     scroll-behavior: smooth;
 }
+
 ul {
     list-style: none;
 }
@@ -68,6 +75,7 @@ header {
     z-index: 1000000;
     padding: 0.7rem 0.3rem;
 }
+
 /*
 section {
     position: relative;
@@ -99,11 +107,14 @@ section {
     /* flex: 1; */
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
 .logo-container h3 .third--logo {
     color: #5ab6f3;
     margin: 0 0.3rem;
 }
+
 .logo-container img {
     width: 38px;
     height: 38px;
@@ -113,6 +124,7 @@ section {
     background: #fff;
     border-radius: 50%;
 }
+
 .nav-btn {
     flex: 3;
     display: flex;
@@ -170,7 +182,7 @@ section {
     color: var(--clr-light);
 }
 
-.nav-links > ul {
+.nav-links>ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +193,7 @@ section {
     position: relative;
 }
 
-.nav-link > a {
+.nav-link>a {
     line-height: 3rem;
     color: var(--clr-light);
     padding: 0 0.8rem;
@@ -194,11 +206,11 @@ section {
     font-weight: 900;
 }
 
-.nav-link > a > i {
+.nav-link>a>i {
     margin-left: 0.2rem;
 }
 
-.nav-link:hover > a {
+.nav-link:hover>a {
     /* transform: scale(1.1); */
     color: #f77a14;
 }
@@ -219,7 +231,7 @@ section {
     position: relative;
 }
 
-.dropdown-link > a {
+.dropdown-link>a {
     display: flex;
     background-color: var(--clr-light);
     color: var(--clr-dropdown);
@@ -230,7 +242,7 @@ section {
     transition: 0.3s;
 }
 
-.dropdown-link:hover > a {
+.dropdown-link:hover>a {
     background-color: var(--clr-dropdown);
     color: var(--clr-light);
 }
@@ -256,7 +268,7 @@ section {
     z-index: -1;
 }
 
-.dropdown-link:first-child:hover ~ .arrow {
+.dropdown-link:first-child:hover~.arrow {
     background-color: var(--clr-dropdown);
 }
 
@@ -274,6 +286,7 @@ section {
     z-index: 909009;
     width: 100%;
 }
+
 .dropdown.second ul {
     width: 13rem;
     border-radius: 10px;
@@ -285,8 +298,8 @@ section {
     left: -5.5px;
 }
 
-.nav-link:hover > .dropdown,
-.dropdown-link:hover > .dropdown {
+.nav-link:hover>.dropdown,
+.dropdown-link:hover>.dropdown {
     transform: translate(0, 0);
     opacity: 1;
     pointer-events: auto;
@@ -349,15 +362,15 @@ section {
     display: none;
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div {
+#check:checked~.hamburger-menu-container .hamburger-menu div {
     background-color: transparent;
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:before {
+#check:checked~.hamburger-menu-container .hamburger-menu div:before {
     transform: translateY(0) rotate(-45deg);
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:after {
+#check:checked~.hamburger-menu-container .hamburger-menu div:after {
     transform: translateY(0) rotate(45deg);
 }
 
@@ -377,16 +390,19 @@ section {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 0.2 ease-in;
     }
 }
+
 @keyframes zoom-in {
     0% {
         transition: 0.2s ease-in;
         opacity: 0.5;
         transform: scale(0.8);
     }
+
     100% {
         transition: 0.2s ease-in-out;
         opacity: 0.5 ease-in;
@@ -419,12 +435,12 @@ section {
         transition: 0.65s;
     }
 
-    #check:checked ~ .nav-btn {
+    #check:checked~.nav-btn {
         transform: translateX(0);
     }
 
-    #check:checked ~ .nav-btn .nav-link,
-    #check:checked ~ .nav-btn .log-sign {
+    #check:checked~.nav-btn .nav-link,
+    #check:checked~.nav-btn .log-sign {
         animation: animation 0.5s ease-in;
     }
 
@@ -433,7 +449,7 @@ section {
         width: 100%;
     }
 
-    .nav-links > ul {
+    .nav-links>ul {
         flex-direction: column;
     }
 
@@ -443,13 +459,13 @@ section {
         transform: translateY(15px);
     }
 
-    .nav-link > a {
+    .nav-link>a {
         color: #fff;
         line-height: 1;
         padding: 1.6rem 2rem;
     }
 
-    .nav-link:hover > a {
+    .nav-link:hover>a {
         color: #fff;
         transform: scale(1);
         background-color: transparent;
@@ -470,32 +486,33 @@ section {
         display: none;
     }
 
-    .nav-link:hover > .dropdown,
-    .dropdown-link:hover > .dropdown {
+    .nav-link:hover>.dropdown,
+    .dropdown-link:hover>.dropdown {
         display: block;
     }
 
-    .nav-link:hover > a > i,
-    .dropdown-link:hover > a > i {
+    .nav-link:hover>a>i,
+    .dropdown-link:hover>a>i {
         transform: rotate(360deg);
     }
 
-    .dropdown-link > a {
+    .dropdown-link>a {
         background-color: transparent;
         color: var(--clr-light);
         padding: 1.2rem 2rem;
         line-height: 1;
     }
+
     .dropdown.second ul {
         box-shadow: none;
         width: 100%;
     }
 
-    .dropdown.second .dropdown-link > a {
+    .dropdown.second .dropdown-link>a {
         padding: 1.2rem 2rem 1.2rem 3rem;
     }
 
-    .dropdown.second .dropdown.second .dropdown-link > a {
+    .dropdown.second .dropdown.second .dropdown-link>a {
         padding: 1.2rem 2rem 1.2rem 4rem;
     }
 
@@ -519,16 +536,16 @@ section {
         display: none;
     }
 
-    .dropdown-link:hover > a {
+    .dropdown-link:hover>a {
         color: #fff;
         background-color: var(--clr-dropdown-link-hov);
     }
 
-    .dropdown-link:first-child:hover ~ .arrow {
+    .dropdown-link:first-child:hover~.arrow {
         background-color: transparent;
     }
 
-    .nav-link > a > i {
+    .nav-link>a>i {
         font-size: 1.1rem;
         transform: rotate(-90deg);
         transition: 0.7s;

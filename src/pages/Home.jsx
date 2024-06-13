@@ -12,16 +12,16 @@ const Home = () => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     });
 
-        return (
-            <>
-                <HeroSection/>
-                <ServiceSection/>
-                <ArsenalSeo/>
-                <WhyUs/>
-                <Projects/>
-                <Location/>
-            </>
-        );
+    return (
+        <>
+            <HeroSection />
+            <ServiceSection />
+            <ArsenalSeo />
+            <WhyUs />
+            <Projects />
+            {/* <Location/> */}
+        </>
+    );
 };
 
 export default Home;

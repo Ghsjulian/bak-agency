@@ -4,12 +4,14 @@
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "poppin-thin";
     src: url("fonts/Poppins-Light.ttf") format("truetype");
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "ghs";
     src: url("fonts/Lato-Bold.ttf") format("truetype");
@@ -19,8 +21,10 @@
 
 .section {
     width: 100%;
+    height: auto;
     margin: 0.5rem 0;
 }
+
 .section h2 {
     color: rgb(1, 149, 226);
     font-weight: 900;
@@ -30,6 +34,7 @@
     margin: auto;
     padding: 0.2rem 0;
 }
+
 .section h3 {
     color: rgb(0, 91, 20);
     text-align: center;
@@ -37,28 +42,41 @@
     font-size: 18px;
     margin: 0.5rem auto;
 }
+
+.section h2 img,
+#what_we_can_do {
+    width: 500px;
+    height: 70px;
+    object-fit: cover;
+    margin: 1rem auto;
+    text-align: center;
+    justify-content: center;
+}
+
 .section .text {
     color: rgb(0, 34, 7);
     font-weight: 400;
     font-size: 20px;
-    line-height: 2.2rem;
-    text-align: center;
+    line-height: 2.4rem;
+    text-align: justify;
     justify-content: center;
     width: 70%;
     text-transform: capitalize;
     margin: 0.2rem auto;
     font-family: poppin-bold;
 }
+
 .section .row {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    gap: 10px;
+    gap: 25px;
     margin: 1rem auto;
     padding: 1rem;
 
-    background: rgb(239, 239, 239);
+    /* background: rgb(239, 239, 239); */
 }
+
 .row .col {
     align-items: center;
     text-align: center;
@@ -66,14 +84,35 @@
     background: #ffffff;
     padding: 0.5rem;
     border-radius: 5px;
-    border: 0.1px solid rgb(0, 207, 150);
+    /* border: 0.1px solid rgb(0, 207, 150); */
 }
+
+
+.row .col {
+    background-color: #dddddd;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.row .col::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 40px 15px rgba(0, 0, 0, .5);
+    background-color: transparent;
+    border-radius: 80px / 4px;
+}
+
+
+
 .col img {
     width: 140px;
     height: 140px;
     object-fit: cover;
     margin: 0.1rem auto;
 }
+
 .col h4 {
     color: rgb(119, 15, 255);
     text-align: center;
@@ -81,10 +120,11 @@
     font-size: 25px;
     margin: 0.2rem auto;
 }
+
 .col .p-text {
-    color: rgb(0, 112, 115);
+    color: rgb(0, 0, 0);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     justify-content: left;
     line-height: 2rem;
@@ -92,9 +132,11 @@
     margin: 0.5rem 0.5rem;
     font-family: poppin-thin;
 }
+
 .col a {
     margin: 0.8rem auto;
 }
+
 /* SERVICE SECTION COMPLETED */
 .section .one-column {
     display: flex;
@@ -107,6 +149,7 @@
     overflow-x: auto;
     overflow-y: hidden;
 }
+
 .one-column img {
     width: 100px;
     height: 100px;
@@ -124,6 +167,7 @@
     padding: 1rem;
     background: rgb(239, 239, 239);
 }
+
 .row-four .column {
     align-items: center;
     text-align: center;
@@ -133,6 +177,7 @@
     border-radius: 5px;
     border: 0.1px solid rgb(0, 207, 150);
 }
+
 .column h4 {
     color: rgb(0, 226, 229);
     text-align: center;
@@ -140,12 +185,14 @@
     font-size: 15px;
     margin: 0.2rem auto;
 }
+
 .column img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin: 0.1rem auto;
 }
+
 .column .p-text {
     color: rgb(67, 67, 67);
     font-weight: 500;
@@ -161,9 +208,11 @@
 #projects {
     padding: 1rem 0.5rem;
 }
+
 #projects img {
     width: 100%;
 }
+
 #projects a {
     outline: none;
     border: none;
@@ -178,11 +227,13 @@
     margin-bottom: 1rem;
     border-radius: 10px;
 }
+
 #projects a:hover {
     background: transparent;
     border: 1px solid rgb(0, 76, 44);
     color: rgb(0, 76, 44);
 }
+
 /* CLIENTS STYLING AREA */
 img {
     -webkit-filter: saturate(2);
@@ -202,6 +253,7 @@ img {
     background: rgb(238, 238, 238);
     padding: 0.2rem 0.5rem;
 }
+
 .client .client-column {
     background: #ffffff;
     padding: 0.6rem 0.7rem;
@@ -213,15 +265,18 @@ img {
     width: 30%;
     overflow: hidden;
 }
+
 .client .client-column img {
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
+
 .client .client-column h4 {
     color: rgb(0, 145, 84);
     font-weight: 500;
 }
+
 .client .client-column .p-text {
     width: 100%;
     color: rgb(0, 48, 196);
@@ -246,6 +301,7 @@ img {
     margin: 0.5rem auto;
     padding: 0.5rem;
 }
+
 .location img {
     width: 100%;
     height: auto;
@@ -277,6 +333,7 @@ img {
 ::-webkit-scrollbar {
     display: none;
 }
+
 .one-column {
     position: relative;
     /*
@@ -299,6 +356,7 @@ img {
         transform: translateX(100%);
         right: 0;
     }
+
     100% {
         transform: translateX(-100%);
         left: 0;

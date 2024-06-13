@@ -4,12 +4,14 @@
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "poppin-thin";
     src: url("fonts/Poppins-Light.ttf") format("truetype");
     font-weight: 700;
     font-style: bold;
 }
+
 @font-face {
     font-family: "ghs";
     src: url("fonts/Lato-Bold.ttf") format("truetype");
@@ -22,18 +24,23 @@ main {
     padding: 5% 0;
     position: relative;
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
     gap: 7px;
-    background-image: url("../images/—Pngtree—e-commerce promotion fluid gradient_4610709.png");
+    /* background-image: url("../images/bg.png"); 
     background-repeat: no-repeat;
     background-size: cover;
+    */
+    border-bottom: 2px solid rgb(1, 149, 226);
 }
+
 main section {
     width: 100%;
     margin: 0;
 }
+
 main .hero {
     width: 100%;
     text-align: left;
@@ -47,11 +54,13 @@ main .hero {
     /* animation: heroAnimation 1s linear infinite; */
     overflow-y: auto;
 }
+
 .hero .main-text {
     margin-right: 0.6rem;
     margin: 0.5rem 0;
     color: #222222;
 }
+
 .hero .hero-text,
 h2 {
     color: rgb(1, 149, 226);
@@ -61,6 +70,7 @@ h2 {
     justify-content: left;
     padding-left: 2.2rem;
 }
+
 .hero p {
     color: #073500;
     font-weight: 500;
@@ -71,15 +81,18 @@ h2 {
     margin: 0.7rem 2.6rem;
     font-family: ghs;
 }
+
 main .hero-img {
-    animation: zoom-in 7s linear backwards infinite;
+    /* animation: zoom-in 7s linear backwards infinite; */
 }
+
 main .hero-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     padding: 0.5rem;
 }
+
 .hero .btn-area {
     display: flex;
     justify-content: space-around;
@@ -88,6 +101,7 @@ main .hero-img img {
     gap: 1rem;
     overflow: hidden;
 }
+
 .hero .btn-area #shop {
     margin: 0.5rem auto;
     outline: none;
@@ -104,6 +118,7 @@ main .hero-img img {
     transition: 0.3s ease-in;
     font-family: ghs;
 }
+
 .hero .btn-area #view {
     margin: 0.5rem;
     outline: none;
@@ -119,16 +134,19 @@ main .hero-img img {
     font-weight: 800;
     transition: 0.3s ease-in;
 }
+
 .hero .btn-area #shop:hover {
     background: transparent;
     border: 1px solid #008c14;
     color: #008c14;
 }
+
 .hero .btn-area #view:hover {
     background: transparent;
     border: 1px solid #d24e00;
     color: #d24e00;
 }
+
 .hero .btn-area #shop img,
 #view img {
     width: 20px;
@@ -137,9 +155,11 @@ main .hero-img img {
     cursor: pointer;
     margin: 0 0.3rem;
 }
+
 main .hide {
     display: none;
 }
+
 /* FOOTER STYLING HERE */
 footer {
     position: relative;
@@ -153,6 +173,7 @@ footer {
     text-align: center;
     bottom: 0;
 }
+
 footer .three-row-footer {
     display: flex;
     position: fixed;
@@ -161,14 +182,15 @@ footer .three-row-footer {
     right: 0.7rem;
     bottom: 1rem;
     border-radius: 50%;
-    background: #0090d2;
+    background: transparent;
     z-index: 100000;
     padding: 0.5rem;
     width: 50px;
     height: 50px;
-        box-shadow: 10px 10px 30px #cccccc;
-        
+    box-shadow: 10px 10px 30px #cccccc;
+
 }
+
 .three-row-footer button {
     outline: none;
     border: none;
@@ -176,6 +198,14 @@ footer .three-row-footer {
     display: block;
     color: #fff;
 }
+
+.three-row-footer button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 footer .social {
     display: flex;
     justify-content: center;
@@ -184,6 +214,7 @@ footer .social {
     align-items: center;
     text-align: center;
 }
+
 .social a {
     text-decoration: none;
     margin: 0.3rem 1rem;
@@ -191,6 +222,7 @@ footer .social {
     border-radius: 50%;
     border: none;
 }
+
 .social a img {
     width: 30px;
     height: 30px;
@@ -200,19 +232,23 @@ footer .social {
     margin: 0.5rem;
     padding: 0.3rem;
 }
+
 footer strong {
     margin: 0.3rem auto;
     color: #000000;
     font-weight: 800;
 }
+
 footer strong span {
     color: rgb(24, 0, 253);
 }
+
 footer p {
     color: rgb(21, 21, 21);
     font-weight: 500;
     margin: 0.3rem auto;
 }
+
 footer p a {
     margin: 0.2rem;
     text-decoration: none;
@@ -223,25 +259,30 @@ footer p a {
     color: rgb(0, 196, 63);
     transition: 0.3s ease-in;
 }
+
 footer p a:hover {
     translate: scale(1.1);
     color: rgb(196, 61, 0);
 }
+
 /* Adding Animations */
 @keyframes heroAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 0.2 ease-in;
     }
 }
+
 @keyframes zoom-in {
     0% {
         transition: 0.2s ease-in;
         opacity: 0.5;
         transform: scale(0.8);
     }
+
     100% {
         transition: 0.2s ease-in-out;
         opacity: 0.5 ease-in;

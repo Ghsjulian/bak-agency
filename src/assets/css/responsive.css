@@ -1,5 +1,6 @@
 /*  CSS RESPONSIVE MEDIA QUERY  FOR MOBILE  DEVICE  */
 @media (max-width: 768px) {
+
     /*
     header {
         padding: 0.8rem;
@@ -43,15 +44,18 @@
     }
     */
     header {
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
     }
+
     header .logo-container img {
         width: 32px;
         height: 32px;
     }
+
     header .logo-container h3 {
         font-size: 18px;
     }
+
     main,
     .section .row,
     .row-four {
@@ -59,43 +63,70 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+
     main .hero {
         padding: 1.5rem 0.5rem;
     }
+
     main .hero .hero-text {
         width: 100%;
         margin: 0.5rem 0;
         font-size: 22px;
         padding: 0;
     }
+
     main .hero-img {
         width: 100%;
     }
+
     .hero p {
         margin: 0.5rem auto;
+        font-size: 16px;
     }
+
     .section h2 {
         font-size: 22px;
+        margin: .6rem auto;
     }
+
     .section .text,
     p {
-        width: 100%;
+        text-align: justify;
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        word-spacing: 1px;
     }
+
     .client-column {
         white-space: nowrap;
         width: 100%;
         right: 0;
     }
+
     .two-row {
         flex-direction: column;
         margin: 0.5rem;
     }
+
     .two-row .form {
         width: 100%;
         padding: 0.5rem;
     }
+
     .form input,
     .form textarea {
         width: 100%;
+    }
+
+    .section h2 img,
+    #what_we_can_do {
+        width: 300px;
+    }
+
+    .section .text {
+        font-size: 16px;
+        font-weight: 900;
+        font-family: popin-thin;
     }
 }

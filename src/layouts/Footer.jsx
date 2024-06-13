@@ -1,20 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import facebook from "../assets/icons/facebook.png";
 import google from "../assets/icons/google.png";
 import twitter from "../assets/icons/twitter.png";
 import instagram from "../assets/icons/instagram.png";
 import github from "../assets/icons/github.png";
+import arrow_up from "../assets/icons/arrow_up.png";
 
 const Footer = () => {
-    const goToTop = () =>{
-                window.scrollTo({ top: 0, behavior: "smooth" }), [];
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const goToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" }), [];
     }
     return (
         <footer className="footer">
-        <div onClick={goToTop} className="three-row-footer">
-       <button className="top-btn">Top</button>
-        </div>
+            <div onClick={goToTop} className="three-row-footer">
+                <button className="top-btn">
+                    <img src={arrow_up} />
+                </button>
+            </div>
             <div className="social">
                 <NavLink to="/">
                     <img src={google} />
