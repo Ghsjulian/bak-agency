@@ -31,8 +31,8 @@ main {
     background-size: cover;
 }
 main section {
-    width: 100% ;
-    margin: 0 ;
+    width: 100%;
+    margin: 0;
 }
 main .hero {
     width: 100%;
@@ -146,12 +146,21 @@ footer {
     width: 100%;
     margin: 0;
     padding: 1rem 0.7rem;
-    /*background: rgb(238, 238, 238);*/ 
+    /*background: rgb(238, 238, 238);*/
     background: #005124;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     bottom: 0;
+}
+footer .three-row-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-bottom: 0.1px solid rgb(0, 179, 234);
 }
 footer .social {
     display: flex;
@@ -160,7 +169,6 @@ footer .social {
     margin: 0.5rem auto;
     align-items: center;
     text-align: center;
-    border-bottom: 0.1px solid rgb(0, 179, 234);
 }
 .social a {
     text-decoration: none;
@@ -168,13 +176,15 @@ footer .social {
     display: block;
     border-radius: 50%;
     border: none;
-    background: transparent;
 }
 .social a img {
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
+    background: #fff;
+    border-radius: 50%;
     margin: 0.5rem;
+    padding: 0.3rem;
 }
 footer strong {
     margin: 0.3rem auto;

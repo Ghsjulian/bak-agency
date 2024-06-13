@@ -9,6 +9,11 @@ import github from "../assets/icons/github.png";
 const Footer = () => {
     return (
         <footer className="footer">
+        <div className="three-row-footer">
+        <div className="col">Col</div>
+        <div className="col">Col</div>
+        <div className="col">Col</div>
+        </div>
             <div className="social">
                 <NavLink to="/">
                     <img src={google} />
