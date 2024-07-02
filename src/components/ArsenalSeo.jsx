@@ -1,18 +1,20 @@
 import React from "react";
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import SwiperCore, Navigation, Pagination  from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
 import untitled42 from "../assets/icons/untitled42.png";
 import Untitled43 from "../assets/icons/Untitled43.png";
 import Untitled44 from "../assets/icons/Untitled44.png";
 import Untitled45 from "../assets/icons/Untitled45.png";
 import Untitled46 from "../assets/icons/Untitled46.png";
 
-SwiperCore.use([Navigation, Pagination]);
+// SwiperCore.use([Navigation, Pagination]);
 const ArsenalSeo = () => {
     return (
         <div id="slide" data-aos="zoom-in" className="section">
             <h2>Our SEO Tools</h2>
-            <Swiper
+            {/* <Swiper
       navigation
       pagination={{ clickable: true }}
       slidesPerView={1}
@@ -23,10 +25,10 @@ const ArsenalSeo = () => {
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    </Swiper> */}
             <div className="one-column">
                 <img src={untitled42} />
-                <img src={Untitled43} />
+                 <img src={Untitled43} /> 
                 <img src={Untitled44} />
                 <img src={Untitled45} />
                 <img src={Untitled46} />
