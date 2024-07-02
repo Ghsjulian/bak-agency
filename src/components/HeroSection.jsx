@@ -2,24 +2,24 @@ import React, { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 /* ICONS */
 import rightArrow from "../assets/icons/rightArrow.png";
-import hero_1 from "../assets/images/hero_1.png";
-import hero_2 from "../assets/images/hero_2.jpg";
-import hero_3 from "../assets/images/hero_3.jpg";
-import hero_4 from "../assets/images/hero_4.jpg";
-import hero_5 from "../assets/images/hero_5.jpg";
-import hero__1 from "../assets/images/hero__4.png";
-import agent_2 from "../assets/images/agent_3.png";
+// import hero_1 from "../assets/images/hero_1.png";
+// import hero_2 from "../assets/images/hero_2.jpg";
+// import hero_3 from "../assets/images/hero_3.jpg";
+// import hero_4 from "../assets/images/hero_4.jpg";
+// import hero_5 from "../assets/images/hero_5.jpg";
+// import hero__1 from "../assets/images/hero__4.png";
+// import agent_2 from "../assets/images/agent_3.png";
 import "../assets/css/index.css";
 import { ReactTyped } from "react-typed";
 import MySlider from './Slider';
 
 const HeroSection = () => {
     // console.log(data)
+   
     return (
         <main data-aos="zoom-in">
-            <audio style={{display:"none"}} id="audio" loop autoplay>
-  <source src="your_audio_file.mp3" type="audio/mp3"/>
-  <source src="your_audio_file.wav" type="audio/wav"/>
+            <audio style={{display:"none"}} id="audio" loop autoPlay>
+  <source src="/typer.mp3" type="audio/mp3"/>
   Your browser does not support the audio element.
 </audio>
             <section data-aos="zoom-in" className="hero">

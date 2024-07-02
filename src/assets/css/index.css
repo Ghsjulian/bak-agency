@@ -32,8 +32,8 @@ main {
     /* background-image: url("../images/bg.png"); 
     background-repeat: no-repeat;
     background-size: cover;
-    */
     border-bottom: 2px solid rgb(1, 149, 226);
+    */
 }
 
 main section {
@@ -48,8 +48,8 @@ main .hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    margin: 0;
 
     /* animation: heroAnimation 1s linear infinite; */
     overflow-y: auto;
@@ -61,7 +61,7 @@ main .hero {
     color: #222222;
 }
 .hero .typer {
-    
+    margin: .6rem auto;
     background: -webkit-linear-gradient(0deg, rgba(173,57,255,1) 0%, rgba(247,122,20,1) 54%, rgba(70,182,243,1) 76%, rgba(0,35,255,1) 100%);
      -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

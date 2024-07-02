@@ -67,7 +67,9 @@
     main .hero {
         padding: 1.5rem 0.5rem;
     }
-
+    .hero .typer {
+     font-size: 1.8rem;
+    }
     main .hero .hero-text {
         width: 100%;
         margin: 0.5rem 0;
