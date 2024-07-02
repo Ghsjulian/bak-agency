@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'rc-slider';
-import digital_marketing_2 from "../assets/images/digital_marketing_2.png"
-import digital_marketing from "../assets/images/digital_marketing.png"
-import web_desgine from "../assets/images/web_desgine.png"
-import web_design from "../assets/images/web_design.png"
-import web_development from "../assets/images/web_development.png"
+import full_stack_web from "../assets/images/Full stack web design.png"
+import web_design from "../assets/images/Web Design.png"
+import Web_development from "../assets/images/Web development.png"
+import seo from "../assets/images/SEO image.png"
+import social_media from "../assets/images/Social media marketting.png"
+import multiple from "../assets/images/Multiple services.png"
+import graphics_design from "../assets/images/Graphics design.png"
+
+
 
 
 const MySlider = () => {
     const images = [
-        digital_marketing_2, digital_marketing, web_desgine, web_design, web_development
+        multiple,full_stack_web,web_design,Web_development,seo,social_media,graphics_design
     ];
     const [value, setValue] = useState(0);
     const [timerId, setTimerId] = useState(null);

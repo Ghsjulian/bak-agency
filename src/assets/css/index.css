@@ -60,12 +60,32 @@ main .hero {
     margin: 0.5rem 0;
     color: #222222;
 }
-
+.hero .typer {
+    
+    background: -webkit-linear-gradient(0deg, rgba(173,57,255,1) 0%, rgba(247,122,20,1) 54%, rgba(70,182,243,1) 76%, rgba(0,35,255,1) 100%);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    background: -webkit-radial-gradient(rgba(173,57,255,1) 0%, rgba(247,122,20,1) 54%, rgba(70,182,243,1) 76%, rgba(0,35,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    font-size: 3.6rem;
+    text-align: center;
+    justify-content: center;
+    font-family: "Sans-Serif";
+    font-weight: 900;
+}
+.hero .typer .typed-cursor {
+    color: #fb0aff;
+    text-shadow: none;
+    font-weight: 700;
+}
 .hero .hero-text,
 h2 {
     color: rgb(1, 149, 226);
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: center;
     justify-content: left;
     padding-left: 2.2rem;
@@ -84,14 +104,16 @@ h2 {
 
 main .hero-img {
     /* animation: zoom-in 7s linear backwards infinite; */
-    background: #ccc8c8;
+    /* background: #ccc8c8; */
 }
 
 main .hero-img img {
     width: 100%;
-    height: auto;
+    height:auto;
     object-fit: cover;
     padding: 0.5rem;
+    object-fit: cover;
+    
 }
 
 .hero .btn-area {

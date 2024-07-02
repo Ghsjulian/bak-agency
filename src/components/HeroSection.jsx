@@ -10,14 +10,36 @@ import hero_5 from "../assets/images/hero_5.jpg";
 import hero__1 from "../assets/images/hero__4.png";
 import agent_2 from "../assets/images/agent_3.png";
 import "../assets/css/index.css";
-// import { useSite } from "../context/useAuth";
+import { ReactTyped } from "react-typed";
 import MySlider from './Slider';
 
 const HeroSection = () => {
     // console.log(data)
     return (
         <main data-aos="zoom-in">
+            <audio style={{display:"none"}} id="audio" loop autoplay>
+  <source src="your_audio_file.mp3" type="audio/mp3"/>
+  <source src="your_audio_file.wav" type="audio/wav"/>
+  Your browser does not support the audio element.
+</audio>
             <section data-aos="zoom-in" className="hero">
+                <h1 className="typer">
+                <ReactTyped
+                        strings={[
+                          "Full Stack SEO",
+                          "PPC & Google Adds",
+                          "Email Marketing",
+                          "Digital Strategy",
+                          "Graphics Design",
+                         "Video Production",
+                         "Copywrite Services"
+                        ]}
+                        cursorChar="|"
+                        typeSpeed={90} // Adjust typing speed here (milliseconds)
+                        backSpeed={80} // Adjust backspace speed (milliseconds)
+                        loop // Set to loop through the strings continuously
+                    />
+                </h1>
                 <h2 className="hero-text">
                     Elevate Your Digital Presence with Our Expertise
                 </h2>
