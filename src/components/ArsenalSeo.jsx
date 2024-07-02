@@ -1,8 +1,4 @@
 import React from "react";
-
-// import SwiperCore, Navigation, Pagination  from 'swiper';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-
 import untitled42 from "../assets/icons/untitled42.png";
 import Untitled43 from "../assets/icons/Untitled43.png";
 import Untitled44 from "../assets/icons/Untitled44.png";
