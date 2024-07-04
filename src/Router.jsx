@@ -6,10 +6,7 @@ import Services from "./pages/Services";
 import ServiceLayout from "./components/ServiceLayout";
 import Blogs from "./pages/Blogs";
 import Viewblogs from "./components/Viewblogs";
-/* Sub Pages Included Here */
-import Webdevelopment from "./pages/sub-pages/Webdevelopment";
-import GraphicsDesginer from "./pages/sub-pages/GraphicsDesginer";
-/* Sub Pages Included Here */
+import OurTeam from "./components/OurTeam";
 
 const MyRoutes = [
     {
@@ -70,18 +67,10 @@ const MyRoutes = [
         )
     },
     {
-        path: "/services/web-development",
+        path: "/our-team",
         element: (
             <Layouts>
-                <Webdevelopment />
-            </Layouts>
-        )
-    },
-    {
-        path: "/services/graphics-desginer",
-        element: (
-            <Layouts>
-                <GraphicsDesginer />
+            <OurTeam/>
             </Layouts>
         )
     }

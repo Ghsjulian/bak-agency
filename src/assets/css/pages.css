@@ -209,3 +209,15 @@
     margin: 0.3rem auto;
     line-height: 1.8rem;
 }
+/* Our Team Page Styling */ 
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

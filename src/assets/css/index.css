@@ -205,13 +205,11 @@ footer .three-row-footer {
     right: 0.7rem;
     bottom: 1rem;
     border-radius: 50%;
-    background: transparent;
+    background: #002734;
     z-index: 100000;
     padding: 0.5rem;
     width: 50px;
     height: 50px;
-    box-shadow: 10px 10px 30px #cccccc;
-
 }
 
 .three-row-footer button {
