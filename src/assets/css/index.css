@@ -61,9 +61,15 @@ main .hero {
     color: #222222;
 }
 .hero .typer {
-    margin: .6rem auto;
-    background: -webkit-linear-gradient(0deg, rgba(173,57,255,1) 0%, rgba(247,122,20,1) 54%, rgba(70,182,243,1) 76%, rgba(0,35,255,1) 100%);
-     -webkit-background-clip: text;
+    margin: 0.6rem auto;
+    background: -webkit-linear-gradient(
+        0deg,
+        rgba(173, 57, 255, 1) 0%,
+        rgba(247, 122, 20, 1) 54%,
+        rgba(70, 182, 243, 1) 76%,
+        rgba(0, 35, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /*
     background: -webkit-radial-gradient(rgba(173,57,255,1) 0%, rgba(247,122,20,1) 54%, rgba(70,182,243,1) 76%, rgba(0,35,255,1) 100%);
@@ -109,11 +115,10 @@ main .hero-img {
 
 main .hero-img img {
     width: 100%;
-    height:auto;
+    height: auto;
     object-fit: cover;
     padding: 0.5rem;
     object-fit: cover;
-    
 }
 
 .hero .btn-area {
@@ -256,12 +261,12 @@ footer .social {
 
 footer strong {
     margin: 0.3rem auto;
-    color: #000000;
+    color: #ffffff;
     font-weight: 800;
 }
 
 footer strong span {
-    color: rgb(24, 0, 253);
+    color: #b942ff;
 }
 
 footer p {

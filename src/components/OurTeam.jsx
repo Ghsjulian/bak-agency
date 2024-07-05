@@ -8,19 +8,40 @@ const OurTeam = () => {
             <h2> Our Team Members </h2>
             <div className="grid-row">
                 <div className="card">
+                    <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
+                    <h4> Web Developer And Designer </h4>
+                    <p>
+                        He is an expert web developer and desginer , he create
+                        or develop any website easily.
+                    </p>
                 </div>
                 <div className="card">
+                    <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
+                    <h4> Web Developer And Designer </h4>
+                    <p>
+                        He is an expert web developer and desginer , he create
+                        or develop any website easily.
+                    </p>
                 </div>
                 <div className="card">
+                    <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
+                    <h4> Web Developer And Designer </h4>
+                    <p>
+                        He is an expert web developer and desginer , he create
+                        or develop any website easily.
+                    </p>
                 </div>
                 <div className="card">
+                    <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
-                </div>
-                <div className="card">
-                    <h3> Ghs Julian</h3>
+                    <h4> Web Developer And Designer </h4>
+                    <p>
+                        He is an expert web developer and desginer , he create
+                        or develop any website easily.
+                    </p>
                 </div>
             </div>
         </div>

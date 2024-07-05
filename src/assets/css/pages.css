@@ -150,7 +150,7 @@
     width: 30px;
     height: 30px;
     object-fit: cover;
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
 }
 
 /* VIew Blogs Styling....*/
@@ -209,10 +209,10 @@
     margin: 0.3rem auto;
     line-height: 1.8rem;
 }
-/* Our Team Page Styling */ 
+/* Our Team Page Styling */
 .grid-row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
     gap: 10px;
     margin: 1rem auto;
@@ -220,4 +220,29 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.grid-row .card {
+    justify-content: center;
+    margin: .5rem auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow:
+        2px 2px 4px #c7c7c7,
+        -2px -2px 4px #c7c7c7;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.card p {
+    color: #464646;
+    font-weight: 500;
+    font-family: ghs;
+    text-align: justify;
+    margin: 0.5rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    line-height: 1.7rem;
 }
