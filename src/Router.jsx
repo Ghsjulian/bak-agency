@@ -7,6 +7,8 @@ import ServiceLayout from "./components/ServiceLayout";
 import Blogs from "./pages/Blogs";
 import Viewblogs from "./components/Viewblogs";
 import OurTeam from "./components/OurTeam";
+import NotFound from "./components/NotFound"
+
 
 const MyRoutes = [
     {
@@ -73,6 +75,10 @@ const MyRoutes = [
             <OurTeam/>
             </Layouts>
         )
+    },
+    {
+        path: "*",
+        element: <NotFound/>
     }
 ];
 

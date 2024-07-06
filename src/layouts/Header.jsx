@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/icons/logo.png"
+import logo from "../assets/icons/logo.png";
 import "../assets/css/Navbar.css";
 
 const Header = () => {
@@ -17,9 +17,11 @@ const Header = () => {
     const closeNav = () => {
         setIsChecked(false);
     };
-    const goToHome = ()=>{
-        navigate("/")
-    }
+    const goToHome = () => {
+        navigate("/");
+        closeNav();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
     return (
         <header>
             <div className="container">
@@ -33,7 +35,8 @@ const Header = () => {
                 <div onClick={goToHome} className="logo-container">
                     <img src={logo} />
                     <h3 className="logo">
-                        Bak-<span>Digital</span><span className="third--logo">Firm</span>
+                        Bak-<span>Digital</span>
+                        <span className="third--logo">Firm</span>
                     </h3>
                 </div>
 
@@ -58,7 +61,7 @@ const Header = () => {
                                     About
                                 </NavLink>
                             </li>
-                       
+
                             <li className="nav-link">
                                 <NavLink to="#">
                                     Services
@@ -211,8 +214,7 @@ const Header = () => {
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink to="#">
-                                                         App
-                                                            Development
+                                                            App Development
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">

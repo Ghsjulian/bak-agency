@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios"
+import axios from "axios";
 import agent_3 from "../assets/images/agent_3.png";
 
 const Contact = () => {
-    document.title = "Contact With Us - Contact with us anytime , and get our best opportunity"
+    document.title =
+        "Contact With Us - Contact with us anytime , and get our best opportunity";
     const messageRef = useRef(null);
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");
@@ -25,7 +26,7 @@ const Contact = () => {
                         user_message: userMessage
                     })
                     .then(response => {
-                        console.log(response.data)
+                        console.log(response.data);
                         setData(response.data);
                         messageRef.current.style.display = "block";
                         messageRef.current.classList.remove("error");
@@ -33,7 +34,7 @@ const Contact = () => {
                         messageRef.current.textContent = response.data;
                     });
             } catch (error) {
-                console.log(error)
+                console.log(error);
                 setError(error);
                 messageRef.current.style.display = "block";
                 messageRef.current.classList.remove("success");
@@ -62,9 +63,10 @@ const Contact = () => {
                 </div>
                 <div data-aos="zoom-in" className="form">
                     <p className="text">
-                        Full free to contact with us , our team will response
-                        you as soon as possible. You can directly contact us and
-                        get touch with us.
+                        Feel free to reach out to us at any time. Our dedicated
+                        team is always ready to assist you promptly. Connect
+                        with us directly for immediate assistance and let's stay
+                        in touch.
                     </p>
                     <h3>Fill Out This Form </h3>
                     <span
