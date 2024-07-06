@@ -247,80 +247,6 @@ const Header = () => {
                                     Blogs
                                 </NavLink>
                             </li>
-                            {/*
-                            <li className="nav-link">
-                                <NavLink to="#">
-                                    Services
-                                    <i className="fas fa-caret-down"></i>
-                                </NavLink>
-                                <div className="dropdown">
-                                    <ul>
-                                        <li className="dropdown-link">
-                                            <NavLink to="#">Link 1</NavLink>
-                                        </li>
-                                        <li className="dropdown-link">
-                                            <NavLink to="#">Link 2</NavLink>
-                                        </li>
-                                        <li className="dropdown-link">
-                                            <NavLink to="#">
-                                                Link 3
-                                                <i className="fas fa-caret-down"></i>
-                                            </NavLink>
-                                            <div className="dropdown second">
-                                                <ul>
-                                                    <li className="dropdown-link">
-                                                        <NavLink to="#">
-                                                            Link 1
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="dropdown-link">
-                                                        <NavLink to="#">
-                                                            Link 2
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="dropdown-link">
-                                                        <NavLink to="#">
-                                                            Link 3
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="dropdown-link">
-                                                        <NavLink to="#">
-                                                            More
-                                                            <i className="fas fa-caret-down"></i>
-                                                        </NavLink>
-                                                        <div className="dropdown second">
-                                                            <ul>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 1
-                                                                    </NavLink>
-                                                                </li>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 2
-                                                                    </NavLink>
-                                                                </li>
-                                                                <li className="dropdown-link">
-                                                                    <NavLink to="#">
-                                                                        Link 3
-                                                                    </NavLink>
-                                                                </li>
-                                                                <div className="arrow"></div>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                    <div className="arrow"></div>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li className="dropdown-link">
-                                            <NavLink to="#">Link 4</NavLink>
-                                        </li>
-                                        <div className="arrow"></div>
-                                    </ul>
-                                </div>
-                            </li>
-                            */}
                         </ul>
                     </div>
                     <div className="log-sign">
@@ -330,6 +256,14 @@ const Header = () => {
                             className="btn transparent"
                         >
                             Contact
+                        </NavLink>
+                        <NavLink
+                            onClick={closeNav}
+                            to="/our-team"
+                            id="team"
+                            className="btn transparent"
+                        >
+                            Our Team
                         </NavLink>
                     </div>
                 </div>

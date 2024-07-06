@@ -63,9 +63,8 @@ main .hero {
 .hero .typer {
     margin: 0.6rem auto;
     background: -webkit-linear-gradient(
-        0deg,
+        30deg,
         rgba(173, 57, 255, 1) 0%,
-        rgba(247, 122, 20, 1) 54%,
         rgba(70, 182, 243, 1) 76%,
         rgba(0, 35, 255, 1) 100%
     );
@@ -266,7 +265,7 @@ footer strong {
 }
 
 footer strong span {
-    color: #b942ff;
+    color: #f9f34a;
 }
 
 footer p {

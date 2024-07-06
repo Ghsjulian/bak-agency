@@ -51,7 +51,7 @@ const Footer = () => {
                 </NavLink>
             </div>
             <strong>
-                © Copyright All Reserve <span>2023-2024</span>
+                © Copyright All Reserve <span>Bak Digital Firm</span>
             </strong>
             {/*
             <p>
