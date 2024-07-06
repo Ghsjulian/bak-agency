@@ -74,7 +74,7 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="service/Fullstack SEO & Local">
+                                                        <NavLink to="/service/fullstack-seo">
                                                             Fullstack SEO &
                                                             Local
                                                         </NavLink>

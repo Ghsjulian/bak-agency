@@ -11,7 +11,7 @@ import SingleService from "./SingleService";
 
 const ServiceLayout = () => {
     const param = useParams();
-    return <SingleService data={{ type: param }} />;
+    return <SingleService data={{ type: param.name }} />;
 };
 
 export default ServiceLayout;
