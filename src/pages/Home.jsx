@@ -4,7 +4,7 @@ import ServiceSection from "../components/ServiceSection";
 import ArsenalSeo from "../components/ArsenalSeo";
 import WhyUs from "../components/WhyUs";
 import Projects from "../components/Projects";
-import Location from "../components/Location";
+import OurTeam from "../components/OurTeam";
 
 const Home = () => {
     document.title = "Bak-Agency Official Website And Service Portal | Get Our Best Service"
@@ -16,9 +16,10 @@ const Home = () => {
         <>
             <HeroSection />
             <ServiceSection />
-            <ArsenalSeo />
             <WhyUs />
+            <OurTeam/>
             <Projects />
+            <ArsenalSeo />
             {/* <Location/> */}
         </>
     );
