@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <ReactTyped
                         strings={[
                           "Full Stack SEO",
-                          "PPC & Google Adds",
+                          "PPC And Google Adds",
                           "Email Marketing",
                           "Digital Strategy",
                           "Graphics Design",

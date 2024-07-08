@@ -2,19 +2,29 @@ import React from "react";
 import team_2 from "../assets/images/team_2.png";
 const Viewblogs = () => {
     return (
-        <div data-aos="zoom-in" className="section view--blog">
-            <div className="two-row">
-            <div data-aos="zoom-in" className="image">
-            <img src={team_2} />
+        <div data-aos="zoom-in" id="page" className="section">
+            <br />
+            <br />
+            <h2>Create Attractive Website Using Custom Coding</h2>
+            <div className="blog-img">
+                <img src="/images/demo6.jpg" alt="Blog" />
             </div>
-            <div style={{marginTop:"8rem"}} data-aos="zoom-in" id="content" className="form">
-            <h2> Our latest post of the services which we provided. </h2>
-            <p className="text">
-                Explore our main service and offer we provide the best service
-                all over the world , if you want to get our service please
-                contact us right now we'll response you as soon as possible.
-            </p>
-            </div>
+            <div className="content">
+                <div className="post-section">
+                <article className="text">
+                Stay ahead of the curve with the latest insights and trends in
+                digital marketing and online services. Our blog is your go-to
+                resource for expert advice, industry news, and thought
+                leadership articles. From the benefits of outsourcing to a
+                digital agency to the latest digital marketing techniques, our
+                blog covers it all.
+            </article>
+                </div>
+                <div className="blog-section">
+                    <div className="blog-card"></div>
+                    <div className="blog-card"></div>
+                    <div className="blog-card"></div>
+                </div>
             </div>
         </div>
     );

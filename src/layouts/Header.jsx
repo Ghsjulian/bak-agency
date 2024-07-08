@@ -77,45 +77,69 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="/service/fullstack-seo">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="/service/fullstack-seo"
+                                                        >
                                                             Fullstack SEO &
                                                             Local
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             PPC & Google Adds
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Email Mareting
                                                             Campagine
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Digital Strategy
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Market Research
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Digital
                                                             Transformation
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Brand Strateg
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Customer Insights
                                                         </NavLink>
                                                     </li>
@@ -132,27 +156,42 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Graphics Desgin
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Video Production
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Copywrite Services
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Logo Desgin
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Branding
                                                         </NavLink>
                                                     </li>
@@ -170,22 +209,34 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Blog Writing
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Copy Writing
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Product Descriptions
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Content Strategy
                                                         </NavLink>
                                                     </li>
@@ -203,32 +254,50 @@ const Header = () => {
                                             <div className="dropdown second">
                                                 <ul>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Responsive Desgin
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             E-Commerce Solutions
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             App Development
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             CMS Integration
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             Custom Web Solutions
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
-                                                        <NavLink to="#">
+                                                        <NavLink
+                                                            onClick={closeNav}
+                                                            to="#"
+                                                        >
                                                             ADA Compliance
                                                         </NavLink>
                                                     </li>

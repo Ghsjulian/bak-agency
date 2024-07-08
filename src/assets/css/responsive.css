@@ -89,4 +89,17 @@
         font-family: popin-thin;
         width: 90%;
     }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .post-section {
+        width: 100%;
+        left: 0;
+    }
+    .content .blog-section {
+        width: 100%;
+        left: 0;
+    }
 }
