@@ -265,41 +265,71 @@
     object-fit: contain;
     border-radius: 5px;
 }
+
 .content {
-    display: flex;
-    /* justify-content: center; */
-}
-.content .post-section {
-    width: 60%;
-    padding: 0.5rem;
-    background: orangered;
-    margin: 0;
-}
-.post-section article {
-    text-align: justify;
-    line-height: 1.8rem;
-    margin: 0.4rem .2rem;
-    word-spacing: 2px;
-    color: #434343;
-}
-.content .blog-section {
-    width: 40%;
+    margin: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    gap: 3px;
-    padding: 0.5rem;
-    justify-content: center;
+    grid-template-columns: 60% 40%; /* 2 columns of equal width */
+    gap: 10px; /* add a gap between the columns */
+}
+
+.content .left {
+    padding: 0.5rem 2.5rem;
+}
+.left article {
     align-items: center;
     text-align: justify;
-}
-.blog-section .blog-card {
-    padding: 5rem;
     justify-content: center;
-    margin: 0.5rem;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow:
-        2px 2px 4px #c7c7c7,
-        -2px -2px 4px #c7c7c7;
+    margin: 0.3rem auto;
+    word-spacing: 2.3px;
+    line-height: 2.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #454545;
+}
+.content .right {
+    padding: 0.3rem;
+}
+
+.content .right .list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin: 0;
+}
+.list a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.list a img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.list a strong {
+    color: #0066f0;
+    margin: 0 0.3rem;
+    text-align: left;
+    justify-content: left;
+}
+/* Mobile version */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* 1 column that takes up the full width */
+    }
+    .left,
+    .right {
+        padding: 0.5rem;
+        width: 100%; /* make the left and right divs take up the full width */
+    }
+    .content .left {
+        padding: 0.5rem 0.5rem;
+    }
 }
