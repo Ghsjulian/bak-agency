@@ -167,7 +167,7 @@
 }
 
 .service-layouts img {
-    width: 40%;
+    width: 85%;
     object-fit: cover;
     text-align: center;
     align-items: center;
@@ -178,10 +178,11 @@
     align-items: left;
     text-align: left;
     font-family: poppin-thin;
-    color: #004f13;
+    color: #3f3f3f;
     justify-content: left;
     margin: 0.3rem auto;
-    line-height: 1.8rem;
+    font-size: 18px;
+    line-height: 2rem;
 }
 /* Our Team Page Styling */
 .grid-row {
