@@ -241,10 +241,48 @@
     width: 100%;
     margin: .5rem 0;
     padding: .5rem;
-    background: red;
+
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem auto;
+    padding: 0.5rem 0.7rem;
+
 }
 .service-desc .service-col {
-    
+display: flex;
+flex-direction: column;
+width: 48%;
+}
+.service-desc .service-col h4 {
+ color: #044dca;
+ margin: .5rem auto;
+ font-size: 2rem;
+}
+.service-desc .service-col p {
+  color: #3f3f3f;
+  font-family: poppin-thin;
+  font-weight: 600;
+  margin: .5rem auto;
+  margin-left: 2.8rem;
+  padding: .5rem;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 20px;
+}
+
+
+.service-desc .service-col img {
+ width: 60%;
+ height: auto;
+ margin: .5rem auto;
+ object-fit: contain;
+ border-radius: 8px;
+}
+
+.next-service {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Our Team Page Styling */
