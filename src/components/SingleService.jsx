@@ -80,7 +80,7 @@ const SingleService = ({ data }) => {
               <h4
                 style={{
                   textAlign: "center",
-                  fontSize: "1.7rem",
+                  fontSize: "1.6rem",
                   marginTop: "4.5rem",
                   margin: ".5rem auto",
                 }}
