@@ -88,9 +88,9 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/google-ads"
                                                         >
-                                                            PPC & Google Adds
+                                                            PPC & Google Ads
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">

@@ -6,7 +6,7 @@ const SingleService = ({ data }) => {
   const [foundObject, setFoundObject] = useState(null);
 
   useEffect(() => {
-    let url = "/data.json";
+    let url = "/services.json";
     fetch(url)
       .then((response) => {
         return response.json();
@@ -24,20 +24,13 @@ const SingleService = ({ data }) => {
         }
       });
     }
-  console.log("Found Object : ",foundObject)
   }, []);
   return (
     <div data-aos="zoom-in" id="page" className="section">
-       <div className="service-header">
-        <img src={foundObject.service_header_img} alt={data.type} />
-        <h2>{foundObject.header_title}</h2>
-      </div>
-      <div className="service-flex">
-          <div className="flex">
-            
-          </div>
-      </div>
-      {/*
+     
+     <h2>Testing....</h2>
+
+     {/*}
       <div className="service-header">
         <img src="/images/seo_service.png" />
         <h2> Our SEO Services and Strategy Management</h2>
@@ -45,101 +38,101 @@ const SingleService = ({ data }) => {
           <div className="flex">
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Websites Analysis And Audit</span>
+              <span class="smm_content">Websites Analysis And Audit</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Google Web Analytics</span>
+              <span class="smm_content">Google Web Analytics</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Find Out Business Keywords</span>
+              <span class="smm_content">Find Out Business Keywords</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Authorizes Social Media Accounts</span>
+              <span class="smm_content">Authorizes Social Media Accounts</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Research Keywords Competitors</span>
+              <span class="smm_content">Research Keywords Competitors</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Follow Google Algorithm</span>
+              <span class="smm_content">Follow Google Algorithm</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Manually On-Page Optimization</span>
+              <span class="smm_content">Manually On-Page Optimization</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Link Building Campaign</span>
+              <span class="smm_content">Link Building Campaign</span>
             </li>
           </div>
           <div className="flex">
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Content Checking And Optimization</span>
+              <span class="smm_content">Content Checking And Optimization</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Video Submission</span>
+              <span class="smm_content">Video Submission</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Google Webmaster Tool Setup</span>
+              <span class="smm_content">Google Webmaster Tool Setup</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Link Audit &amp; Penguin Recovery</span>
+              <span class="smm_content">Link Audit &amp; Penguin Recovery</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Bing Webmaster Tool Setup</span>
+              <span class="smm_content">Bing Webmaster Tool Setup</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Local SEO Services</span>
+              <span class="smm_content">Local SEO Services</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Yandex Webmaster Tool Setup</span>
+              <span class="smm_content">Yandex Webmaster Tool Setup</span>
             </li>
             <li>
               <span>
-                <i className="bx bx-check-circle"></i>
+                <i class="bx bx-check-circle"></i>
               </span>
-              <span className="smm_content">Monitoring And Reporting</span>
+              <span class="smm_content">Monitoring And Reporting</span>
             </li>
           </div>
         </div>
