@@ -32,9 +32,9 @@
     },
     {
         "type" : "google-ads",
-        "service_header_img": "/images/seo_service.png",
+        "service_header_img": "/images/ppc_adds.png",
         "feture_img": "/images/seo.png",
-        "header_title": "Our SEO Services and Strategy Management",
+        "header_title": "Google PPC Ads",
         "left_service_tools": [
             "Websites Analysis And Audit",
             "Google Web Analytics",
