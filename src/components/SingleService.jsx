@@ -30,7 +30,7 @@ const SingleService = ({ data }) => {
       });
     }
     // console.log("Found Object : ",foundObject)
-  }, [isLoading]);
+  }, [isLoading,data.type]);
 
   return (
     <div data-aos="zoom-in" id="page" className="section">
