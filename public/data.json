@@ -1,0 +1,35 @@
+[
+    {
+        "service_header_img": "/images/seo_service.png",
+        "feture_img": "/images/seo.png",
+        "header_title": "Our SEO Services and Strategy Management",
+        "left_service_tools": [
+            "Websites Analysis And Audit",
+            "Google Web Analytics",
+            "Find Out Business Keywords",
+            "Authorizes Social Media Accounts",
+            "Research Keywords Competitors",
+            "Follow Google Algorithm",
+            "Manually On-Page Optimization",
+            "Link Building Campaign"
+        ],
+        "right_service_tools": [
+            "Content Checking And Optimization",
+            "Video Submission",
+            "Google Webmaster Tool Setup",
+            "Link Audit & Penguin Recovery",
+            "Bing Webmaster Tool Setup",
+            "Local SEO Services",
+            "Yandex Webmaster Tool Setup",
+            "Monitoring And Reporting"
+        ],
+        "service_title": "Search Engine Optimization",
+        "service_desc": "Skyrocket Your Organic Traffic with Our SEO Expertise Get your website seen by the right audience. Our data-driven SEO services optimize your site for search engines, attracting qualified leads and boosting organic traffic. We'll help you dominate search results for relevant keywords, turning clicks into conversions.",
+        "strategy_heading": "Here's what sets our SEO services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Targeted Keyword Strategy:</b> We identify the perfect keywords to target, ensuring your website reaches the right audience.<br /><b> Technical SEO Optimization: </b> We ensure your website's foundation is search-engine friendly, improving crawlability and user experience.<br /><b>Content Marketing Powerhouse:</b> We craft high-quality, SEO-optimized content that engages visitors and drives conversions.<br /><b>Regular Reporting & Transparency: </b>Stay informed with clear reports that track your progress and SEO success.</p>",
+        "service_bootom": "<strong style={{color: '#000'}}>Invest in long-term growth with our results-oriented SEO services.</strong><strong><NavLink style={{color : '#F77A14'}} to='/contact'>Contact us</NavLink> today for a free consultation!</strong>"
+    }
+]
+
+
+

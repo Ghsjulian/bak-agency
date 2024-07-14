@@ -19,7 +19,7 @@ const Blogs = () => {
             .catch(error => {
                 console.error("Error:", error);
             });
-    }, [blogs]);
+    }, []);
 
     return (
         <div data-aos="zoom-in" id="page" className="section">

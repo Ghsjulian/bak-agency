@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {NavLink} from "react-router-dom"
 
 const SingleService = ({ data }) => {
   const [services, setServices] = useState(null);
@@ -23,7 +24,7 @@ const SingleService = ({ data }) => {
         }
       });
     }
-  }, [services]);
+  }, []);
   return (
     <div data-aos="zoom-in" id="page" className="section">
       <div className="service-header">
@@ -146,7 +147,7 @@ const SingleService = ({ data }) => {
             style={{
               textAlign: "center",
               fontSize: "1.7rem",
-              marginTop : "4rem",
+              marginTop: "4.5rem",
               margin: ".5rem auto",
             }}
           >
@@ -158,21 +159,37 @@ const SingleService = ({ data }) => {
         </div>
       </div>
       <div className="next-service">
-      <p style={{
-            width : "100%",
-            maxWidth : "100%",
-            
-          }}>
-            <b>Targeted Keyword Strategy:</b> We identify the perfect keywords to
-            target, ensuring your website reaches the right audience. 
-            <br/>
-           <b> Technical SEO Optimization: </b> We ensure your website's foundation is
-            search-engine friendly, improving crawlability and user experience.<br/>
-            <b>Content Marketing Powerhouse:</b> We craft high-quality, SEO-optimized
-            content that engages visitors and drives conversions. <br/>
-            <b>Regular Reporting & Transparency: </b>Stay informed with clear reports that
-            track your progress and SEO success.
-          </p>
+        <p
+          style={{
+            width: "100%",
+            maxWidth: "100%",
+          }}
+        >
+          <b>Targeted Keyword Strategy:</b> We identify the perfect keywords to
+          target, ensuring your website reaches the right audience.
+          <br />
+          <b> Technical SEO Optimization: </b> We ensure your website's
+          foundation is search-engine friendly, improving crawlability and user
+          experience.
+          <br />
+          <b>Content Marketing Powerhouse:</b> We craft high-quality,
+          SEO-optimized content that engages visitors and drives conversions.{" "}
+          <br />
+          <b>Regular Reporting & Transparency: </b>Stay informed with clear
+          reports that track your progress and SEO success.
+        </p>
+      </div>
+      <div className="bottom-text">
+      <strong style={{
+         color: "#000"
+      }}>
+          Invest in long-term growth with our results-oriented SEO services.
+        </strong>
+        <strong>
+        <NavLink style={{
+          color : "#F77A14"
+        }} to="/contact">Contact us</NavLink> today for a free consultation!
+        </strong>
       </div>
       {/* <div className="service-layouts">
                 {!foundObject && <h2>Loading...</h2>}

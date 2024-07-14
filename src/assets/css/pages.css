@@ -281,8 +281,40 @@ width: 48%;
 
 .next-service {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next-service p{
+    color: #3f3f3f;
+    font-family: poppin-thin;
+    font-weight: 600;
+    margin: 0 2.5rem;
+    padding: 0 .5rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 20px;
+}
+.next-service p b {
+    font-family: poppin-bold;
+}
+
+.bottom-text {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-text strong {
+    color: #044dca;
+    font-size: 2rem;
+    margin: .8rem auto;
+    font-family: ghs;
 }
 
 /* Our Team Page Styling */
