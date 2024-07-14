@@ -301,6 +301,23 @@ width: 48%;
     font-family: poppin-bold;
 }
 
+
+.loading {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #044dca;
+    font-size: 28px;
+    padding: 1rem;
+}
+.loading h2 {
+    color: #0066f0;
+    text-align: center;
+}
+
 .bottom-text {
     width: 100%;
     margin: 1rem auto;

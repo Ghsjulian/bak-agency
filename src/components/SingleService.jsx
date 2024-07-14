@@ -4,40 +4,79 @@ import {NavLink} from "react-router-dom"
 const SingleService = ({ data }) => {
   const [services, setServices] = useState(null);
   const [foundObject, setFoundObject] = useState(null);
-
-  useEffect(() => {
+  const [isLoading,setIsLoading] = useState(true)
+  const getData = async () => {
     let url = "/data.json";
-    fetch(url)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setServices(data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    if (services) {
+    try {
+        setIsLoading(true)
+        const response = await fetch(url);
+        const responseData = await response.json();
+        setServices(responseData)
+        setIsLoading(false)
+    } catch (error) {
+        console.error("Error : ", error);
+    }
+}
+  useEffect(() => {
+    getData()
+    if(isLoading){
+      return
+    }
+    if (!isLoading) {
       const found = services.find((obj) => {
         if (obj.type === data.type) {
           setFoundObject(obj);
         }
       });
     }
-  console.log("Found Object : ",foundObject)
-  }, []);
+ // console.log("Found Object : ",foundObject)
+  }, [isLoading]);
+  
   return (
     <div data-aos="zoom-in" id="page" className="section">
+      {/* { isLoading && <div style={{marginTop : "5rem"}} className="loading"><h2>Loading...</h2></div>} */}
+       {foundObject &&
        <div className="service-header">
         <img src={foundObject.service_header_img} alt={data.type} />
         <h2>{foundObject.header_title}</h2>
-      </div>
+
+{/*}
       <div className="service-flex">
           <div className="flex">
-            
+            {
+              foundObject.left_service_tools.map((list,key)=>{
+                return(
+                  <li key={key}>
+              <span>
+                <i className="bx bx-check-circle"></i>
+              </span>
+              <span className="smm_content">{list}</span>
+            </li>
+                )
+              })
+            }
+          </div>
+
+          
+          <div className="flex">
+            {
+              foundObject.right_service_tools.map((li,i)=>{
+                return(
+                  <li key={i}>
+              <span>
+                <i className="bx bx-check-circle"></i>
+              </span>
+              <span className="smm_content">{li}</span>
+            </li>
+                )
+              })
+            }
           </div>
       </div>
-      {/*
+      */}
+</div>
+}
+{/*
       <div className="service-header">
         <img src="/images/seo_service.png" />
         <h2> Our SEO Services and Strategy Management</h2>
