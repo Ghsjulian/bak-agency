@@ -188,17 +188,18 @@
 
 /* Service Header Sections Styling...*/ 
 .service-header {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:  0;
-    margin: 0;
+    margin-top: 5%;
 }
 .service-header img {
     width: 100%;
     margin: 0;
-    object-fit: contain;
+    object-fit: cover;
 }
 .service-header h2 {
     position: relative;
@@ -332,6 +333,9 @@ width: 48%;
     font-size: 2rem;
     margin: .8rem auto;
     font-family: ghs;
+}
+.bottom-text a {
+    color: #ea1800;
 }
 
 /* Our Team Page Styling */

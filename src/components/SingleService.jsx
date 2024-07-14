@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import parse from 'html-react-parser';
+
 
 const SingleService = ({ data }) => {
   const [services, setServices] = useState(null);
@@ -83,13 +85,19 @@ const SingleService = ({ data }) => {
                   margin: ".5rem auto",
                 }}
               >
-                Here's what sets our SEO services apart:
+                {foundObject.strategy_heading}
               </h4>
             </div>
             <div className="service-col">
-              <img src="/images/seo.png" />
+              <img src={foundObject.feture_img}  alt="Feture Image"/>
             </div>
           </div>
+          <div className="next-service">
+        {parse(foundObject.strategy_desc)}
+      </div>
+      <div className="bottom-text">
+    {parse(foundObject.service_bootom)}
+      </div>
         </>
       )}
 
