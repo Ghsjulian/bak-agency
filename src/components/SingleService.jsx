@@ -33,7 +33,6 @@ const SingleService = ({ data }) => {
           <div className="flex">
             <li>
               <span>
-                
                 <i class="bx bx-check-circle"></i>
               </span>
               <span class="smm_content">Websites Analysis And Audit</span>
@@ -80,10 +79,9 @@ const SingleService = ({ data }) => {
               </span>
               <span class="smm_content">Link Building Campaign</span>
             </li>
-        
           </div>
           <div className="flex">
-          <li>
+            <li>
               <span>
                 <i class="bx bx-check-circle"></i>
               </span>
@@ -133,9 +131,27 @@ const SingleService = ({ data }) => {
             </li>
           </div>
         </div>
-      </div>
+       </div>
+        <div className="service-desc">
+          <div className="service-col">
+            <h5>Search Engine Optimization</h5>
+            <p>
 
-      {/* <div className="service-layouts">
+               has over 12 years of experience in this particular section.
+              We offer professional and affordable SEO services<em> </em>to get
+              more customers from all Search Engines. DMS provides advanced
+              Local SEO services, Global Search Engine Optimization services,
+              <em> </em>On-page and off-page detail audit reports, profitable
+              keyword research, optimized content writing, on-page strategies
+              implementation, and off-page or link-building services.
+            </p>
+          </div>
+          <div className="service-col">
+            <img src="/images/seo_service.png" />
+          </div>
+        </div>
+
+        {/* <div className="service-layouts">
                 {!foundObject && <h2>Loading...</h2>}
                 <br />
                 <br />
@@ -155,6 +171,7 @@ const SingleService = ({ data }) => {
                 )}
             </div>
              */}
+     
     </div>
   );
 };

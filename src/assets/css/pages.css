@@ -237,6 +237,16 @@
     font-size: 30px;
     color: #00a528;
 }
+.service-desc {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    background: red;
+}
+.service-desc .service-col {
+    
+}
+
 /* Our Team Page Styling */
 .grid-row {
     display: grid;
