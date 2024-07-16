@@ -47,7 +47,7 @@ const Footer = () => {
                         <NavLink to="/our-privacy">Privacy And Policy</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/our-team">Terms And Connection</NavLink>
+                        <NavLink to="/terms-condition">Terms And Connection</NavLink>
                     </li>
                 </div>
                 <div className="flex-row">

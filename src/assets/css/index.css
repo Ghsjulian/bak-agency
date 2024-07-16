@@ -205,9 +205,9 @@ footer .footer-flex {
     width: 100%;
     display: flex;
     margin: 0.5rem auto;
-    padding: 0;
+    padding: 0 20%;
     justify-content: center;
-    align-items: justify;
+    align-items: center;
     text-align: center;
     place-items: center;
 }
@@ -239,14 +239,14 @@ footer .footer-flex {
     color: #ffffff;
 }
 @media (max-width: 768px) {
-    .footer-flex {
+    footer .footer-flex {
         flex-direction: column;
         margin: 0;
-        padding: 0;
+        padding: 0 0;
     }
     .flex-row h3 {
         text-align: left;
-        margin: 0.5rem .5rem;
+        margin: 0.5rem 0.5rem;
     }
 }
 footer .three-row-footer {

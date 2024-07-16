@@ -7,8 +7,9 @@ import ServiceLayout from "./components/ServiceLayout";
 import Blogs from "./pages/Blogs";
 import Viewblogs from "./components/Viewblogs";
 import OurTeam from "./components/OurTeam";
-import NotFound from "./components/NotFound"
-
+import NotFound from "./components/NotFound";
+import TermsCondition from "./components/TermsCondition";
+import PrivacyPoicy from "./components/PrivacyPoicy";
 
 const MyRoutes = [
     {
@@ -72,13 +73,29 @@ const MyRoutes = [
         path: "/our-team",
         element: (
             <Layouts>
-            <OurTeam/>
+                <OurTeam />
+            </Layouts>
+        )
+    },
+    {
+        path: "/terms-condition",
+        element: (
+            <Layouts>
+                <TermsCondition />
+            </Layouts>
+        )
+    },
+    {
+        path: "/our-privacy",
+        element: (
+            <Layouts>
+                <PrivacyPoicy />
             </Layouts>
         )
     },
     {
         path: "*",
-        element: <NotFound/>
+        element: <NotFound />
     }
 ];
 

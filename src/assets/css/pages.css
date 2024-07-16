@@ -469,7 +469,20 @@
     text-align: left;
     justify-content: left;
 }
-
+/* Terms And Condition */
+#text-- {
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    max-width: 850px;
+    margin: 0.5rem auto;
+}
+#text-- p {
+    line-height: 2.2rem;
+    color: #363636;
+    font-weight: 500;
+    font-family: ghs;
+    font-size: 17px;
+}
 /* Responsive */
 @media (max-width: 768px) {
     .service-header {
