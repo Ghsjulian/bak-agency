@@ -41,10 +41,10 @@ const SingleService = ({ data }) => {
       {foundObject && (
         <>
           <div className="service-header">
-            <img src={foundObject.service_header_img} alt={data.type} />
+            <img data-aos="zoom-in" src={foundObject.service_header_img} alt={data.type} />
             <h2>{foundObject.header_title}</h2>
             <div className="service-flex">
-              <div className="flex">
+              <div data-aos="zoom-in" className="flex">
                 {foundObject.left_service_tools.map((list, key) => {
                   return (
                     <li key={key}>
@@ -57,7 +57,7 @@ const SingleService = ({ data }) => {
                 })}
               </div>
 
-              <div className="flex">
+              <div data-aos="zoom-in" className="flex">
                 {foundObject.right_service_tools.map((li, i) => {
                   return (
                     <li key={i}>
@@ -71,7 +71,7 @@ const SingleService = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="service-desc">
+          <div data-aos="zoom-in" className="service-desc">
             <div className="service-col">
               <h4>{foundObject.service_title}</h4>
               <p>
@@ -88,14 +88,14 @@ const SingleService = ({ data }) => {
                 {foundObject.strategy_heading}
               </h4>
             </div>
-            <div className="service-col">
+            <div data-aos="zoom-in" className="service-col">
               <img src={foundObject.feture_img}  alt="Feture Image"/>
             </div>
           </div>
-          <div className="next-service">
+          <div data-aos="zoom-in" className="next-service">
         {parse(foundObject.strategy_desc)}
       </div>
-      <div className="bottom-text">
+      <div data-aos="zoom-in" className="bottom-text">
     {parse(foundObject.service_bootom)}
       </div>
         </>

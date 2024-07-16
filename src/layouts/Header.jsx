@@ -221,7 +221,7 @@ const Header = () => {
                                                             onClick={closeNav}
                                                             to="#"
                                                         >
-                                                            Copy Writing
+                                                            Sound Canvas
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">

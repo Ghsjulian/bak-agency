@@ -20,7 +20,7 @@ const Layouts = ({ children }) => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         AOS.init();
         AOS.refresh();
-    }, []);
+    }, [children]);
     return (
         <>
             <Header />

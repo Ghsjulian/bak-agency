@@ -6,6 +6,7 @@ import twitter from "../assets/icons/twitter.png";
 import instagram from "../assets/icons/instagram.png";
 import github from "../assets/icons/github.png";
 import arrow_up from "../assets/icons/arrow_up.png";
+import linkedin from "../assets/icons/linkedin.png";
 
 const Footer = () => {
     const [showButton, setShowButton] = useState(false);
@@ -58,7 +59,7 @@ const Footer = () => {
                         <NavLink to="/service/web-development">Web Development</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/ppc-ads">Google PPC Ads</NavLink>
+                        <NavLink to="/service/google-ads">Google PPC Ads</NavLink>
                     </li>
                     <li>
                         <NavLink to="/service/graphics-design">Graphics Design</NavLink>
@@ -70,7 +71,7 @@ const Footer = () => {
                         <NavLink to="/contact">Contact Us</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">Email : example@gmail.com</NavLink>
+                        <NavLink to="#">Email : info@bakdif.com</NavLink>
                     </li>
                     <li>
                         <NavLink to="#">Phone : +8801788******56</NavLink>
@@ -84,11 +85,11 @@ const Footer = () => {
                 <NavLink to="/">
                     <img src={google} />
                 </NavLink>
-                <NavLink to="/">
+                <NavLink target="_blank" to="https://www.facebook.com/bakdif">
                     <img src={facebook} />
                 </NavLink>
-                <NavLink to="/">
-                    <img src={instagram} />
+                <NavLink target="_blank" to="https://www.linkedin.com/company/bakdif">
+                    <img src={linkedin} />
                 </NavLink>
                 <NavLink to="/">
                     <img src={twitter} />
