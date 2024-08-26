@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import untitled42 from "../assets/icons/untitled42.png";
 import Untitled43 from "../assets/icons/Untitled43.png";
 import Untitled44 from "../assets/icons/Untitled44.png";
@@ -10,16 +11,25 @@ const ArsenalSeo = () => {
     return (
         <div id="slide" data-aos="zoom-in" className="section">
             <h2>Our SEO Tools</h2>
-            <div className="one-column">
-                <img src={untitled42} />
-                <img src={Untitled43} />
-                <img src={Untitled44} />
-                <img src={Untitled45} />
-                <img src={Untitled46} />
-            </div>
+            <Marquee direction={"right"}>
+                <div className="slide">
+                    <img src={untitled42} />
+                </div>
+                <div className="slide">
+                    <img src={Untitled43} />
+                </div>
+                <div className="slide">
+                    <img src={Untitled44} />
+                </div>
+                <div className="slide">
+                    <img src={Untitled45} />
+                </div>
+                <div className="slide">
+                    <img src={Untitled46} />
+                </div>
+            </Marquee>
         </div>
     );
 };
 
 export default ArsenalSeo;
-
