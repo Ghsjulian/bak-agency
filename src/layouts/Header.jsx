@@ -96,7 +96,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/email-marketing"
                                                         >
                                                             Email Mareting
                                                             Campagine
@@ -105,7 +105,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/digital-strategy"
                                                         >
                                                             Digital Strategy
                                                         </NavLink>
@@ -113,7 +113,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/market-research"
                                                         >
                                                             Market Research
                                                         </NavLink>
@@ -121,7 +121,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/digital-transformation"
                                                         >
                                                             Digital
                                                             Transformation
@@ -130,15 +130,15 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/brand-strategy"
                                                         >
-                                                            Brand Strateg
+                                                            Brand Strategy
                                                         </NavLink>
                                                     </li>
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/customer-insights"
                                                         >
                                                             Customer Insights
                                                         </NavLink>
@@ -158,7 +158,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/graphics-desgin"
                                                         >
                                                             Graphics Desgin
                                                         </NavLink>

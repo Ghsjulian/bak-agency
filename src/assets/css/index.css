@@ -191,9 +191,11 @@ main .hide {
 footer {
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem 0.7rem;
     /*background: rgb(238, 238, 238);*/
+    display: flex;
+    flex-direction: column;
     background: #005124;
     align-items: center;
     justify-content: space-around;
@@ -202,14 +204,12 @@ footer {
 }
 
 footer .footer-flex {
-    width: 100%;
     display: flex;
     margin: 0.5rem auto;
-    padding: 0 20%;
-    justify-content: center;
+    padding: 0;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    place-items: center;
 }
 .footer-flex .flex-row {
     width: 100%;
@@ -222,22 +222,23 @@ footer .footer-flex {
     /* text-align: center; */
     margin: 0.3rem 0.5rem;
 }
+
+/*
 .flex-row li {
-    width: 100%;
+    margin: 0.3rem 0.5rem;
+    text-align: justify;
     justify-content: center;
     list-style: none;
     list-style-type: none;
-    text-align: left;
-    margin: 0.5rem 0;
 }
 .flex-row li a {
-    width: 100%;
-    margin: 0.7rem auto;
+    display: inline;
     padding: 0.5rem 0.8rem;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 300;
     color: #ffffff;
 }
+*/
 @media (max-width: 768px) {
     footer .footer-flex {
         flex-direction: column;

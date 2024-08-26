@@ -68,6 +68,306 @@
         "strategy_heading": "Draw Ideal Clients and Optimize Conversions",
         "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Drive a surge of targeted traffic to your website in no time:</b><br /><b> Watch your conversion rates soar to new heights </b><br /><b>Boost your business and leave the competition in the dust</b><br /><b>Added a attention-grabbing headline to draw the reader in</b></p>",
         "service_bootom": "<strong style='color:#000'>Don't let your website underperform any longer.</strong><strong><a style='color:#F77A14' href='/contact'> Partner with us</a> today and discover the power of PPC done right!</strong>"
+    },
+    {
+        "type": "email-marketing",
+        "service_header_img": "/images/email-marketing-service.png",
+        "feture_img": "/images/email-marketing.png",
+        "header_title": "Our Email Marketing Campaign Services",
+        "left_service_tools": [
+            "Email List Building and Segmentation",
+            "Email Content Creation",
+            "Email Template Design",
+            "Campaign Setup and Deployment",
+            "Tracking and Analysis",
+            "Campaign Optimization"
+        ],
+        "right_service_tools": [
+            "Personalized Email Messaging",
+            "Automated Email Workflows",
+            "A/B Testing and Experimentation",
+            "Email List Cleaning and Validation",
+            "Compliance with Anti-Spam Laws",
+            "Regular Campaign Reporting"
+        ],
+        "service_title": "Email Marketing Campaign",
+        "service_desc": "Reach Your Target Audience and Drive Conversions with Our Expert Email Marketing Services. Our team of experts will work with you to develop a customized email marketing strategy that aligns with your business objectives and resonates with your target audience.",
+        "strategy_heading": "Here's what sets our email marketing services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Targeted Email Strategy:</b> We identify the perfect audience to target, ensuring your email campaign reaches the right people.<br /><b> Compelling Email Content: </b> We craft high-quality, engaging email content that drives conversions.<br /><b>Expert Campaign Deployment:</b> We ensure your email campaign is deployed correctly, with attention to detail and a focus on deliverability.<br /><b>Regular Reporting & Transparency: </b>Stay informed with clear reports that track your progress and email marketing success.</p>",
+        "service_bootom": "<strong style='color:#000'>Drive real results with our expert email marketing services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "market-research",
+        "service_header_img": "/images/market-research-service.png",
+        "feture_img": "/images/market-research.png",
+        "header_title": "Unlock Valuable Insights with Our Market Research Services",
+        "left_service_tools": [
+            "Competitor Analysis",
+            "Customer Surveys",
+            "Market Segmentation",
+            "Trend Analysis",
+            "Data Analytics"
+        ],
+        "right_service_tools": [
+            "Market Sizing and Forecasting",
+            "Customer Profiling",
+            "Product Testing and Feedback",
+            "Brand Awareness Studies",
+            "Opportunity Identification"
+        ],
+        "service_title": "Market Research",
+        "service_desc": "Gain a deeper understanding of your market and customers with our expert market research services. Our team will help you uncover valuable insights to inform your business strategy and drive growth.",
+        "strategy_heading": "Here's what sets our market research services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Research Approach:</b> We tailor our research methods to your specific business needs and goals.<br /><b>Expert Analysis and Insights:</b> Our team of experts will analyze the data and provide actionable recommendations.<br /><b>Accurate and Reliable Data:</b> We ensure that our research is based on accurate and reliable data, giving you confidence in your business decisions.<br /><b>Fast and Flexible:</b> We deliver research results quickly, so you can make informed decisions and stay ahead of the competition.</p>",
+        "service_bootom": "<strong style='color:#000'>Make informed business decisions with our expert market research services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "digital-strategy",
+        "service_header_img": "/images/digital-strategy-service.png",
+        "feture_img": "/images/digital-strategy.png",
+        "header_title": "Transform Your Business with Our Digital Strategy Services",
+        "left_service_tools": [
+            "Digital Roadmap Development",
+            "Business Model Innovation",
+            "Digital Transformation Consulting",
+            "Technology Strategy",
+            "Change Management"
+        ],
+        "right_service_tools": [
+            "Digital Product Development",
+            "Service Design",
+            "Experience Design",
+            "Digital Marketing Strategy",
+            "Analytics and Performance Optimization"
+        ],
+        "service_title": "Digital Strategy",
+        "service_desc": "Stay ahead of the competition with our expert digital strategy services. Our team will help you develop a customized digital strategy that aligns with your business goals and drives growth.",
+        "strategy_heading": "Here's what sets our digital strategy services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Digital Approach:</b> We develop a tailored digital strategy that meets your unique business needs and goals.<br /><b>Expert Guidance:</b> Our team of experts will guide you through the digital transformation process.<br /><b>Data-Driven Decision Making:</b> We use data and analytics to inform our digital strategy and ensure measurable results.<br /><b>Agile and Flexible:</b> We adapt to changing market conditions and customer needs, ensuring your digital strategy stays relevant and effective.</p>",
+        "service_bootom": "<strong style='color:#000'>Transform your business with our expert digital strategy services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "customer-insights",
+        "service_header_img": "/images/brand-strategy-service.png",
+        "feture_img": "/images/brand-strategy.png",
+        "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
+        "left_service_tools": [
+            "Brand Positioning and Messaging",
+            "Competitor Analysis",
+            "Target Audience Identification",
+            "Brand Architecture Development",
+            "Brand Guidelines Creation"
+        ],
+        "right_service_tools": [
+            "Brand Identity Design",
+            "Brand Voice and Tone Development",
+            "Content Strategy and Creation",
+            "Brand Launch and Activation",
+            "Ongoing Brand Management and Optimization"
+        ],
+        "service_title": "Brand Strategy",
+        "service_desc": "Develop a Strong Brand Foundation with Our Expert Brand Strategy Services. Our team of experts will help you create a unique brand identity that resonates with your target audience and sets you apart from the competition.",
+        "strategy_heading": "Here's what sets our brand strategy services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Brand Approach:</b> We develop a tailored brand strategy that meets your unique business needs and goals.<br /><b>Expert Brand Analysis:</b> Our team of experts will analyze your brand's strengths, weaknesses, opportunities, and threats to inform our strategy.<br /><b>Data-Driven Decision Making:</b> We use data and analytics to inform our brand strategy and ensure measurable results.<br /><b>Collaborative Process:</b> We work closely with you to ensure that our brand strategy aligns with your vision and goals.</p>",
+        "service_bootom": "<strong style='color:#000'>Elevate your brand with our expert brand strategy services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "brand-strategy",
+        "service_header_img": "/images/brand-strategy-service.png",
+        "feture_img": "/images/brand-strategy.png",
+        "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
+        "left_service_tools": [
+            "Brand Positioning and Messaging",
+            "Competitor Analysis",
+            "Target Audience Identification",
+            "Brand Architecture Development",
+            "Brand Guidelines Creation"
+        ],
+        "right_service_tools": [
+            "Brand Identity Design",
+            "Brand Voice and Tone Development",
+            "Content Strategy and Creation",
+            "Brand Launch and Activation",
+            "Ongoing Brand Management and Optimization"
+        ],
+        "service_title": "Brand Strategy",
+        "service_desc": "Develop a Strong Brand Foundation with Our Expert Brand Strategy Services. Our team of experts will help you create a unique brand identity that resonates with your target audience and sets you apart from the competition.",
+        "strategy_heading": "Here's what sets our brand strategy services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Brand Approach:</b> We develop a tailored brand strategy that meets your unique business needs and goals.<br /><b>Expert Brand Analysis:</b> Our team of experts will analyze your brand's strengths, weaknesses, opportunities, and threats to inform our strategy.<br /><b>Data-Driven Decision Making:</b> We use data and analytics to inform our brand strategy and ensure measurable results.<br /><b>Collaborative Process:</b> We work closely with you to ensure that our brand strategy aligns with your vision and goals.</p>",
+        "service_bootom": "<strong style='color:#000'>Elevate your brand with our expert brand strategy services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "digital-transformation",
+        "service_header_img": "/images/digital-transformation-service.png",
+        "feture_img": "/images/digital-transformation.png",
+        "header_title": "Transform Your Business with Our Digital Transformation Services",
+        "left_service_tools": [
+            "Digital Maturity Assessment",
+            "Business Model Innovation",
+            "Digital Roadmap Development",
+            "Technology Strategy",
+            "Change Management"
+        ],
+        "right_service_tools": [
+            "Digital Product Development",
+            "Service Design",
+            "Experience Design",
+            "Digital Marketing Strategy",
+            "Analytics and Performance Optimization"
+        ],
+        "service_title": "Digital Transformation",
+        "service_desc": "Stay Ahead of the Competition with Our Expert Digital Transformation Services. Our team will help you develop a customized digital transformation strategy that aligns with your business goals and drives growth.",
+        "strategy_heading": "Here's what sets our digital transformation services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Digital Approach:</b> We develop a tailored digital transformation strategy that meets your unique business needs and goals.<br /><b>Expert Guidance:</b> Our team of experts will guide you through the digital transformation process.<br /><b>Data-Driven Decision Making:</b> We use data and analytics to inform our digital transformation strategy and ensure measurable results.<br /><b>Agile and Flexible:</b> We adapt to changing market conditions and customer needs, ensuring your digital transformation stays relevant and effective.</p>",
+        "service_bootom": "<strong style='color:#000'>Transform your business with our expert digital transformation services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "graphic-design",
+        "service_header_img": "/images/graphic-design-service.png",
+        "feture_img": "/images/graphic-design.png",
+        "header_title": "Elevate Your Visual Identity with Our Expert Graphic Design Services",
+        "left_service_tools": [
+            "Logo Design",
+            "Brochure Design",
+            "Business Card Design",
+            "Flyer Design",
+            "Poster Design"
+        ],
+        "right_service_tools": [
+            "Infographic Design",
+            "Icon Design",
+            "Packaging Design",
+            "Menu Design",
+            "Stationery Design"
+        ],
+        "service_title": "Graphic Design",
+        "service_desc": "Create a Lasting Impression with Our Expert Graphic Design Services. Our team of skilled designers will help you develop a unique visual identity that sets you apart from the competition and resonates with your target audience.",
+        "strategy_heading": "Here's what sets our graphic design services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Design Approach:</b> We develop a tailored design strategy that meets your unique business needs and goals.<br /><b>Creative Vision:</b> Our team of expert designers bring your vision to life with innovative and effective design solutions.<br /><b>Attention to Detail:</b> We ensure that every design element is carefully crafted to perfection, from typography to color palette.<br /><b>Fast Turnaround:</b> We deliver high-quality designs quickly, so you can stay ahead of the competition.</p>",
+        "service_bootom": "<strong style='color:#000'>Elevate your brand with our expert graphic design services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "video-production",
+        "service_header_img": "/images/video-production-service.png",
+        "feture_img": "/images/video-production.png",
+        "header_title": "Bring Your Story to Life with Our Expert Video Production Services",
+        "left_service_tools": [
+            "Concept Development",
+            "Scriptwriting",
+            "Storyboarding",
+            "Location Scouting",
+            "Casting"
+        ],
+        "right_service_tools": [
+            "Filming and Videography",
+            "Editing and Post-Production",
+            "Motion Graphics and Animation",
+            "Sound Design and Music Composition",
+            "Color Grading and Finishing"
+        ],
+        "service_title": "Video Production",
+        "service_desc": "Capture Your Audience's Attention with Our Expert Video Production Services. Our team of skilled videographers, editors, and producers will help you create high-quality, engaging videos that tell your story and achieve your goals.",
+        "strategy_heading": "Here's what sets our video production services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Video Approach:</b> We develop a tailored video strategy that meets your unique business needs and goals.<br /><b>Creative Vision:</b> Our team of expert videographers and editors bring your vision to life with innovative and effective storytelling.<br /><b>High-Quality Production:</b> We use the latest equipment and technology to ensure that your video looks and sounds amazing.<br /><b>Fast Turnaround:</b> We deliver high-quality videos quickly, so you can stay ahead of the competition.</p>",
+        "service_bootom": "<strong style='color:#000'>Bring your story to life with our expert video production services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "copywriting",
+        "service_header_img": "/images/copywriting-service.png",
+        "feture_img": "/images/copywriting.png",
+        "header_title": "Craft Compelling Content that Drives Results with Our Expert Copywriting Services",
+        "left_service_tools": [
+            "Website Content",
+            "Blog Posts",
+            "Social Media Content",
+            "Email Marketing",
+            "Product Descriptions"
+        ],
+        "right_service_tools": [
+            "Ad Copy",
+            "Landing Pages",
+            "Whitepapers",
+            "E-books",
+            "Case Studies"
+        ],
+        "service_title": "Copywriting",
+        "service_desc": "Elevate Your Brand's Voice with Our Expert Copywriting Services. Our team of skilled copywriters will help you develop a unique tone and style that resonates with your target audience and drives results.",
+        "strategy_heading": "Here's what sets our copywriting services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Audience:</b> We take the time to understand your target audience's needs, desires, and pain points.<br /><b>Compelling Storytelling:</b> Our expert copywriters craft engaging narratives that capture attention and drive action.<br /><b>SEO-Friendly Content:</b> We optimize your content for search engines to improve visibility and drive organic traffic.<br /><b>Fast Turnaround:</b> We deliver high-quality content quickly, so you can stay ahead of the competition.</p>",
+        "service_bootom": "<strong style='color:#000'>Elevate your brand's voice with our expert copywriting services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "logo-design",
+        "service_header_img": "/images/logo-design-service.png",
+        "feture_img": "/images/logo-design.png",
+        "header_title": "Create a Lasting Impression with Our Expert Logo Design Services",
+        "left_service_tools": [
+            "Custom Logo Design",
+            "Logo Redesign",
+            "Logo Refresh",
+            "Icon Design",
+            "Wordmark Design"
+        ],
+        "right_service_tools": [
+            "Letterform Design",
+            "Combination Mark Design",
+            "Emblem Design",
+            "Logo Variations",
+            "Style Guides"
+        ],
+        "service_title": "Logo Design",
+        "service_desc": "Establish a Strong Brand Identity with Our Expert Logo Design Services. Our team of skilled designers will help you create a unique and memorable logo that represents your brand's values and mission.",
+        "strategy_heading": "Here's what sets our logo design services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Brand:</b> We take the time to understand your brand's values, mission, and target audience.<br /><b>Customized Design Approach:</b> Our designers create unique and tailored logo designs that meet your specific needs.<br /><b>Scalability and Versatility:</b> We ensure that your logo looks great in various formats and resolutions.<br /><b>Fast Turnaround:</b> We deliver high-quality logo designs quickly, so you can start building your brand.</p>",
+        "service_bootom": "<strong style='color:#000'>Establish a strong brand identity with our expert logo design services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "branding",
+        "service_header_img": "/images/branding-service.png",
+        "feture_img": "/images/branding.png",
+        "header_title": "Develop a Unique Brand Identity that Sets You Apart with Our Expert Branding Services",
+        "left_service_tools": [
+            "Brand Strategy",
+            "Brand Positioning",
+            "Brand Messaging",
+            "Brand Guidelines",
+            "Brand Architecture"
+        ],
+        "right_service_tools": [
+            "Visual Identity Design",
+            "Tone of Voice Development",
+            "Brand Voice Guidelines",
+            "Brand Asset Creation",
+            "Brand Launch Strategy"
+        ],
+        "service_title": "Branding",
+        "service_desc": "Create a Lasting Impression with Our Expert Branding Services. Our team of skilled branding experts will help you develop a unique brand identity that resonates with your target audience and sets you apart from the competition.",
+        "strategy_heading": "Here's what sets our branding services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Business:</b> We take the time to understand your business goals, values, and target audience.<br /><b>Customized Branding Approach:</b> Our experts develop a tailored branding strategy that meets your specific needs.<br /><b>Consistency Across All Touchpoints:</b> We ensure that your brand identity is consistent across all marketing channels and customer interactions.<br /><b>Measurable Results:</b> We track and measure the success of your branding efforts to ensure a strong ROI.</p>",
+        "service_bootom": "<strong style='color:#000'>Develop a unique brand identity that sets you apart with our expert branding services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "blog-writing",
+        "service_header_img": "/images/blog-writing-service.png",
+        "feture_img": "/images/blog-writing.png",
+        "header_title": "Craft Compelling Content that Resonates with Your Audience with Our Expert Blog Writing Services",
+        "left_service_tools": [
+            "High-Quality Blog Posts",
+            "SEO-Optimized Content",
+            "Engaging Headlines",
+            "Well-Researched Articles",
+            "Optimized Meta Tags"
+        ],
+        "right_service_tools": [
+            "Content Calendar Creation",
+            "Blog Post Optimization",
+            "Content Repurposing",
+            "Guest Blogging",
+            "Editorial Calendar Management"
+        ],
+        "service_title": "Blog Writing",
+        "service_desc": "Establish Your Brand as a Thought Leader with Our Expert Blog Writing Services. Our team of skilled writers will help you create high-quality, engaging, and informative blog posts that resonate with your target audience and drive results.",
+        "strategy_heading": "Here's what sets our blog writing services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Industry:</b> We take the time to understand your industry, target audience, and content goals.<br /><b>High-Quality Content:</b> Our writers create well-researched, engaging, and informative blog posts that meet your specific needs.<br /><b>SEO Expertise:</b> We optimize your blog posts for search engines to increase visibility"
     }
 ]
-
