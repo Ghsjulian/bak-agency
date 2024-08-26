@@ -29,11 +29,6 @@ const Footer = () => {
     };
     return (
         <footer className="footer">
-            <div onClick={goToTop} className="three-row-footer">
-                <button className="top-btn">
-                    <img src={arrow_up} />
-                </button>
-            </div>
             <div className="footer-flex">
                 <div className="flex-row">
                     <h3>About Company</h3>

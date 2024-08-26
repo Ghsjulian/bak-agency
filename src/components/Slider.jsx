@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'rc-slider';
-import full_stack_web from "../assets/images/Full stack web design.png"
+import full_stack_web from "../assets/images/Graphics design.png"
 import web_design from "../assets/images/Web Design.png"
 import Web_development from "../assets/images/Web development.png"
 import seo from "../assets/images/SEO image.png"

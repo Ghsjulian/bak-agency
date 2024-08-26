@@ -189,43 +189,40 @@ main .hide {
 
 /* FOOTER STYLING HERE */
 footer {
-    position: relative;
     width: 100%;
-    margin: 0 auto;
+    position: relative;
+    margin: 0;
     padding: 1rem 0.7rem;
-    /*background: rgb(238, 238, 238);*/
     display: flex;
     flex-direction: column;
     background: #005124;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     bottom: 0;
+    overflow: hidden;
 }
 
 footer .footer-flex {
+    width: 100%;
     display: flex;
-    margin: 0.5rem auto;
-    padding: 0;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin: 0.5rem auto;
 }
 .footer-flex .flex-row {
-    width: 100%;
     text-align: justify;
     align-items: center;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
 }
 .flex-row h3 {
     color: #fff450;
-    /* text-align: center; */
+    /*text-align: center; */
     margin: 0.3rem 0.5rem;
 }
-
-/*
 .flex-row li {
-    margin: 0.3rem 0.5rem;
+    margin: 0.5rem 0.5rem;
     text-align: justify;
     justify-content: center;
     list-style: none;
@@ -233,57 +230,35 @@ footer .footer-flex {
 }
 .flex-row li a {
     display: inline;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0;
     font-size: 17px;
     font-weight: 300;
     color: #ffffff;
 }
-*/
 @media (max-width: 768px) {
+    footer {
+        /* width: 100%; */
+    }
     footer .footer-flex {
+        width: 100%;
+        text-align: justify;
         flex-direction: column;
-        margin: 0;
+        margin: 0.5rem 0;
         padding: 0 0;
     }
     .flex-row h3 {
         text-align: left;
         margin: 0.5rem 0.5rem;
     }
-}
-footer .three-row-footer {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    right: 0.7rem;
-    bottom: 1rem;
-    border-radius: 50%;
-    background: #002734;
-    z-index: 100000;
-    padding: 0.5rem;
-    width: 50px;
-    height: 50px;
-}
-
-.three-row-footer button {
-    outline: none;
-    border: none;
-    background: transparent;
-    display: block;
-    color: #fff;
-}
-
-.three-row-footer button img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    footer .footer-flex .flex-row {
+        width: 100%;
+    }
 }
 
 footer .social {
     display: flex;
     justify-content: center;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
     margin: 0.5rem auto;
     align-items: center;
     text-align: center;

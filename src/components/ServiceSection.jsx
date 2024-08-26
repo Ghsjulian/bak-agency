@@ -12,7 +12,8 @@ const ServiceSection = () => {
     return (
         <div data-aos="zoom-in" className="section">
             <h2>
-                <img id="service-text" src={what_we_can_do} />
+               What We Can Do ?
+               {/* <img id="service-text" src={what_we_can_do} />*/}
             </h2>
             <p className="text">
                 Stay ahead of the competition with a robust digital strategy.
