@@ -71,8 +71,8 @@
     },
     {
         "type": "email-marketing",
-        "service_header_img": "/images/email-marketing-service.png",
-        "feture_img": "/images/email-marketing.png",
+        "service_header_img": "/services/email-marketing-heading.png",
+        "feture_img": "/services/email-marketing-feature.png",
         "header_title": "Our Email Marketing Campaign Services",
         "left_service_tools": [
             "Email List Building and Segmentation",
@@ -98,8 +98,8 @@
     },
     {
         "type": "market-research",
-        "service_header_img": "/images/market-research-service.png",
-        "feture_img": "/images/market-research.png",
+        "service_header_img": "/services/market-research-heading.png",
+        "feture_img": "/services/market-research-feature.png",
         "header_title": "Unlock Valuable Insights with Our Market Research Services",
         "left_service_tools": [
             "Competitor Analysis",
@@ -123,8 +123,8 @@
     },
     {
         "type": "digital-strategy",
-        "service_header_img": "/images/digital-strategy-service.png",
-        "feture_img": "/images/digital-strategy.png",
+        "service_header_img": "/services/Digital Transformation Feature.png",
+        "feture_img": "services/Digital Transformation Feature.png",
         "header_title": "Transform Your Business with Our Digital Strategy Services",
         "left_service_tools": [
             "Digital Roadmap Development",
@@ -148,8 +148,8 @@
     },
     {
         "type": "customer-insights",
-        "service_header_img": "/images/brand-strategy-service.png",
-        "feture_img": "/images/brand-strategy.png",
+        "service_header_img": "/services/Customer Insights Heading.png",
+        "feture_img": "/services/Customer Insights Feature.png",
         "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
         "left_service_tools": [
             "Brand Positioning and Messaging",
@@ -173,8 +173,8 @@
     },
     {
         "type": "brand-strategy",
-        "service_header_img": "/images/brand-strategy-service.png",
-        "feture_img": "/images/brand-strategy.png",
+        "service_header_img": "/services/Branding Header.png",
+        "feture_img": "/services/Branding Feature.png",
         "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
         "left_service_tools": [
             "Brand Positioning and Messaging",
@@ -198,8 +198,8 @@
     },
     {
         "type": "digital-transformation",
-        "service_header_img": "/images/digital-transformation-service.png",
-        "feture_img": "/images/digital-transformation.png",
+        "service_header_img": "/services/Digital Transformation Feature.png",
+        "feture_img": "/services/Digital Transformation Feature.png",
         "header_title": "Transform Your Business with Our Digital Transformation Services",
         "left_service_tools": [
             "Digital Maturity Assessment",
@@ -223,8 +223,8 @@
     },
     {
         "type": "graphic-design",
-        "service_header_img": "/images/graphic-design-service.png",
-        "feture_img": "/images/graphic-design.png",
+        "service_header_img": "/services/Graphics Design Header.png",
+        "feture_img": "/services/Graphics Design Feature.png",
         "header_title": "Elevate Your Visual Identity with Our Expert Graphic Design Services",
         "left_service_tools": [
             "Logo Design",
@@ -248,8 +248,8 @@
     },
     {
         "type": "video-production",
-        "service_header_img": "/images/video-production-service.png",
-        "feture_img": "/images/video-production.png",
+        "service_header_img": "/services/Video Production Header.png",
+        "feture_img": "/services/Video Production Feature.png",
         "header_title": "Bring Your Story to Life with Our Expert Video Production Services",
         "left_service_tools": [
             "Concept Development",
@@ -273,8 +273,8 @@
     },
     {
         "type": "copywriting",
-        "service_header_img": "/images/copywriting-service.png",
-        "feture_img": "/images/copywriting.png",
+        "service_header_img": "/services/Copywriting Header.png",
+        "feture_img": "/services/Copywriting Feature.png",
         "header_title": "Craft Compelling Content that Drives Results with Our Expert Copywriting Services",
         "left_service_tools": [
             "Website Content",
@@ -298,8 +298,8 @@
     },
     {
         "type": "logo-design",
-        "service_header_img": "/images/logo-design-service.png",
-        "feture_img": "/images/logo-design.png",
+        "service_header_img": "/services/logo-desgin-heading.png",
+        "feture_img": "/services/logo-desgin-feature.png",
         "header_title": "Create a Lasting Impression with Our Expert Logo Design Services",
         "left_service_tools": [
             "Custom Logo Design",
@@ -323,8 +323,8 @@
     },
     {
         "type": "branding",
-        "service_header_img": "/images/branding-service.png",
-        "feture_img": "/images/branding.png",
+        "service_header_img": "/services/Branding Header.png",
+        "feture_img": "/services/Branding Feature.png",
         "header_title": "Develop a Unique Brand Identity that Sets You Apart with Our Expert Branding Services",
         "left_service_tools": [
             "Brand Strategy",

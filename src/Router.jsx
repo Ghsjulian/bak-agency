@@ -11,6 +11,9 @@ import NotFound from "./components/NotFound";
 import TermsCondition from "./components/TermsCondition";
 import PrivacyPoicy from "./components/PrivacyPoicy";
 
+/* Import Admin Routes Here */
+// import AdminLayouts from "./admin/AdminLayouts";
+
 const MyRoutes = [
     {
         path: "/",
@@ -93,6 +96,13 @@ const MyRoutes = [
             </Layouts>
         )
     },
+    /* Admin Routes Here */
+    // {
+    //     path: "/admin",
+    //     element: <AdminLayouts />,
+        
+    // },
+
     {
         path: "*",
         element: <NotFound />

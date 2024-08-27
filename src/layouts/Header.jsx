@@ -158,7 +158,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="/service/graphics-desgin"
+                                                            to="/service/graphic-design"
                                                         >
                                                             Graphics Desgin
                                                         </NavLink>
@@ -166,7 +166,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/video-production"
                                                         >
                                                             Video Production
                                                         </NavLink>
@@ -174,7 +174,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/copywriting"
                                                         >
                                                             Copywrite Services
                                                         </NavLink>
@@ -182,7 +182,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/logo-desgin"
                                                         >
                                                             Logo Desgin
                                                         </NavLink>
@@ -190,7 +190,7 @@ const Header = () => {
                                                     <li className="dropdown-link">
                                                         <NavLink
                                                             onClick={closeNav}
-                                                            to="#"
+                                                            to="/service/branding"
                                                         >
                                                             Branding
                                                         </NavLink>
