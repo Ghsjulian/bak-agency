@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import agent_3 from "../assets/images/agent_3.png";
+import WhyUs from "../components/WhyUs";
+import ServiceSection from "../components/ServiceSection";
 
 const Contact = () => {
     document.title =
@@ -54,7 +56,7 @@ const Contact = () => {
         }, 3000);
     };
 
-    return (
+    return (<>
         <div data-aos="zoom-in" id="page" className="section">
             <h2> Contact With Us </h2>
             <div className="two-row">
@@ -111,6 +113,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+         <ServiceSection />
+            <WhyUs /></>
     );
 };
 

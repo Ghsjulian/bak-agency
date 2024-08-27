@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import development from "../assets/images/development.png";
 import coding from "../assets/icons/coding.png";
 import task from "../assets/icons/typography.png";
@@ -12,8 +13,8 @@ const ServiceSection = () => {
     return (
         <div data-aos="zoom-in" className="section">
             <h2>
-               What We Can Do ?
-               {/* <img id="service-text" src={what_we_can_do} />*/}
+                What We Can Do ?
+                {/* <img id="service-text" src={what_we_can_do} />*/}
             </h2>
             <p className="text">
                 Stay ahead of the competition with a robust digital strategy.
@@ -24,7 +25,11 @@ const ServiceSection = () => {
                 game!
             </p>
             <div className="row">
-                <div data-aos="zoom-in" className="col">
+                <NavLink
+                    to="/service/custom-web-solution"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={development} />
                     <h4>Web Development & Design</h4>
                     <p className="p-text">
@@ -33,8 +38,12 @@ const ServiceSection = () => {
                         e-commerce solutions, we craft digital experiences that
                         drive engagement.
                     </p>
-                </div>
-                <div data-aos="zoom-in" className="col">
+                </NavLink>
+                <NavLink
+                    to="/service/fullstack-seo"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={seo} />
                     <h4>SEO And Optimization</h4>
                     <p className="p-text">
@@ -43,18 +52,26 @@ const ServiceSection = () => {
                         provides a seamless experience for your visitors. A
                         well-optimized website.
                     </p>
-                </div>
-                <div data-aos="zoom-in" className="col">
+                </NavLink>
+                <NavLink
+                    to="/service/e-commerce-solution"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={coding} />
-                    <h4>Coding & IT Technology</h4>
+                    <h4>E Commerce Solutions</h4>
                     <p className="p-text">
                         Expert coding and IT solutions for businesses, driving
                         growth and productivity through custom software
                         development, IT consulting, and innovative technology
                         solutions.
                     </p>
-                </div>
-                <div data-aos="zoom-in" className="col">
+                </NavLink>
+                <NavLink
+                    to="/service/graphic-design"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={time} />
                     <h4>Graphics Design</h4>
                     <p className="p-text">
@@ -63,8 +80,12 @@ const ServiceSection = () => {
                         team of skilled designers crafts visually stunning
                         graphics that capture your brand's .
                     </p>
-                </div>
-                <div data-aos="zoom-in" className="col">
+                </NavLink>
+                <NavLink
+                    to="/service/video-production"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={dashboard} />
                     <h4>Video Editing & Production</h4>
                     <p className="p-text">
@@ -73,8 +94,12 @@ const ServiceSection = () => {
                         editors crafts engaging, high-quality videos that
                         captivate your audience .
                     </p>
-                </div>
-                <div data-aos="zoom-in" className="col">
+                </NavLink>
+                <NavLink
+                    to="/service/logo-desgin"
+                    data-aos="zoom-in"
+                    className="col"
+                >
                     <img src={task} />
                     <h4>Logo Design</h4>
                     <p className="p-text">
@@ -83,7 +108,7 @@ const ServiceSection = () => {
                         and personality. Our expert designers create unique,
                         scalable.
                     </p>
-                </div>
+                </NavLink>
             </div>
         </div>
     );

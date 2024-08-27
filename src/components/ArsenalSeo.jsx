@@ -13,20 +13,32 @@ const ArsenalSeo = () => {
             <h2>Our SEO Tools</h2>
             <Marquee direction={"right"}>
                 <div className="slide">
-                    <img src={untitled42} />
+                    <img src="/tools/Woorank.png" />
                 </div>
                 <div className="slide">
-                    <img src={Untitled43} />
+                    <img src="/tools/KWFinder.png" />
                 </div>
                 <div className="slide">
-                    <img src={Untitled44} />
+                    <img src="/tools/KWFinder.png" />
                 </div>
                 <div className="slide">
-                    <img src={Untitled45} />
+                    <img src="/tools/Rivalflow.png" />
                 </div>
                 <div className="slide">
-                    <img src={Untitled46} />
+                    <img src="/tools/Serpstat.png" />
                 </div>
+                <div className="slide">
+<img src="/tools/Answer The Public.png" />
+</div>
+<div className="slide">
+<img src="/tools/Backlink Repository.png" />
+</div>
+<div className="slide">
+<img src="/tools/Buzzstream.png" />
+</div>
+<div className="slide">
+<img src="/tools/Seobilty.png" />
+</div>
             </Marquee>
         </div>
     );

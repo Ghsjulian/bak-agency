@@ -26,7 +26,7 @@
         ],
         "service_title": "Search Engine Optimization",
         "service_desc": "Skyrocket Your Organic Traffic with Our SEO Expertise Get your website seen by the right audience. Our data-driven SEO services optimize your site for search engines, attracting qualified leads and boosting organic traffic. We'll help you dominate search results for relevant keywords, turning clicks into conversions.",
-        "strategy_heading": "Here's what sets our SEO services apart:",
+        "service_heading": "Here's what sets our SEO services apart:",
         "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Targeted Keyword Strategy:</b> We identify the perfect keywords to target, ensuring your website reaches the right audience.<br /><b> Technical SEO Optimization: </b> We ensure your website's foundation is search-engine friendly, improving crawlability and user experience.<br /><b>Content Marketing Powerhouse:</b> We craft high-quality, SEO-optimized content that engages visitors and drives conversions.<br /><b>Regular Reporting & Transparency: </b>Stay informed with clear reports that track your progress and SEO success.</p>",
         "service_bootom": "<strong style='color:#000'>Invest in long-term growth with our results-oriented SEO services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
     },
@@ -297,7 +297,7 @@
         "service_bootom": "<strong style='color:#000'>Elevate your brand's voice with our expert copywriting services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
     },
     {
-        "type": "logo-design",
+        "type": "logo-desgin",
         "service_header_img": "/services/logo-desgin-heading.png",
         "feture_img": "/services/logo-desgin-feature.png",
         "header_title": "Create a Lasting Impression with Our Expert Logo Design Services",
@@ -318,7 +318,7 @@
         "service_title": "Logo Design",
         "service_desc": "Establish a Strong Brand Identity with Our Expert Logo Design Services. Our team of skilled designers will help you create a unique and memorable logo that represents your brand's values and mission.",
         "strategy_heading": "Here's what sets our logo design services apart:",
-        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Brand:</b> We take the time to understand your brand's values, mission, and target audience.<br /><b>Customized Design Approach:</b> Our designers create unique and tailored logo designs that meet your specific needs.<br /><b>Scalability and Versatility:</b> We ensure that your logo looks great in various formats and resolutions.<br /><b>Fast Turnaround:</b> We deliver high-quality logo designs quickly, so you can start building your brand.</p>",
+        "strategy_desc": "<p><b>Deep Understanding of Your Brand:</b> We take the time to understand your brand's values, mission, and target audience.</b><br /><b>Customized Design Approach:</b> Our designers create unique and tailored logo designs that meet your specific needs.</b><br /><b>Scalability and Versatility:</b> We ensure that your logo looks great in various formats and resolutions.<br /><b>Fast Turnaround:</b> We deliver high-quality logo designs quickly, so you can start building your brand.</p>",
         "service_bootom": "<strong style='color:#000'>Establish a strong brand identity with our expert logo design services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
     },
     {
@@ -348,8 +348,8 @@
     },
     {
         "type": "blog-writing",
-        "service_header_img": "/images/blog-writing-service.png",
-        "feture_img": "/images/blog-writing.png",
+        "service_header_img": "/images/blog-writing-headinh.png",
+        "feture_img": "/images/blog-writing-feature.png",
         "header_title": "Craft Compelling Content that Resonates with Your Audience with Our Expert Blog Writing Services",
         "left_service_tools": [
             "High-Quality Blog Posts",
@@ -368,6 +368,232 @@
         "service_title": "Blog Writing",
         "service_desc": "Establish Your Brand as a Thought Leader with Our Expert Blog Writing Services. Our team of skilled writers will help you create high-quality, engaging, and informative blog posts that resonate with your target audience and drive results.",
         "strategy_heading": "Here's what sets our blog writing services apart:",
-        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Industry:</b> We take the time to understand your industry, target audience, and content goals.<br /><b>High-Quality Content:</b> Our writers create well-researched, engaging, and informative blog posts that meet your specific needs.<br /><b>SEO Expertise:</b> We optimize your blog posts for search engines to increase visibility"
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Industry:</b> We take the time to understand your industry, target audience, and content goals.<br /><b>High-Quality Content:</b> Our writers create well-researched, engaging, and informative blog posts that meet your specific needs.<br /><b>SEO Expertise:</b> We optimize your blog posts for search engines to increase visibility and drive organic traffic.<br /><b>Fast Turnaround:</b> We deliver high-quality blog posts quickly, so you can stay ahead of the competition.</p>",
+        "service_bootom": "<strong style='color:#000'>Establish your brand as a thought leader with our expert blog writing services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "sound-canvas",
+        "service_header_img": "/services/Sound Production Heading.png",
+        "feture_img": "/services/Sound Production Feature.png",
+        "header_title": "Elevate Your Brand's Sonic Identity with Our Expert Sound Canvas Services",
+        "left_service_tools": [
+            "Custom Music Composition",
+            "Sound Design",
+            "Audio Branding",
+            "Music Licensing",
+            "Soundscaping"
+        ],
+        "right_service_tools": [
+            "Audio Post-Production",
+            "Voiceover Recording",
+            "Sound Effects Design",
+            "Music Editing",
+            "Mixing and Mastering"
+        ],
+        "service_title": "Sound Canvas",
+        "service_desc": "Create an Immersive Audio Experience that Resonates with Your Audience with Our Expert Sound Canvas Services. Our team of skilled sound designers and composers will help you craft a unique sonic identity that elevates your brand and leaves a lasting impression.",
+        "strategy_heading": "Here's what sets our sound canvas services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Deep Understanding of Your Brand:</b> We take the time to understand your brand's values, tone, and personality.<br /><b>Customized Audio Solutions:</b> Our experts create tailored audio experiences that meet your specific needs and goals.<br /><b>High-Quality Audio Production:</b> We use state-of-the-art equipment and software to ensure exceptional audio quality.<br /><b>Collaborative Approach:</b> We work closely with you to ensure that the final product exceeds your expectations.</p>",
+        "service_bootom": "<strong style='color:#000'>Elevate your brand's sonic identity with our expert sound canvas services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "product-descriptions",
+        "service_header_img": "/images/product-heading.png",
+        "feture_img": "/images/product-feature.png",
+        "header_title": "Craft Compelling Product Descriptions that Drive Sales and Customer Engagement",
+        "left_service_tools": [
+            "Engaging Product Copy",
+            "SEO-Optimized Descriptions",
+            "Product Benefits Highlighting",
+            "Unique Selling Proposition (USP) Development",
+            "Tone and Voice Consistency"
+        ],
+        "right_service_tools": [
+            "Product Research and Analysis",
+            "Competitor Analysis",
+            "Product Feature and Benefit Identification",
+            "Content Optimization for Conversions",
+            "A/B Testing and Iteration"
+        ],
+        "service_title": "Product Descriptions",
+        "service_desc": "Transform Your Product Pages with Compelling Descriptions that Drive Sales, Increase Conversions, and Enhance Customer Experience. Our team of expert writers will help you craft product descriptions that accurately convey your product's value, features, and benefits, while resonating with your target audience.",
+        "strategy_heading": "Here's what sets our product description services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>In-Depth Product Research:</b> We thoroughly research your product to identify its unique features, benefits, and selling points.<br /><b>Customer-Centric Approach:</b> We write product descriptions that speak directly to your target audience, addressing their needs, pain points, and desires.<br /><b>SEO Expertise:</b> We optimize your product descriptions for search engines to increase visibility, drive organic traffic, and boost conversions.<br /><b>Data-Driven Approach:</b> We use data and analytics to inform our writing, ensuring that our product descriptions are optimized for maximum impact.</p>",
+        "service_bootom": "<strong style='color:#000'>Transform your product pages with compelling descriptions that drive sales and customer engagement.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
+    },
+    {
+        "type": "content-strategy",
+        "service_header_img": "/services/",
+        "feture_img": "/images/content-strategy.png",
+        "header_title": "Develop a Winning Content Strategy that Drives Business Results",
+        "left_service_tools": [
+            "Content Audit and Analysis",
+            "Target Audience Identification",
+            "Content Gap Analysis",
+            "Content Mission Statement Development",
+            "Content Calendar Creation"
+        ],
+        "right_service_tools": [
+            "Content Channel Strategy",
+            "Content Format Development",
+            "Tone and Voice Guidelines",
+            "Content Measurement and Evaluation",
+            "Ongoing Content Optimization"
+        ],
+        "service_title": "Content Strategy",
+        "service_desc": "Create a Comprehensive Content Strategy that Aligns with Your Business Goals and Resonates with Your Target Audience. Our team of experts will help you develop a tailored content strategy that drives engagement, conversions, and revenue growth.",
+        "strategy_heading": "Here's what sets our content strategy services apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Data-Driven Approach:</b> We use data and analytics to inform our content strategy, ensuring that it's tailored to your target audience and business goals.<br /><b>Customized Solutions:</b> We develop content strategies that are unique to your brand, industry, and target audience.<br /><b>Integrated Approach:</b> We consider all aspects of your business, from marketing to sales to customer service, to create a cohesive content strategy.<br /><b>Measurable Results:</b> We establish clear metrics and KPIs to measure the success of your content strategy and make data-driven decisions.</p>",
+        "service_bootom": "<strong style='color:#000'>Develop a winning content strategy that drives business results.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "responsive-design",
+        "service_header_img": "/images/responsive-feature.png",
+        "feture_img": "/images/responsive-feature.png",
+        "header_title": "Create a Seamless User Experience Across All Devices",
+        "left_service_tools": [
+            "Mobile-First Design Approach",
+            "Responsive Layout and Grid System",
+            "Cross-Browser Compatibility",
+            "Device-Agnostic Design",
+            "Accessibility Compliance"
+        ],
+        "right_service_tools": [
+            "Customizable Breakpoints",
+            "Flexible Images and Media",
+            "Responsive Typography and Icons",
+            "Touch-Friendly Navigation",
+            "Performance Optimization"
+        ],
+        "service_title": "Responsive Design",
+        "service_desc": "Ensure a Consistent and Engaging User Experience Across All Devices and Screen Sizes. Our Responsive Design Services Guarantee a Website that Adapts to Any Device, Boosting Conversions and User Satisfaction.",
+        "strategy_heading": "Why Responsive Design Matters:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Increased Mobile Traffic:</b> With most users accessing websites through mobile devices, a responsive design is crucial for a seamless user experience.<br /><b>Improved User Experience:</b> A responsive design ensures that your website is easily navigable and visually appealing on all devices.<br /><b>Better Search Engine Rankings:</b> Google recommends responsive design as the best approach for mobile-friendliness, which can improve your search engine rankings.<br /><b>Cost-Effective:</b> A responsive design eliminates the need for separate websites for different devices, reducing development and maintenance costs.</p>",
+        "service_bootom": "<strong style='color:#000'>Create a responsive website that adapts to any device.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "e-commerce-solution",
+        "service_header_img": "/images/e-commerce-heading.png",
+        "feture_img": "/images/e-commerce-feature.png",
+        "header_title": "Build a Successful Online Store with Our E-Commerce Solutions",
+        "left_service_tools": [
+            "Custom E-Commerce Platform Development",
+            "Magento, Shopify, and WooCommerce Expertise",
+            "Responsive and Mobile-Friendly Design",
+            "Secure Payment Gateway Integration",
+            "Order Management and Fulfillment"
+        ],
+        "right_service_tools": [
+            "Product Information Management (PIM)",
+            "Search Engine Optimization (SEO)",
+            "Conversion Rate Optimization (CRO)",
+            "Multi-Channel Selling Integration",
+            "Analytics and Performance Reporting"
+        ],
+        "service_title": "E-Commerce Solutions",
+        "service_desc": "Take Your Online Store to the Next Level with Our Comprehensive E-Commerce Solutions. From Custom Platform Development to Ongoing Support, We'll Help You Drive Sales, Increase Conversions, and Enhance Customer Experience.",
+        "strategy_heading": "What Sets Our E-Commerce Solutions Apart:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Customized Solutions:</b> We develop tailored e-commerce solutions that meet your unique business needs and goals.<br /><b>Expertise in Leading Platforms:</b> Our team has extensive experience in Magento, Shopify, and WooCommerce, ensuring seamless integration and optimization.<br /><b>Focus on User Experience:</b> We design and develop online stores that provide an intuitive and engaging user experience, driving conversions and loyalty.<br /><b>Ongoing Support and Optimization:</b> We provide continuous support and optimization to ensure your online store stays competitive and profitable.</p>",
+        "service_bootom": "<strong style='color:#000'>Build a successful online store with our e-commerce solutions.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "app-development",
+        "service_header_img": "/images/app-development-heading.png",
+        "feture_img": "/images/app-development-feture.png",
+        "header_title": "Transform Your Ideas into Engaging Mobile Apps",
+        "left_service_tools": [
+            "Native iOS and Android App Development",
+            "Cross-Platform App Development (React Native, Flutter)",
+            "Custom App Design and Prototyping",
+            "API Integration and Backend Development",
+            "App Store Optimization (ASO)"
+        ],
+        "right_service_tools": [
+            "Cloud-Based Infrastructure and Hosting",
+            "Real-Time Analytics and Performance Monitoring",
+            "Security and Compliance (HIPAA, GDPR)",
+            "Push Notifications and In-App Messaging",
+            "Ongoing Maintenance and Updates"
+        ],
+        "service_title": "App Development",
+        "service_desc": "Bring Your Mobile App Vision to Life with Our Expert App Development Services. From Concept to Launch, We'll Help You Create a High-Performing, User-Friendly App that Meets Your Business Goals.",
+        "strategy_heading": "Why Choose Our App Development Services:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Latest Technologies:</b> Our team stays up-to-date with the latest mobile app development trends and technologies.<br /><b>Customized Solutions:</b> We develop apps tailored to your specific business needs and goals.<br /><b>Agile Development Methodology:</b> We follow an agile approach to ensure rapid development, continuous improvement, and flexibility.<br /><b>Quality Assurance and Testing:</b> We conduct thorough testing and QA to ensure your app is bug-free and performs optimally.</p>",
+        "service_bootom": "<strong style='color:#000'>Transform your ideas into engaging mobile apps.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "cms-integration",
+        "service_header_img": "/images/cms-intigration.png",
+        "feture_img": "/images/cms-integration.png",
+        "header_title": "Streamline Your Content Management with Our CMS Integration Services",
+        "left_service_tools": [
+            "WordPress, Drupal, and Joomla Expertise",
+            "Custom CMS Development and Implementation",
+            "Content Migration and Integration",
+            "Plugin and Module Development",
+            "Security and Performance Optimization"
+        ],
+        "right_service_tools": [
+            "Multi-Site and Multi-Language Support",
+            "Custom Theme Development and Design",
+            "API Integration and Third-Party Services",
+            "Content Workflow and Approval Process",
+            "Ongoing Maintenance and Support"
+        ],
+        "service_title": "CMS Integration",
+        "service_desc": "Effortlessly Manage Your Content with Our Expert CMS Integration Services. From Custom Development to Ongoing Support, We'll Help You Get the Most Out of Your Content Management System.",
+        "strategy_heading": "Why Choose Our CMS Integration Services:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Leading CMS Platforms:</b> Our team has extensive experience in WordPress, Drupal, and Joomla, ensuring seamless integration and optimization.<br /><b>Customized Solutions:</b> We develop tailored CMS solutions that meet your unique business needs and goals.<br /><b>Content-Centric Approach:</b> We focus on creating a content management system that is intuitive, user-friendly, and scalable.<br /><b>Ongoing Support and Maintenance:</b> We provide continuous support and maintenance to ensure your CMS stays up-to-date and secure.</p>",
+        "service_bootom": "<strong style='color:#000'>Streamline your content management with our CMS integration services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "custom-web-solution",
+        "service_header_img": "/images/web-solution-heading.png",
+        "feture_img": "/images/web-solution-feature.png",
+        "header_title": "Unlock Your Business Potential with Custom Web Solutions",
+        "left_service_tools": [
+            "Custom Web Application Development",
+            "E-commerce Solutions (B2B, B2C, C2C)",
+            "Portal Development (Intranet, Extranet)",
+            "Custom CMS Development and Integration",
+            "API Integration and Third-Party Services"
+        ],
+        "right_service_tools": [
+            "Responsive and Mobile-Friendly Design",
+            "Cloud-Based Infrastructure and Hosting",
+            "Security and Compliance (HIPAA, GDPR)",
+            "Real-Time Analytics and Performance Monitoring",
+            "Ongoing Maintenance and Support"
+        ],
+        "service_title": "Custom Web Solutions",
+        "service_desc": "Take Your Business to the Next Level with Our Custom Web Solutions. From Concept to Launch, We'll Help You Create a Unique, Scalable, and Secure Online Presence that Meets Your Business Goals.",
+        "strategy_heading": "Why Choose Our Custom Web Solutions:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Latest Technologies:</b> Our team stays up-to-date with the latest web development trends and technologies.<br /><b>Customized Solutions:</b> We develop tailored web solutions that meet your unique business needs and goals.<br /><b>Agile Development Methodology:</b> We follow an agile approach to ensure rapid development, continuous improvement, and flexibility.<br /><b>Quality Assurance and Testing:</b> We conduct thorough testing and QA to ensure your web solution is bug-free and performs optimally.</p>",
+        "service_bootom": "<strong style='color:#000'>Unlock your business potential with our custom web solutions.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
+    },
+    {
+        "type": "ada-compliance",
+        "service_header_img": "/images/ada-heading.png",
+        "feture_img": "/images/ada-feature.png",
+        "header_title": "Ensure Accessibility and Compliance with Our ADA Compliance Services",
+        "left_service_tools": [
+            "Website Accessibility Audits",
+            "WCAG 2.1 Compliance",
+            "Section 508 Compliance",
+            "ADA Compliance Consulting",
+            "Accessibility Remediation and Repair"
+        ],
+        "right_service_tools": [
+            "Accessible Design and Development",
+            "Screen Reader Testing and Optimization",
+            "Color Contrast Analysis and Optimization",
+            "Closed Captioning and Audio Description",
+            "Ongoing Compliance Monitoring and Support"
+        ],
+        "service_title": "ADA Compliance",
+        "service_desc": "Make Your Website Accessible to All with Our Expert ADA Compliance Services. Ensure Equal Access and Avoid Legal Risks with Our Comprehensive Compliance Solutions.",
+        "strategy_heading": "Why Choose Our ADA Compliance Services:",
+        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Accessibility Guidelines:</b> Our team is well-versed in WCAG 2.1, Section 508, and ADA regulations.<br /><b>Comprehensive Audits and Remediation:</b> We identify and fix accessibility issues to ensure compliance.<br /><b>Customized Solutions:</b> We develop tailored accessibility solutions that meet your unique business needs.<br /><b>Ongoing Support and Monitoring:</b> We provide continuous support to ensure your website remains compliant and accessible.</p>",
+        "service_bootom": "<strong style='color:#000'>Ensure accessibility and compliance with our ADA compliance services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
     }
 ]
