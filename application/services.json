@@ -1,43 +1,12 @@
- [
-    {
-        "type": "web-development",
-        "service_img": "http://localhost:8080/server/assets/images/agent_3.png",
-        "service_heading": "Web Development & Design",
-        "service_description":
-            "We serve the best design and professional website, our employees are so good they build professional and user-friendly website . supposed you have planned for making a good qualities website , such as e commerce, template building and many more . Kindly please contact us. Explore our main service and offer we provide the best service all over the world , if you want to get ourservice please contact us right now we'll response you as soon as possible."
-    },
-    {
-        "type": "graphics-desgin",
-        "service_img": "http://localhost:8080/server/assets/images/agent_3.png",
-        "service_heading": "Graphics Desgin And Logo",
-        "service_description":
-            "   We serve the best design and professional website, our employees are so good they build professional and user-friendly website . supposed you have planned for making a good qualities website , such as e commerce, template building and many more . Kindly please contact us. Explore our main service and offer we provide the best service all over the world , if you want to get ourservice please contact us right now we'll response you as soon as possible."
-    },
-    {
-        "type": "seo-analysis",
-        "service_img": "http://localhost:8080/server/assets/images/agent_3.png",
-        "service_heading": "Web Development & Design",
-        "service_description":
-            "   We serve the best design and professional website, our employees are so good they build professional and user-friendly website . supposed you have planned for making a good qualities website , such as e commerce, template building and many more . Kindly please contact us. Explore our main service and offer we provide the best service all over the world , if you want to get ourservice please contact us right now we'll response you as soon as possible."
-    },
-    {
-        "type": "video-editing",
-        "service_img": "http://localhost:8080/server/assets/images/agent_3.png",
-        "service_heading": "Web Development & Design",
-        "service_description":
-            "   We serve the best design and professional website, our employees are so good they build professional and user-friendly website . supposed you have planned for making a good qualities website , such as e commerce, template building and many more . Kindly please contact us. Explore our main service and offer we provide the best service all over the world , if you want to get ourservice please contact us right now we'll response you as soon as possible."
-    },
-    {
-        "type": "fullstack-seo",
-        "service_img": "/images/seo_service.jpg",
-        "service_heading": "Full Stack SEO",
-        "service_description" : "Unlocking the Secrets of Full Stack SEO Success Welcome to bakdif.com (BAK Digital Firm), your go-to resource for mastering the art of Full Stack SEO. In this comprehensive guide, we will unlock the secrets of optimizing your online presence from both a technical and user-experience perspective. SEO isn't just about keywords anymore – it's about providing a seamless, engaging experience for your audience while ensuring your website performs efficiently. Let’s embark on this journey into the world of Full Stack SEO together! Journey into the World of Full Stack SEO: A Comprehensive Guide Full Stack SEO integrates all aspects of search engine optimization, from technical configurations to content strategy. Here’s a detailed roadmap to understanding and implementing Full Stack SEO: 1. today, it’s about relevant, high-quality content that answers users' queries. On-Page SEO: Optimize page titles, meta descriptions, headers, and content to align with search intent.2. "
-        },
-    {
-        "type": "content-writing",
-        "service_img": "http://localhost:8080/server/assets/images/agent_3.png",
-        "service_heading": "Web Development & Design",
-        "service_description":
-            "   We serve the best design and professional website, our employees are so good they build professional and user-friendly website . supposed you have planned for making a good qualities website , such as e commerce, template building and many more . Kindly please contact us. Explore our main service and offer we provide the best service all over the world , if you want to get ourservice please contact us right now we'll response you as soon as possible."
-    }
-]
+<div className="slide">
+<img src="/tools/Answer The Public.png" />
+</div>
+<div className="slide">
+<img src="/tools/Backlink Repository.png" />
+</div>
+<div className="slide">
+<img src="/tools/Buzzstream.png" />
+</div>
+<div className="slide">
+<img src="/tools/Seobilty.png" />
+</div>
