@@ -202,7 +202,40 @@ footer {
     bottom: 0;
     overflow: hidden;
 }
-
+footer .subscribe {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+.subscribe input {
+    outline: none;
+    font-weight: 600;
+    margin: 0.3rem 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2f4ff;
+}
+.subscribe button {
+    outline: none;
+    background: transparent;
+    margin: 0.3rem 0.2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #e2f4ff;
+    color: #e2f4ff;
+    transition: 0.3s ease-in;
+}
+footer #join {
+    color: #ffffff;
+    margin: 0.2rem auto;
+}
+.subscribe button:hover {
+    background: #0089dd;
+}
 footer .footer-flex {
     width: 100%;
     display: flex;

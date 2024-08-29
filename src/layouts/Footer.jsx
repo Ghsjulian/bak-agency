@@ -29,6 +29,15 @@ const Footer = () => {
     };
     return (
         <footer className="footer">
+            <h3 id="join">Join With Us</h3>
+            <div className="subscribe">
+                <input
+                    type="email"
+                    placeholder="Enter Email To Subscribe"
+                    required
+                />
+                <button>Subscribe</button>
+            </div>
             <div className="footer-flex">
                 <div className="flex-row">
                     <h3>About Company</h3>
@@ -42,7 +51,9 @@ const Footer = () => {
                         <NavLink to="/our-privacy">Privacy And Policy</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/terms-condition">Terms And Connection</NavLink>
+                        <NavLink to="/terms-condition">
+                            Terms And Connection
+                        </NavLink>
                     </li>
                 </div>
                 <div className="flex-row">
@@ -51,13 +62,19 @@ const Footer = () => {
                         <NavLink to="/services">Our Services</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/web-development">Web Development</NavLink>
+                        <NavLink to="/service/web-development">
+                            Web Development
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/google-ads">Google PPC Ads</NavLink>
+                        <NavLink to="/service/google-ads">
+                            Google PPC Ads
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/graphics-design">Graphics Design</NavLink>
+                        <NavLink to="/service/graphics-design">
+                            Graphics Design
+                        </NavLink>
                     </li>
                 </div>
                 <div className="flex-row">
@@ -83,7 +100,10 @@ const Footer = () => {
                 <NavLink target="_blank" to="https://www.facebook.com/bakdif">
                     <img src={facebook} />
                 </NavLink>
-                <NavLink target="_blank" to="https://www.linkedin.com/company/bakdif">
+                <NavLink
+                    target="_blank"
+                    to="https://www.linkedin.com/company/bakdif"
+                >
                     <img src={linkedin} />
                 </NavLink>
                 <NavLink to="/">

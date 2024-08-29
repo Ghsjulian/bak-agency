@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import client_1 from "../assets/images/client_1.png";
 import WhyUs from "../components/WhyUs";
-import ServiceSection from "../components/ServiceSection"
+import ServiceSection from "../components/ServiceSection";
 const About = () => {
     document.title = "About us - See and know more about our services";
     useEffect(() => {
@@ -16,7 +16,7 @@ const About = () => {
                         data-aos="zoom-in"
                         className="image"
                     >
-                        <img src={client_1} />
+                        <img src="/images/about_2.png" />
                     </div>
                     <div data-aos="zoom-in" id="content" className="form">
                         <h2 style={{ marginTop: "3.7rem" }}>
@@ -30,17 +30,12 @@ const About = () => {
                             Design, Digital Marketing, SEO Optimization, Social
                             Media Management, E-commerce Website Development,
                             Dropshipping Creation & Management, Amazon &
-                            E-commerce Store Management. We are dedicated to
-                            helping businesses establish a strong online
-                            presence and achieve their digital goals. Our team
-                            of experts leverages the latest technologies and
-                            strategies to deliver solutions that drive growth
-                            and success in the digital marketplace.
+                            E-commerce Store Management.
                         </p>
                     </div>
                 </div>
             </div>
-            <ServiceSection/>
+            <ServiceSection />
             <WhyUs />
         </>
     );

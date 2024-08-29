@@ -11,13 +11,14 @@ const Contact = () => {
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");
     const [userEmail, setuserEmail] = useState("");
+    const [subject, setuserSubject] = useState("");
     const [userMessage, setuserMessage] = useState("");
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const baseURL = "http://localhost:8080/server/client-contact";
     const handleContact = async e => {
         e.preventDefault();
-        if (userName && telephone && userEmail && userMessage) {
+        if (userName && telephone && userEmail && subject && userMessage) {
             try {
                 axios
                     .post(baseURL, {
@@ -56,65 +57,75 @@ const Contact = () => {
         }, 3000);
     };
 
-    return (<>
-        <div data-aos="zoom-in" id="page" className="section">
-            <h2> Contact With Us </h2>
-            <div className="two-row">
-                <div data-aos="zoom-in" className="image">
-                    <img src={agent_3} />
-                </div>
-                <div data-aos="zoom-in" className="form">
-                    <p className="text">
-                        Feel free to reach out to us at any time. Our dedicated
-                        team is always ready to assist you promptly. Connect
-                        with us directly for immediate assistance and let's stay
-                        in touch.
-                    </p>
-                    <h3>Fill Out This Form </h3>
-                    <span
-                        ref={messageRef}
-                        style={{ display: "none" }}
-                        className=""
-                    ></span>
-                    <input
-                        type="text"
-                        onChange={e => {
-                            setuserName(e.target.value);
-                        }}
-                        placeholder="Enter Your Name"
-                        value={userName}
-                    />
-                    <input
-                        type="number"
-                        onChange={e => {
-                            setTelephone(e.target.value);
-                        }}
-                        placeholder="Enter Your Phone Number"
-                        value={telephone}
-                    />
-                    <input
-                        type="email"
-                        onChange={e => {
-                            setuserEmail(e.target.value);
-                        }}
-                        placeholder="Enter Your Email"
-                        value={userEmail}
-                    />
-                    <textarea
-                        onChange={e => {
-                            setuserMessage(e.target.value);
-                        }}
-                        placeholder="Type Your Message..."
-                        value={userMessage}
-                    ></textarea>
-                    <button onClick={handleContact} className="send-btn">
-                        Send Now
-                    </button>
+    return (
+        <>
+            <div data-aos="zoom-in" id="page" className="section">
+                <h2> Contact With Us </h2>
+                <div className="two-row">
+                    <div data-aos="zoom-in" className="image">
+                        <img src="/images/contact_1.png" />
+                    </div>
+                    <div data-aos="zoom-in" className="form">
+                        <p className="text">
+                            Feel free to reach out to us at any time. Our
+                            dedicated team is always ready to assist you
+                            promptly. Connect with us directly for immediate
+                            assistance and let's stay in touch.
+                        </p>
+                        <h3>Fill Out This Form </h3>
+                        <span
+                            ref={messageRef}
+                            style={{ display: "none" }}
+                            className=""
+                        ></span>
+                        <input
+                            type="text"
+                            onChange={e => {
+                                setuserName(e.target.value);
+                            }}
+                            placeholder="Enter Your Name"
+                            value={userName}
+                        />
+                        <input
+                            type="number"
+                            onChange={e => {
+                                setTelephone(e.target.value);
+                            }}
+                            placeholder="Enter Your Phone Number"
+                            value={telephone}
+                        />
+                        <input
+                            type="email"
+                            onChange={e => {
+                                setuserEmail(e.target.value);
+                            }}
+                            placeholder="Enter Your Email"
+                            value={userEmail}
+                        />
+                        <input
+                            type="text"
+                            onChange={e => {
+                                setuserSubject(e.target.value);
+                            }}
+                            placeholder="Enter Your Subject"
+                            value={subject}
+                        />
+                        <textarea
+                            onChange={e => {
+                                setuserMessage(e.target.value);
+                            }}
+                            placeholder="Type Your Message..."
+                            value={userMessage}
+                        ></textarea>
+                        <button onClick={handleContact} className="send-btn">
+                            Send Now
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-         <ServiceSection />
-            <WhyUs /></>
+            <ServiceSection />
+            <WhyUs />
+        </>
     );
 };
 
