@@ -70,7 +70,8 @@
     padding: 0.5rem 0.7rem;
 }
 
-.form input, .form select {
+.form input,
+.form select {
     outline: none;
     border: 1px solid rgb(0, 197, 202);
     padding: 0.8rem 1rem;
@@ -78,7 +79,12 @@
     border-radius: 8px;
     width: 90%;
 }
-
+.form select {
+    background: transparent;
+}
+.form select option{
+    text-transform: capitalize;
+}
 
 .form textarea {
     width: 90%;

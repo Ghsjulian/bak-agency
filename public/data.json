@@ -448,7 +448,7 @@
     },
     {
         "type": "responsive-design",
-        "service_header_img": "/",
+        "service_header_img": "/heading/Responsive Design Header.png",
         "feture_img": "/images/responsive-feature.png",
         "header_title": "Create a Seamless User Experience Across All Devices",
         "left_service_tools": [
@@ -573,7 +573,7 @@
     },
     {
         "type": "ada-compliance",
-        "service_header_img": "/",
+        "service_header_img": "/images/ada-heading.png",
         "feture_img": "/images/ada-feature.png",
         "header_title": "Ensure Accessibility and Compliance with Our ADA Compliance Services",
         "left_service_tools": [

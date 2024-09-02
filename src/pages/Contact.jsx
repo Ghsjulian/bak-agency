@@ -57,6 +57,41 @@ const Contact = () => {
         }, 3000);
     };
 
+    const [countries, setCountry] = useState([]);
+    const [services, setService] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const getData = async () => {
+        let url = "/country-by-name.json";
+        try {
+            setIsLoading(true);
+            const response = await fetch(url);
+            const responseData = await response.json();
+            setCountry(responseData);
+            setIsLoading(false);
+        } catch (error) {
+            console.error("Error : ", error);
+        }
+    };
+    const getService = async () => {
+        let url = "/data.json";
+        try {
+            setIsLoading(true);
+            const response = await fetch(url);
+            const responseData = await response.json();
+            setService(responseData);
+            setIsLoading(false);
+        } catch (error) {
+            console.error("Error : ", error);
+        }
+    };
+    useEffect(() => {
+        getData();
+        getService()
+        if (isLoading) {
+            return;
+        }
+    }, []);
+
     return (
         <>
             <div data-aos="zoom-in" id="page" className="section">
@@ -103,24 +138,42 @@ const Contact = () => {
                             value={userEmail}
                         />
                         <select>
-                            <option>
-                                Select A Service
-                            </option>
-                            <option value="Web Development">
-                                Web Development
-                            </option>
-                            <option value="Web Development">
-                                Web Development
-                            </option>
-                            <option value="Web Development">
-                                Web Development
-                            </option>
-                            <option value="Web Development">
-                                Web Development
-                            </option>
-                            <option value="Web Development">
-                                Web Development
-                            </option>
+                            <option>Select A Service</option>
+                            {services &&
+                                services.map((service, index) => {
+                                    return (
+                                        <option
+                                            value={service.type}
+                                            key={index + 1}
+                                        >
+                                            {service.type}
+                                        </option>
+                                    );
+                                })}
+                        </select>
+                        <select>
+                            <option>Select Your Country</option>
+                            {countries &&
+                                countries.map((cntr, index) => {
+                                    return (
+                                        <option
+                                            value={cntr.country}
+                                            key={index + 1}
+                                        >
+                                            {cntr.country}
+                                        </option>
+                                    );
+                                })}
+                        </select>
+                        <select>
+                            <option>Select Instant Contact Messenger</option>
+                            <option>Messenger</option>
+                            <option>WhatsApp</option>
+                            <option>Instagram</option>
+                            <option>Twitter</option>
+                            <option>Skype</option>
+                            <option>WeChat</option>
+                            <option>Telegram</option>
                         </select>
 
                         {/*<input
