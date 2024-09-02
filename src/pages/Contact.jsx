@@ -60,12 +60,12 @@ const Contact = () => {
     return (
         <>
             <div data-aos="zoom-in" id="page" className="section">
-                <h2> Contact With Us </h2>
                 <div className="two-row">
                     <div data-aos="zoom-in" className="image">
                         <img src="/images/contact_1.png" />
                     </div>
                     <div data-aos="zoom-in" className="form">
+                        <h2> Contact With Us </h2>
                         <p className="text">
                             Feel free to reach out to us at any time. Our
                             dedicated team is always ready to assist you
@@ -102,14 +102,35 @@ const Contact = () => {
                             placeholder="Enter Your Email"
                             value={userEmail}
                         />
-                        <input
+                        <select>
+                            <option>
+                                Select A Service
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                        </select>
+
+                        {/*<input
                             type="text"
                             onChange={e => {
                                 setuserSubject(e.target.value);
                             }}
                             placeholder="Enter Your Subject"
                             value={subject}
-                        />
+                        />*/}
                         <textarea
                             onChange={e => {
                                 setuserMessage(e.target.value);
