@@ -1,9 +1,44 @@
-<script>
-     window.location.href = "http://localhost:5173/contact";
-</script>
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
+header(
+  "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+);
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+require "vendor/autoload.php";
+use PHPMailer\PHPMailer\PHPMailer;
 
+$request = $_SERVER["REQUEST_METHOD"];
+if ($request === "POST") {
+  $data = json_decode(file_get_contents("php://input"), true);
+  // echo json_encode($data);
+  $clent_name = $data["clent_name"];
+  $client_phone = $data["client_phone"];
+  $client_email = $data["client_email"];
+  $client_address = $data["client_address"];
+  $client_country = $data["client_country"];
+  $client_service = $data["client_service"];
+  $client_messanger = $data["client_messanger"];
+  $client_message = $data["client_message"];
+  $mail = new PHPMailer();
+  $mail->isSMTP();
+  $mail->SMTPDebug = 2;
+  $mail->Host = "smtp.hostinger.com";
+  $mail->Port = 587;
+  $mail->SMTPAuth = true;
+  $mail->Username = "info@bakdif.com";
+  $mail->Password = "NamRubel0808@";
+  // Set the sender email address to your Hostinger email address
+  $mail->setFrom("info@bakdif.com", "Bakdif Farm");
+  // Set the reply-to email address to the client's email address
+  $mail->addReplyTo($client_email, $clent_name);
+  // Set the recipient email address to your Hostinger email address
+  $mail->addAddress("info@bakdif.com", "Server");
+  $mail->Subject = "Email For - { $client_service}";
+  
+  $mail->Body = '
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
         <title>Email Signature</title>
@@ -24,7 +59,7 @@
             <tbody>
                 <tr>
                     <td colspan="2">
-                        <br>
+                        <br />
                         <span
                             style="
                                 font-size: 18pt;
@@ -249,3 +284,32 @@
         </table>
     </body>
 </html>
+  ';
+  
+  
+  
+  
+  if (!$mail->send()) {
+    echo json_encode([
+      "code" => 403,
+      "type" => "error",
+      "status" => false,
+      "message" => $mail->ErrorInfo,
+    ]);
+  } else {
+    echo json_encode([
+      "code" => 200,
+      "type" => "success",
+      "status" => true,
+      "message" => "Email Has Been Sent Successfully",
+    ]);
+  }
+} else {
+  echo json_encode([
+    "code" => 403,
+    "type" => "error",
+    "status" => false,
+    "message" => "POST Request Available Only!",
+  ]);
+}
+?>

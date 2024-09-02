@@ -11,24 +11,42 @@ const Contact = () => {
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");
     const [userEmail, setuserEmail] = useState("");
-    const [subject, setuserSubject] = useState("");
+    const [clientservice, setClientService] = useState("");
+    const [address, setAddress] = useState("");
+    const [clientCountry, setClientCountry] = useState("");
+    const [clientMessanger, setMessanger] = useState("");
     const [userMessage, setuserMessage] = useState("");
+
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
-    const baseURL = "http://localhost:8080/server/client-contact";
+    const baseURL = "http://localhost:8080/mail/contact.php";
     const handleContact = async e => {
         e.preventDefault();
-        if (userName && telephone && userEmail && subject && userMessage) {
+        if (
+            userName &&
+            telephone &&
+            userEmail &&
+            userMessage &&
+            address &&
+            clientMessanger &&
+            clientCountry &&
+            clientservice
+        ) {
             try {
                 axios
                     .post(baseURL, {
                         payloads: "__ghs_julian__",
-                        user_name: userName,
-                        user_phone: telephone,
-                        user_email: userEmail,
-                        user_message: userMessage
+                        clent_name: userName,
+                        client_phone: telephone,
+                        client_email: userEmail,
+                        client_address: address,
+                        client_country: clientCountry,
+                        client_service: clientservice,
+                        client_messanger: clientMessanger,
+                        client_message: userMessage
                     })
                     .then(response => {
+                        alert(JSON.stringify(response.data))
                         console.log(response.data);
                         setData(response.data);
                         messageRef.current.style.display = "block";
@@ -86,7 +104,7 @@ const Contact = () => {
     };
     useEffect(() => {
         getData();
-        getService()
+        getService();
         if (isLoading) {
             return;
         }
@@ -137,7 +155,21 @@ const Contact = () => {
                             placeholder="Enter Your Email"
                             value={userEmail}
                         />
-                        <select>
+                        <input
+                            type="text"
+                            onChange={e => {
+                                setAddress(e.target.value);
+                            }}
+                            placeholder="Enter Your Address"
+                            value={address}
+                        />
+
+                        <select
+                            onChange={e => {
+                                setClientService(e.target.value);
+                            }}
+                            value={clientservice}
+                        >
                             <option>Select A Service</option>
                             {services &&
                                 services.map((service, index) => {
@@ -151,7 +183,13 @@ const Contact = () => {
                                     );
                                 })}
                         </select>
-                        <select>
+
+                        <select
+                            onChange={e => {
+                                setClientCountry(e.target.value);
+                            }}
+                            value={clientCountry}
+                        >
                             <option>Select Your Country</option>
                             {countries &&
                                 countries.map((cntr, index) => {
@@ -165,7 +203,12 @@ const Contact = () => {
                                     );
                                 })}
                         </select>
-                        <select>
+                        <select
+                            onChange={e => {
+                                setMessanger(e.target.value);
+                            }}
+                            value={clientMessanger}
+                        >
                             <option>Select Instant Contact Messenger</option>
                             <option>Messenger</option>
                             <option>WhatsApp</option>
