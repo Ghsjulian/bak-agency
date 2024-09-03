@@ -8,6 +8,7 @@ const Contact = () => {
     document.title =
         "Contact With Us - Contact with us anytime , and get our best opportunity";
     const messageRef = useRef(null);
+    const socialRef = useRef(null);
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");
     const [userEmail, setuserEmail] = useState("");
@@ -15,11 +16,13 @@ const Contact = () => {
     const [address, setAddress] = useState("");
     const [clientCountry, setClientCountry] = useState("");
     const [clientMessanger, setMessanger] = useState("");
+    const [instantType, setInstantType] = useState("");
     const [userMessage, setuserMessage] = useState("");
-
+    const [isSelect, setSelect] = useState(false);
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
-    const baseURL = "http://localhost:8080/mail/contact.php";
+    const [isSent, setSent] = useState(false);
+    const baseURL = "http://bakdif.com/mail/contact.php";
     const handleContact = async e => {
         e.preventDefault();
         if (
@@ -29,10 +32,12 @@ const Contact = () => {
             userMessage &&
             address &&
             clientMessanger &&
+            instantType &&
             clientCountry &&
             clientservice
         ) {
             try {
+                setSent(true);
                 axios
                     .post(baseURL, {
                         payloads: "__ghs_julian__",
@@ -43,16 +48,20 @@ const Contact = () => {
                         client_country: clientCountry,
                         client_service: clientservice,
                         client_messanger: clientMessanger,
+                        instant_type:
+                            socialRef.current.getAttribute("data") +
+                            instantType,
                         client_message: userMessage
                     })
                     .then(response => {
-                        alert(JSON.stringify(response.data))
+                        setSent(false);
+                        //alert(JSON.stringify(response.data.message));
                         console.log(response.data);
-                        setData(response.data);
                         messageRef.current.style.display = "block";
                         messageRef.current.classList.remove("error");
                         messageRef.current.classList.add("success");
-                        messageRef.current.textContent = response.data;
+                        messageRef.current.textContent =
+                            response.data[0].message;
                     });
             } catch (error) {
                 console.log(error);
@@ -60,7 +69,7 @@ const Contact = () => {
                 messageRef.current.style.display = "block";
                 messageRef.current.classList.remove("success");
                 messageRef.current.classList.add("error");
-                messageRef.current.textContent = error;
+                messageRef.current.textContent = error.message;
             }
         } else {
             messageRef.current.style.display = "block";
@@ -102,6 +111,16 @@ const Contact = () => {
             console.error("Error : ", error);
         }
     };
+
+    const strMaker = str => {
+        str = str.replace(/-/g, " ");
+        str = str
+            .split(" ")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
+        return str;
+    };
+
     useEffect(() => {
         getData();
         getService();
@@ -175,10 +194,10 @@ const Contact = () => {
                                 services.map((service, index) => {
                                     return (
                                         <option
-                                            value={service.type}
+                                            value={strMaker(service.type)}
                                             key={index + 1}
                                         >
-                                            {service.type}
+                                            {strMaker(service.type)}
                                         </option>
                                     );
                                 })}
@@ -204,9 +223,16 @@ const Contact = () => {
                                 })}
                         </select>
                         <select
+                            ref={socialRef}
                             onChange={e => {
                                 setMessanger(e.target.value);
+                                setSelect(true);
                             }}
+                            data={
+                                "https://" +
+                                clientMessanger.toLowerCase() +
+                                ".com/"
+                            }
                             value={clientMessanger}
                         >
                             <option>Select Instant Contact Messenger</option>
@@ -218,15 +244,16 @@ const Contact = () => {
                             <option>WeChat</option>
                             <option>Telegram</option>
                         </select>
-
-                        {/*<input
-                            type="text"
-                            onChange={e => {
-                                setuserSubject(e.target.value);
-                            }}
-                            placeholder="Enter Your Subject"
-                            value={subject}
-                        />*/}
+                        {isSelect && (
+                            <input
+                                type="text"
+                                onChange={e => {
+                                    setInstantType(e.target.value);
+                                }}
+                                placeholder="Enter Your Username"
+                                value={instantType}
+                            />
+                        )}
                         <textarea
                             onChange={e => {
                                 setuserMessage(e.target.value);
@@ -235,7 +262,7 @@ const Contact = () => {
                             value={userMessage}
                         ></textarea>
                         <button onClick={handleContact} className="send-btn">
-                            Send Now
+                            {isSent ? "Sending..." : "Send Now"}
                         </button>
                     </div>
                 </div>

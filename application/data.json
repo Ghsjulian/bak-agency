@@ -98,7 +98,7 @@
     },
     {
         "type": "market-research",
-        "service_header_img": "/services/market-research-heading.png",
+        "service_header_img": "/heading/Market Research Header.png",
         "feture_img": "/services/market-research-feature.png",
         "header_title": "Unlock Valuable Insights with Our Market Research Services",
         "left_service_tools": [
@@ -123,7 +123,7 @@
     },
     {
         "type": "digital-strategy",
-        "service_header_img": "/services/Digital Transformation Feature.png",
+        "service_header_img": "/heading/Digital Strategy Header.png",
         "feture_img": "services/Digital Transformation Feature.png",
         "header_title": "Transform Your Business with Our Digital Strategy Services",
         "left_service_tools": [
@@ -148,7 +148,7 @@
     },
     {
         "type": "customer-insights",
-        "service_header_img": "/services/Customer Insights Heading.png",
+        "service_header_img": "/heading/Customer Insights Header.png",
         "feture_img": "/services/Customer Insights Feature.png",
         "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
         "left_service_tools": [
@@ -173,7 +173,7 @@
     },
     {
         "type": "brand-strategy",
-        "service_header_img": "/services/Branding Header.png",
+        "service_header_img": "/heading/Brand Strategy Header.png",
         "feture_img": "/services/Branding Feature.png",
         "header_title": "Elevate Your Brand with Our Expert Brand Strategy Services",
         "left_service_tools": [
@@ -198,7 +198,7 @@
     },
     {
         "type": "digital-transformation",
-        "service_header_img": "/services/Digital Transformation Feature.png",
+        "service_header_img": "/heading/Digital Transformation Header.png",
         "feture_img": "/services/Digital Transformation Feature.png",
         "header_title": "Transform Your Business with Our Digital Transformation Services",
         "left_service_tools": [
@@ -223,7 +223,7 @@
     },
     {
         "type": "graphic-design",
-        "service_header_img": "/services/Graphics Design Header.png",
+        "service_header_img": "/heading/Graphics Design Header.png",
         "feture_img": "/services/Graphics Design Feature.png",
         "header_title": "Elevate Your Visual Identity with Our Expert Graphic Design Services",
         "left_service_tools": [
@@ -248,7 +248,7 @@
     },
     {
         "type": "video-production",
-        "service_header_img": "/services/Video Production Header.png",
+        "service_header_img": "/heading/Video Production Header.png",
         "feture_img": "/services/Video Production Feature.png",
         "header_title": "Bring Your Story to Life with Our Expert Video Production Services",
         "left_service_tools": [
@@ -273,7 +273,7 @@
     },
     {
         "type": "copywriting",
-        "service_header_img": "/services/Copywriting Header.png",
+        "service_header_img": "/heading/Copy Writing Service Header.png",
         "feture_img": "/services/Copywriting Feature.png",
         "header_title": "Craft Compelling Content that Drives Results with Our Expert Copywriting Services",
         "left_service_tools": [
@@ -298,7 +298,7 @@
     },
     {
         "type": "logo-desgin",
-        "service_header_img": "/services/logo-desgin-heading.png",
+        "service_header_img": "/heading/Logo Design Header.png",
         "feture_img": "/services/logo-desgin-feature.png",
         "header_title": "Create a Lasting Impression with Our Expert Logo Design Services",
         "left_service_tools": [
@@ -323,7 +323,7 @@
     },
     {
         "type": "branding",
-        "service_header_img": "/services/Branding Header.png",
+        "service_header_img": "/heading/Branding Header.png",
         "feture_img": "/services/Branding Feature.png",
         "header_title": "Develop a Unique Brand Identity that Sets You Apart with Our Expert Branding Services",
         "left_service_tools": [
@@ -348,7 +348,7 @@
     },
     {
         "type": "blog-writing",
-        "service_header_img": "/images/blog-writing-headinh.png",
+        "service_header_img": "/heading/Blog Writing Header.png",
         "feture_img": "/images/blog-writing-feature.png",
         "header_title": "Craft Compelling Content that Resonates with Your Audience with Our Expert Blog Writing Services",
         "left_service_tools": [
@@ -373,7 +373,7 @@
     },
     {
         "type": "sound-canvas",
-        "service_header_img": "/services/Sound Production Heading.png",
+        "service_header_img": "/heading/Sound Canvas Header.png",
         "feture_img": "/services/Sound Production Feature.png",
         "header_title": "Elevate Your Brand's Sonic Identity with Our Expert Sound Canvas Services",
         "left_service_tools": [
@@ -398,7 +398,7 @@
     },
     {
         "type": "product-descriptions",
-        "service_header_img": "/images/product-heading.png",
+        "service_header_img": "/heading/Products Description Header.png",
         "feture_img": "/images/product-feature.png",
         "header_title": "Craft Compelling Product Descriptions that Drive Sales and Customer Engagement",
         "left_service_tools": [
@@ -423,7 +423,7 @@
     },
     {
         "type": "content-strategy",
-        "service_header_img": "/services/",
+        "service_header_img": "/heading/Content Strategy Header.png",
         "feture_img": "/images/content-strategy.png",
         "header_title": "Develop a Winning Content Strategy that Drives Business Results",
         "left_service_tools": [
@@ -448,7 +448,7 @@
     },
     {
         "type": "responsive-design",
-        "service_header_img": "/images/responsive-feature.png",
+        "service_header_img": "/heading/Responsive Design Header.png",
         "feture_img": "/images/responsive-feature.png",
         "header_title": "Create a Seamless User Experience Across All Devices",
         "left_service_tools": [
@@ -473,7 +473,7 @@
     },
     {
         "type": "e-commerce-solution",
-        "service_header_img": "/images/e-commerce-heading.png",
+        "service_header_img": "/heading/E-commerce Solutions Header.png",
         "feture_img": "/images/e-commerce-feature.png",
         "header_title": "Build a Successful Online Store with Our E-Commerce Solutions",
         "left_service_tools": [
@@ -498,7 +498,7 @@
     },
     {
         "type": "app-development",
-        "service_header_img": "/images/app-development-heading.png",
+        "service_header_img": "/heading/App Development Header.png",
         "feture_img": "/images/app-development-feture.png",
         "header_title": "Transform Your Ideas into Engaging Mobile Apps",
         "left_service_tools": [
@@ -523,7 +523,7 @@
     },
     {
         "type": "cms-integration",
-        "service_header_img": "/images/cms-intigration.png",
+        "service_header_img": "/heading/CMS Integration Header.png",
         "feture_img": "/images/cms-integration.png",
         "header_title": "Streamline Your Content Management with Our CMS Integration Services",
         "left_service_tools": [
@@ -548,7 +548,7 @@
     },
     {
         "type": "custom-web-solution",
-        "service_header_img": "/images/web-solution-heading.png",
+        "service_header_img": "/heading/Custom Web Solution Header.png",
         "feture_img": "/images/web-solution-feature.png",
         "header_title": "Unlock Your Business Potential with Custom Web Solutions",
         "left_service_tools": [
