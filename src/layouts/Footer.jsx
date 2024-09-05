@@ -38,6 +38,7 @@ const Footer = () => {
                 />
                 <button>Subscribe</button>
             </div>
+            
             <div className="footer-flex">
                 <div className="flex-row">
                     <h3>About Company</h3>
@@ -82,6 +83,45 @@ const Footer = () => {
                     <li>
                         <NavLink to="/contact">Contact Us</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="#">Email : info@bakdif.com</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Phone : +8801788******56</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Contact Address : Moulovibazar</NavLink>
+                    </li>
+                </div>
+            </div>
+            {/* Bootom Address Section Here */}
+             <div className="footer-flex">
+                <div className="flex-row">
+                    <h3>United States (USA)</h3>
+                     <li>
+                        <NavLink to="#">Email : info@bakdif.com</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Phone : +8801788******56</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Contact Address : Moulovibazar</NavLink>
+                    </li>
+                </div>
+                <div className="flex-row">
+                    <h3>Bangladesh Address</h3>
+                    <li>
+                        <NavLink to="#">Email : info@bakdif.com</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Phone : +8801788******56</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Contact Address : Moulovibazar</NavLink>
+                    </li>
+                </div>
+                <div className="flex-row">
+                    <h3>United Kingdom (UK)</h3>
                     <li>
                         <NavLink to="#">Email : info@bakdif.com</NavLink>
                     </li>

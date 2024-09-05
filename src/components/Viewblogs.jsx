@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import OurServices from "./OurServices"
+import WhyUs from "./WhyUs"
 const Viewblogs = () => {
-    return (
+    return (<>
         <div data-aos="zoom-in" id="page" className="section">
             <br />
             <br />
@@ -147,6 +148,8 @@ Embrace the evolution of SEO with us and transform your digital presence with Fu
                 </div>
             </div>
         </div>
+        <OurServices/>
+        <WhyUs/></>
     );
 };
 

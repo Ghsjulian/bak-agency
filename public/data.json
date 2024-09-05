@@ -71,7 +71,7 @@
     },
     {
         "type": "email-marketing",
-        "service_header_img": "/services/email-marketing-heading.png",
+        "service_header_img": "/heading/Email Marketing Header.png",
         "feture_img": "/services/email-marketing-feature.png",
         "header_title": "Our Email Marketing Campaign Services",
         "left_service_tools": [
@@ -397,7 +397,7 @@
         "service_bootom": "<strong style='color:#000'>Elevate your brand's sonic identity with our expert sound canvas services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation!</strong>"
     },
     {
-        "type": "product-descriptions",
+        "type": "product-description",
         "service_header_img": "/heading/Products Description Header.png",
         "feture_img": "/images/product-feature.png",
         "header_title": "Craft Compelling Product Descriptions that Drive Sales and Customer Engagement",
@@ -570,30 +570,5 @@
         "strategy_heading": "Why Choose Our Custom Web Solutions:",
         "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Latest Technologies:</b> Our team stays up-to-date with the latest web development trends and technologies.<br /><b>Customized Solutions:</b> We develop tailored web solutions that meet your unique business needs and goals.<br /><b>Agile Development Methodology:</b> We follow an agile approach to ensure rapid development, continuous improvement, and flexibility.<br /><b>Quality Assurance and Testing:</b> We conduct thorough testing and QA to ensure your web solution is bug-free and performs optimally.</p>",
         "service_bootom": "<strong style='color:#000'>Unlock your business potential with our custom web solutions.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
-    },
-    {
-        "type": "ada-compliance",
-        "service_header_img": "/images/ada-heading.png",
-        "feture_img": "/images/ada-feature.png",
-        "header_title": "Ensure Accessibility and Compliance with Our ADA Compliance Services",
-        "left_service_tools": [
-            "Website Accessibility Audits",
-            "WCAG 2.1 Compliance",
-            "Section 508 Compliance",
-            "ADA Compliance Consulting",
-            "Accessibility Remediation and Repair"
-        ],
-        "right_service_tools": [
-            "Accessible Design and Development",
-            "Screen Reader Testing and Optimization",
-            "Color Contrast Analysis and Optimization",
-            "Closed Captioning and Audio Description",
-            "Ongoing Compliance Monitoring and Support"
-        ],
-        "service_title": "ADA Compliance",
-        "service_desc": "Make Your Website Accessible to All with Our Expert ADA Compliance Services. Ensure Equal Access and Avoid Legal Risks with Our Comprehensive Compliance Solutions.",
-        "strategy_heading": "Why Choose Our ADA Compliance Services:",
-        "strategy_desc": "<p style={{'width': '100%', 'maxWidth': '100%'}}><b>Expertise in Accessibility Guidelines:</b> Our team is well-versed in WCAG 2.1, Section 508, and ADA regulations.<br /><b>Comprehensive Audits and Remediation:</b> We identify and fix accessibility issues to ensure compliance.<br /><b>Customized Solutions:</b> We develop tailored accessibility solutions that meet your unique business needs.<br /><b>Ongoing Support and Monitoring:</b> We provide continuous support to ensure your website remains compliant and accessible.</p>",
-        "service_bootom": "<strong style='color:#000'>Ensure accessibility and compliance with our ADA compliance services.</strong><strong><a style='color:#F77A14' href='/contact'>Contact us</a> today for a free consultation and let's get started!</strong>"
     }
 ]

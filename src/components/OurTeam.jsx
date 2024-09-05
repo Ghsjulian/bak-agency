@@ -3,10 +3,11 @@ import client_1 from "../assets/images/client_1.png";
 import client1 from "../assets/images/client1.jpg";
 import client2 from "../assets/images/client2.jpg";
 import client4 from "../assets/images/client4.jpg";
-
+import OurServices from "./OurServices"
+import WhyUs from "./WhyUs"
 const OurTeam = () => {
     document.title = "Our Team - See Our Team Members";
-    return (
+    return (<>
         <div data-aos="zoom-in" id="page" className="section">
             <h2> Our Team Members </h2>
             <p style={{ marginTop: ".7rem" }} className="text">
@@ -53,6 +54,8 @@ const OurTeam = () => {
                 </div>
             </div>
         </div>
+        <OurServices/>
+        <WhyUs/></>
     );
 };
 

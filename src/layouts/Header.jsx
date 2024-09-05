@@ -293,14 +293,7 @@ const Header = () => {
                                                             Custom Web Solutions
                                                         </NavLink>
                                                     </li>
-                                                    <li className="dropdown-link">
-                                                        <NavLink
-                                                            onClick={closeNav}
-                                                            to="/service/ada-compliance"
-                                                        >
-                                                            ADA Compliance
-                                                        </NavLink>
-                                                    </li>
+                                                    
                                                     <div className="arrow"></div>
                                                 </ul>
                                             </div>

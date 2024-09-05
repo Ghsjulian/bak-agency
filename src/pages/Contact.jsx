@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import agent_3 from "../assets/images/agent_3.png";
 import WhyUs from "../components/WhyUs";
-import ServiceSection from "../components/ServiceSection";
+import OurServices from "../components/OurServices";
 
 const Contact = () => {
     document.title =
@@ -22,7 +22,8 @@ const Contact = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [isSent, setSent] = useState(false);
-    const baseURL = "http://bakdif.com/mail/contact.php";
+    // const baseURL = "http://bakdif.com/mail/contact.php";
+    const baseURL = "http://localhost:8080/mail/contact.php";
     const handleContact = async e => {
         e.preventDefault();
         if (
@@ -55,15 +56,41 @@ const Contact = () => {
                     })
                     .then(response => {
                         setSent(false);
+                        let height = window.innerHeight;
+                        let width = window.innerWidth;
+                        let mobileHeight = 780;
+                        let desk = 150;
+                        window.scrollTo({
+                            top: width > 400 ? desk : mobileHeight,
+                            behavior: "smooth"
+                        });
                         //alert(JSON.stringify(response.data.message));
-                        console.log(response.data);
+                        // console.log(response.data);
                         messageRef.current.style.display = "block";
                         messageRef.current.classList.remove("error");
                         messageRef.current.classList.add("success");
                         messageRef.current.textContent =
-                            response.data[0].message;
+                            "Your Email Has Been Successfully Sent !";
+                        setClientCountry("");
+                        setService("");
+                        setAddress("");
+                        setClientService("");
+                        setuserEmail("");
+                        setTelephone("");
+                        setMessanger("");
+                        setInstantType("");
+                        setuserName("");
+                        setuserMessage("");
                     });
             } catch (error) {
+                let height = window.innerHeight;
+                let width = window.innerWidth;
+                let mobileHeight = 780;
+                let desk = 150;
+                window.scrollTo({
+                    top: width > 400 ? desk : mobileHeight,
+                    behavior: "smooth"
+                });
                 console.log(error);
                 setError(error);
                 messageRef.current.style.display = "block";
@@ -72,6 +99,14 @@ const Contact = () => {
                 messageRef.current.textContent = error.message;
             }
         } else {
+            let height = window.innerHeight;
+            let width = window.innerWidth;
+            let mobileHeight = 780;
+            let desk = 150;
+            window.scrollTo({
+                top: width > 400 ? desk : mobileHeight,
+                behavior: "smooth"
+            });
             messageRef.current.style.display = "block";
             messageRef.current.classList.remove("success");
             messageRef.current.classList.add("error");
@@ -132,11 +167,19 @@ const Contact = () => {
     return (
         <>
             <div data-aos="zoom-in" id="page" className="section">
+                <h2>Contact With Us </h2>
                 <div className="two-row">
                     <div data-aos="zoom-in" className="image">
                         <img src="/images/contact_1.png" />
+                        <p className="text">
+                            Feel free to reach out to us at any time. Our
+                            dedicated team is always ready to assist you
+                            promptly. Connect with us directly for immediate
+                            assistance and let's stay in touch.
+                        </p>
                     </div>
                     <div data-aos="zoom-in" className="form">
+                        {/*
                         <h2> Contact With Us </h2>
                         <p className="text">
                             Feel free to reach out to us at any time. Our
@@ -144,8 +187,10 @@ const Contact = () => {
                             promptly. Connect with us directly for immediate
                             assistance and let's stay in touch.
                         </p>
+                        */}
                         <h3>Fill Out This Form </h3>
                         <span
+                            id="error-message"
                             ref={messageRef}
                             style={{ display: "none" }}
                             className=""
@@ -241,7 +286,7 @@ const Contact = () => {
                             <option>Instagram</option>
                             <option>Twitter</option>
                             <option>Skype</option>
-                            <option>WeChat</option>
+                            <option>Slack</option>
                             <option>Telegram</option>
                         </select>
                         {isSelect && (
@@ -250,7 +295,7 @@ const Contact = () => {
                                 onChange={e => {
                                     setInstantType(e.target.value);
                                 }}
-                                placeholder="Enter Your Username"
+                                placeholder={`Enter Your ${clientMessanger} Username`}
                                 value={instantType}
                             />
                         )}
@@ -267,7 +312,8 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <ServiceSection />
+            <br />
+            <OurServices />
             <WhyUs />
         </>
     );

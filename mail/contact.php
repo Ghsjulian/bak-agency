@@ -51,7 +51,8 @@ Client Mobile        :   $client_phone
 Client Email         :   $client_email
 Client Address       :   $client_address
 Client Service       :   $client_service
-Client Instant Chat  :   <a href='$instant_type' traget='_blank'>$client_messanger</a>
+Client Instant Name  :   $client_messanger
+Client Instant Chat  :   $instant_type
 
 Please let me know if you have recived my email or reply me here.
 

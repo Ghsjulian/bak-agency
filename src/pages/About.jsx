@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import client_1 from "../assets/images/client_1.png";
 import WhyUs from "../components/WhyUs";
-import ServiceSection from "../components/ServiceSection";
+import OurServices from "../components/OurServices";
+
 const About = () => {
     document.title = "About us - See and know more about our services";
     useEffect(() => {
@@ -35,7 +36,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <ServiceSection />
+            <OurServices />
             <WhyUs />
         </>
     );
