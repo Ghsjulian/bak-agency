@@ -9,6 +9,7 @@ const Contact = () => {
         "Contact With Us - Contact with us anytime , and get our best opportunity";
     const messageRef = useRef(null);
     const socialRef = useRef(null);
+    const sendRef = useRef(null);
     const [userName, setuserName] = useState("");
     const [telephone, setTelephone] = useState("");
     const [userEmail, setuserEmail] = useState("");
@@ -69,6 +70,7 @@ const Contact = () => {
                         messageRef.current.style.display = "block";
                         messageRef.current.classList.remove("error");
                         messageRef.current.classList.add("success");
+                        sendRef.current.textContent = "Email Sent"
                         messageRef.current.textContent =
                             "Your Email Has Been Successfully Sent !";
                         setClientCountry("");
@@ -114,6 +116,7 @@ const Contact = () => {
                 "Please Fill Out The Contact Form !";
         }
         setTimeout(() => {
+            sendRef.current.textContent = "Send Now"
             messageRef.current.style.display = "none";
             messageRef.current.textContent = "";
         }, 3000);
@@ -306,7 +309,7 @@ const Contact = () => {
                             placeholder="Type Your Message..."
                             value={userMessage}
                         ></textarea>
-                        <button onClick={handleContact} className="send-btn">
+                        <button ref={sendRef} onClick={handleContact} className="send-btn">
                             {isSent ? "Sending..." : "Send Now"}
                         </button>
                     </div>
