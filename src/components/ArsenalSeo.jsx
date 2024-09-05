@@ -19,26 +19,23 @@ const ArsenalSeo = () => {
                     <img src="/tools/KWFinder.png" />
                 </div>
                 <div className="slide">
-                    <img src="/tools/KWFinder.png" />
-                </div>
-                <div className="slide">
                     <img src="/tools/Rivalflow.png" />
                 </div>
                 <div className="slide">
                     <img src="/tools/Serpstat.png" />
                 </div>
                 <div className="slide">
-<img src="/tools/Answer The Public.png" />
-</div>
-<div className="slide">
-<img src="/tools/Backlink Repository.png" />
-</div>
-<div className="slide">
-<img src="/tools/Buzzstream.png" />
-</div>
-<div className="slide">
-<img src="/tools/Seobilty.png" />
-</div>
+                    <img src="/tools/Answer The Public.png" />
+                </div>
+                <div className="slide">
+                    <img src="/tools/Backlink Repository.png" />
+                </div>
+                <div className="slide">
+                    <img src="/tools/Buzzstream.png" />
+                </div>
+                <div className="slide">
+                    <img src="/tools/Seobilty.png" />
+                </div>
             </Marquee>
         </div>
     );
