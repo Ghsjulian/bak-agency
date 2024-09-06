@@ -1,10 +1,121 @@
 [
     {
         "id": 1,
-        "img": "/team/ghs_1.jpg",
+        "img": "/team/Kamal Hussain.png",
+        "name": "Kamal Hussain",
+        "skill": "Executive Director",
+        "desc": "As the Executive Director, Kamal oversees BAK Digital Firm's strategic direction. His industry expertise and leadership drive innovation and client success."
+    },
+    {
+        "id": 2,
+        "img": "/team/Ahia Chowdhury.png",
+        "name": "Ahia Chowdhury",
+        "skill": "Managing Director",
+        "desc": "As Managing Director, Ahia Chowdhury is responsible for the day-to-day operations and strategic growth of BAK Digital Firm. His ability to foster a collaborative work environment contribute to the agency's success. Ahia's dedication to delivering exceptional client service and his commitment to staying ahead of industry trends ensure that BAK Digital Firm continues to thrive."
+    },
+    {
+        "id": 3,
+        "img": "/team/Ghsjulian.png",
         "name": "Ghs Julian",
-        "skill": "Full Stack Developer",
-        "desc": "Hello World"
+        "skill": "Full Stack Developer (Custom Coding)",
+        "desc": "A Full stack web application developer and designer. As a full stack developer familiar with MERN STACK development. He is expert in web application builder and API integration with Nodejs. He is also a programmer."
+    },
+    {
+        "id": 4,
+        "img": "/team/Sabbir Ahmed.png",
+        "name": "Sabbir Ahmed",
+        "skill": "Operations Manager (UAE)",
+        "desc": "As the Operations Manager for the UAE, Sabbir Ahmed oversees the day-to-day operations of BAK Digital Firm's UAE-based. His expertise ensures the efficient execution of projects and the delivery of high-quality digital solutions. Sabbir Ahmed's strong understanding of the UAE market and his ability to build relationships with local clients contribute to the agency's success in the region."
+    },
+    {
+        "id": 5,
+        "img": "/team/MD Chowdhury.png",
+        "name": "MD Chowdhury",
+        "skill": "Operations Manager (USA)",
+        "desc": "As the Operations Manager for the USA, MD Chowdhury oversees the day-to-day operations of BAK Digital Firm's US-based team. His expertise in project management, team coordination & ensures the efficient execution of projects and the delivery of high-quality digital solutions. MD Chowdhury's strong understanding of the US market and his ability to build relationships with local clients contribute to the agency's success in the region."
+    },
+    {
+        "id": 6,
+        "img": "/team/Saqib MD.png",
+        "name": "Saqib MD",
+        "skill": "Operations Manager (UK)",
+        "desc": "As the Operations Manager for the UK, Saqib MD oversees the day-to-day operations of BAK Digital Firm's UK-based team. His expertise in project management, team coordination and ensures the efficient execution of projects and the delivery of high-quality digital solutions. Saqib's strong understanding of the UK market and his ability to build relationships with local clients contribute to the agency's success in the region."
+    },
+    {
+        "id": 7,
+        "img": "/team/",
+        "name": "Jibon Chowdhury",
+        "skill": "Project Manager (USA)",
+        "desc": ""
+    },
+    {
+        "id": 8,
+        "img": "/team/Faiza Bushra.png",
+        "name": "Faiza Bushra",
+        "skill": "Web Developer (Wordpress CMS)",
+        "desc": ""
+    },
+    {
+        "id": 9,
+        "img": "/team/Koli.png",
+        "name": "Tanjia Koly",
+        "skill": "Web Designer (Wordpress CMS)",
+        "desc": ""
+    },
+    {
+        "id": 10,
+        "img": "/team/Abid Redwan.png",
+        "name": "Abid Redwan",
+        "skill": "E-Commerce Specialist (Wordpress, Woocomerc)",
+        "desc": ""
+    },
+    {
+        "id": 11,
+        "img": "/team/Raisa Mukta (2).png",
+        "name": "Raisa Mukta",
+        "skill": "Web Designer (Shopify)",
+        "desc": ""
+    },
+    {
+        "id": 12,
+        "img": "/team/Shimu Sanjan.png",
+        "name": "Shimu Sanjan",
+        "skill": "Video Editor",
+        "desc": ""
+    },
+    {
+        "id": 13,
+        "img": "/team/",
+        "name": "Sheikh Shammi",
+        "skill": "Graphics Designer",
+        "desc": ""
+    },
+    {
+        "id": 14,
+        "img": "/team/Sagor Sheikh.png",
+        "name": "Sagor Sheikh",
+        "skill": "Audio Composer",
+        "desc": ""
+    },
+    {
+        "id": 15,
+        "img": "/team/Tania Tanjim.png",
+        "name": "Tania Tanjim",
+        "skill": "Seach Engine Speacilist (SEO)",
+        "desc": ""
+    },
+    {
+        "id": 16,
+        "img": "/team/Kayium.png",
+        "name": "Kayium",
+        "skill": "Article Writer",
+        "desc": ""
+    },
+    {
+        "id": 17,
+        "img": "/team/",
+        "name": "Abdullah",
+        "skill": "Digital Marketing Expert",
+        "desc": ""
     }
 ]
-

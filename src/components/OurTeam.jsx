@@ -1,24 +1,52 @@
-import React from "react";
-import client_1 from "../assets/images/client_1.png";
-import client1 from "../assets/images/client1.jpg";
-import client2 from "../assets/images/client2.jpg";
-import client4 from "../assets/images/client4.jpg";
-import OurServices from "./OurServices"
-import WhyUs from "./WhyUs"
+import React, { useState, useEffect } from "react";
+import OurServices from "./OurServices";
+import WhyUs from "./WhyUs";
 const OurTeam = () => {
     document.title = "Our Team - See Our Team Members";
-    return (<>
-        <div data-aos="zoom-in" id="page" className="section">
-            <h2> Our Team Members </h2>
-            <p style={{ marginTop: ".7rem" }} className="text">
-                Meet our team expertises. We have a group of team and we can
-                handle any task byu sharing our experience. Here is our team
-                members name and their skills and experienc.
-            </p>
-            <div className="grid-row">
-                
-                
-                {/*
+    const [team, setTeam] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const getData = async () => {
+        let url = "/our-team.json";
+        try {
+            setIsLoading(true);
+            const response = await fetch(url);
+            const responseData = await response.json();
+            setTeam(responseData);
+            setIsLoading(false);
+        } catch (error) {
+            console.error("Error : ", error);
+        }
+    };
+    useEffect(() => {
+        getData();
+        if (isLoading) {
+            return;
+        }
+    }, [isLoading]);
+
+    return (
+        <>
+            <div data-aos="zoom-in" id="page" className="section">
+                <h2> Our Team Members </h2>
+                <p style={{ marginTop: ".7rem" }} className="text">
+                    Meet our team expertises. We have a group of team and we can
+                    handle any task byu sharing our experience. Here is our team
+                    members name and their skills and experienc.
+                </p>
+                <div className="grid-row">
+                    {team.length > 0 &&
+                        team.map((el, index) => {
+                            return (
+                                <div className="card" key={el.id}>
+                                    <img src={el.img} alt={el.name} />
+                                    <h3>{el.name}</h3>
+                                    <h4>{el.skill} </h4>
+                                    <p>{el.desc.slice(0,156)}</p>
+                                </div>
+                            );
+                        })}
+
+                    {/*
                 <div className="card">
                     <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
@@ -56,10 +84,11 @@ const OurTeam = () => {
                     </p>
                 </div>
                 */}
+                </div>
             </div>
-        </div>
-        <OurServices/>
-        <WhyUs/></>
+            <OurServices />
+            <WhyUs />
+        </>
     );
 };
 
