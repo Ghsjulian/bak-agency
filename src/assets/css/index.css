@@ -188,6 +188,7 @@ main .hide {
 }
 
 /* FOOTER STYLING HERE */
+/*
 footer {
     width: 100%;
     position: relative;
@@ -243,16 +244,15 @@ footer .footer-flex {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
 }
 .footer-flex .flex-row {
     text-align: justify;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
 }
 .flex-row h3 {
     color: #fff450;
-    /*text-align: center; */
     margin: 0.3rem 0.5rem;
 }
 .flex-row li {
@@ -269,10 +269,27 @@ footer .footer-flex {
     font-weight: 300;
     color: #ffffff;
 }
+
+footer .bootom-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+}
+.bootom-flex .bootom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+}
+.bootom-row li {
+    list-style-type :none;
+    color: #fff;
+    text-align: justify;
+}
 @media (max-width: 768px) {
-    footer {
-        /* width: 100%; */
-    }
+    
     footer .footer-flex {
         width: 100%;
         text-align: justify;
@@ -347,7 +364,117 @@ footer p a:hover {
     translate: scale(1.1);
     color: rgb(196, 61, 0);
 }
+*/
+/* Footer Styling Here */
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem 0.3rem;
+    background: var(--clr-bg-header);
+}
+footer .top-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    border-style: double;
+    border-width: 4px;
+    border-color: #fff;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+}
+.top-flex::placeholder {
+    color: rgb(232, 232, 232);
+}
+.top-flex input {
+    outline: none;
+    background: transparent;
+    padding: 0.6rem 1rem;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgb(22, 188, 255);
+    color: rgb(22, 188, 255);
+}
+.top-flex .subscribe {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0.6rem 1rem;
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(22, 188, 255);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.top-flex #contact {
+    outline: none;
+    text-align: center;
+    margin-right: 6rem;
+    border: 1px solid transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    background: rgb(203, 96, 0);
+    color: #ffff;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.top-flex .subscribe:hover {
+    background: transparent;
+    border: 1px solid rgb(22, 188, 255);
+}
+.top-flex #contact:hover {
+    background: transparent;
+    border: 1px solid rgb(203, 96, 0);
+}
+footer .mid-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0.5rem 1rem;
+}
 
+.mid-flex .flex-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 0.3rem 0;
+}
+.flex-row h3 {
+    color: rgb(249, 139, 41);
+    text-align: justify;
+}
+.flex-row li {
+    margin: 0.5rem 0;
+    list-style-type: none;
+    color: #fff;
+}
+.flex-row li a {
+    color: #fff;
+    text-align: justify;
+}
+
+footer .bottom-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0.5rem 1rem;
+}
 /* Adding Animations */
 @keyframes heroAnimation {
     0% {

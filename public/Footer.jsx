@@ -28,21 +28,18 @@ const Footer = () => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     };
     return (
-        <footer>
-            <div className="top-flex">
-                <div className="email-area">
-                    <input
-                        type="email"
-                        placeholder="Enter Your Email Address"
-                    />
-                    <button class="subscribe">Subscribe </button>
-                </div>
-                <NavLink id="contact" to="/contact">
-                    Get In Touch
-                </NavLink>
+        <footer className="footer">
+            <h3 id="join">Join With Us</h3>
+            <div className="subscribe">
+                <input
+                    type="email"
+                    placeholder="Enter Email To Subscribe"
+                    required
+                />
+                <button>Subscribe</button>
             </div>
-            {/* Footer Contact Information here */}
-            <div className="mid-flex">
+
+            <div className="footer-flex">
                 <div className="flex-row">
                     <h3>About Company</h3>
                     <li>
@@ -90,27 +87,68 @@ const Footer = () => {
                         <NavLink to="#">Email : info@bakdif.com</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">
-                            1096 Genesee st buffalo NY 14211
-                            <br /> Mobile- 7169483740
-                        </NavLink>
+                        <NavLink to="#">Phone : +8801788******56</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">
-                            Matarkapon Moulvibazar,
-                            <br /> Sylhet, Bangladesh Mobile- Pore dicchi
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="#">
-                            Hind Mohammed Ali Alowais Building, <br />
-                            Naif, 203, Deira, Dubai Mobile- 071543543980
-                        </NavLink>
+                        <NavLink to="#">Contact Address : Moulovibazar</NavLink>
                     </li>
                 </div>
             </div>
-            {/* Footer Contact Information here */}
-            
+            {/* Bootom Address Section Here */}
+            <div className="bootom-flex">
+                <div className="bootom-row">
+                    <h3>USA Address</h3>
+                    <li>
+                        1096 Genesee st buffalo NY 14211
+                        <br /> Mobile- 7169483740
+                    </li>
+                </div>
+                <div className="bootom-row">
+                    <h3>Bangladesh Address</h3>
+                    <li>
+                        Matarkapon Moulvibazar,
+                        <br /> Sylhet, Bangladesh Mobile- Pore dicchi
+                    </li>
+                </div>
+                <div className="bootom-row">
+                    <h3>UAE Address</h3>
+                    <li>
+                        Hind Mohammed Ali Alowais Building, <br />
+                        Naif, 203, Deira, Dubai Mobile- 071543543980
+                    </li>
+                </div>
+            </div>
+            <div className="social">
+                <NavLink to="/">
+                    <img src={google} />
+                </NavLink>
+                <NavLink target="_blank" to="https://www.facebook.com/bakdif">
+                    <img src={facebook} />
+                </NavLink>
+                <NavLink
+                    target="_blank"
+                    to="https://www.linkedin.com/company/bakdif"
+                >
+                    <img src={linkedin} />
+                </NavLink>
+                <NavLink to="/">
+                    <img src={twitter} />
+                </NavLink>
+                <NavLink to="/">
+                    <img src={github} />
+                </NavLink>
+            </div>
+            <strong>
+                © Copyright All Reserve <span>Bak Digital Firm</span>
+            </strong>
+            {/*
+            <p>
+                Developed By -
+                <NavLink to="https://ghsresume.netlify.app" target="_blank">
+                    Ghs Julian
+                </NavLink>
+            </p>
+            */}
         </footer>
     );
 };
