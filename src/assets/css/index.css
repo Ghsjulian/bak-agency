@@ -378,6 +378,7 @@ footer {
 }
 footer .top-flex {
     width: 100%;
+    max-width: 65rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -441,6 +442,7 @@ footer .top-flex {
 }
 footer .mid-flex {
     width: 100%;
+    max-width: 65rem;
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -470,6 +472,7 @@ footer .mid-flex {
 
 footer .bottom-flex {
     width: 100%;
+    max-width: 65rem;
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -478,6 +481,7 @@ footer .bottom-flex {
 /* Styling Footer Styling */
 footer .social-flex {
     width: 100%;
+    max-width: 65rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
