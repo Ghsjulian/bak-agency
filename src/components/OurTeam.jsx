@@ -16,6 +16,9 @@ const OurTeam = () => {
                 members name and their skills and experienc.
             </p>
             <div className="grid-row">
+                
+                
+                {/*
                 <div className="card">
                     <img src={client_1} alt="Team Ghs Julian" />
                     <h3> Ghs Julian</h3>
@@ -52,6 +55,7 @@ const OurTeam = () => {
                         or develop any website easily.
                     </p>
                 </div>
+                */}
             </div>
         </div>
         <OurServices/>

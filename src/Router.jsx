@@ -41,7 +41,7 @@ const MyRoutes = [
         )
     },
     {
-        path: "/service",
+        path: "/services",
         element: (
             <Layouts>
                 <Services />
@@ -100,7 +100,7 @@ const MyRoutes = [
     // {
     //     path: "/admin",
     //     element: <AdminLayouts />,
-        
+
     // },
 
     {

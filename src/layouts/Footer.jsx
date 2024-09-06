@@ -66,7 +66,7 @@ const Footer = () => {
                         <NavLink to="/services">Our Services</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/web-development">
+                        <NavLink to="/service/responsive-design">
                             Web Development
                         </NavLink>
                     </li>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/service/graphics-design">
+                        <NavLink to="/service/graphic-design">
                             Graphics Design
                         </NavLink>
                     </li>
@@ -84,33 +84,48 @@ const Footer = () => {
                 <div className="flex-row">
                     <h3>Contact Us</h3>
                     <li>
-                        <NavLink to="/contact">Contact Us</NavLink>
+                        <NavLink to="#">Bangladesh Mobile : 017XXXXX11</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#">Dubai Mobile : 071543543980</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="#"> USA Mobile : 7169483740</NavLink>
                     </li>
                     <li>
                         <NavLink to="#">Email : info@bakdif.com</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="#">
-                            1096 Genesee st buffalo NY 14211
-                            <br /> Mobile- 7169483740
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="#">
-                            Matarkapon Moulvibazar,
-                            <br /> Sylhet, Bangladesh Mobile- Pore dicchi
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="#">
-                            Hind Mohammed Ali Alowais Building, <br />
-                            Naif, 203, Deira, Dubai Mobile- 071543543980
-                        </NavLink>
-                    </li>
                 </div>
             </div>
             {/* Footer Contact Information here */}
-            
+            <div className="social-flex">
+                <div className="social">
+                    <NavLink to="/">
+                        <img src={google} />
+                    </NavLink>
+                    <NavLink
+                        target="_blank"
+                        to="https://www.facebook.com/bakdif"
+                    >
+                        <img src={facebook} />
+                    </NavLink>
+                    <NavLink
+                        target="_blank"
+                        to="https://www.linkedin.com/company/bakdif"
+                    >
+                        <img src={linkedin} />
+                    </NavLink>
+                    <NavLink to="/">
+                        <img src={twitter} />
+                    </NavLink>
+                    <NavLink to="/">
+                        <img src={github} />
+                    </NavLink>
+                </div>
+                <strong>
+                    © Copyright All Reserve <span>Bak Digital Firm</span>
+                </strong>
+            </div>
         </footer>
     );
 };

@@ -420,7 +420,7 @@ footer .top-flex {
 .top-flex #contact {
     outline: none;
     text-align: center;
-    margin-right: 6rem;
+    margin-right: 7.2rem;
     border: 1px solid transparent;
     text-decoration: none;
     border-radius: 8px;
@@ -444,7 +444,7 @@ footer .mid-flex {
     display: flex;
     justify-content: space-between;
     align-items: left;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .mid-flex .flex-row {
@@ -468,13 +468,132 @@ footer .mid-flex {
     text-align: justify;
 }
 
-footer .bottom-flex{
+footer .bottom-flex {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: left;
     padding: 0.5rem 1rem;
 }
+/* Styling Footer Styling */
+footer .social-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+}
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+    margin: 0 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social a {
+    text-decoration: none;
+    display: block;
+    border-radius: 50%;
+    border: none;
+}
+
+.social a img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+footer strong {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+footer strong span {
+    color: #f9f34a;
+}
+
+footer p {
+    color: rgb(21, 21, 21);
+    font-weight: 500;
+    margin: 0.3rem 0;
+}
+
+footer p a {
+    margin: 0.2rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    color: rgb(0, 196, 63);
+    transition: 0.3s ease-in;
+}
+
+footer p a:hover {
+    translate: scale(1.1);
+    color: rgb(196, 61, 0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    footer {
+        align-items: left;
+        justify-content: left;
+        text-align: justify;
+        flex-direction: column;
+    }
+    footer .top-flex {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .top-flex .email-area {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+    .top-flex input {
+        width: 70%;
+        margin: 0 0;
+    }
+    .top-flex .subscribe {
+        width: 30%;
+        margin: 0 0.5rem;
+    }
+    .top-flex #contact {
+        width: 98%;
+        margin: 0.6rem auto;
+        margin-left: 0;
+    }
+    footer .mid-flex {
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        text-align: justify;
+        align-items: left;
+        margin: 0;
+    }
+    footer .social-flex {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .social-flex .social {
+        gap: 2rem;
+        margin: 0.8rem auto;
+    }
+}
+
 /* Adding Animations */
 @keyframes heroAnimation {
     0% {
