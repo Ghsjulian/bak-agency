@@ -1,5 +1,12 @@
 [
     {
+        "id": 0,
+        "img": "/team/Bakdif.png",
+        "name": "Bakdif Team",
+        "skill": "",
+        "desc" : ""
+    },
+    {
         "id": 1,
         "img": "/team/Kamal Hussain.png",
         "name": "Kamal Hussain",
@@ -8,114 +15,107 @@
     },
     {
         "id": 2,
-        "img": "/team/Ahia Chowdhury.png",
-        "name": "Ahia Chowdhury",
-        "skill": "Managing Director",
-        "desc": "As Managing Director, Ahia Chowdhury is responsible for the day-to-day operations and strategic growth of BAK Digital Firm. His ability to foster a collaborative work environment contribute to the agency's success. Ahia's dedication to delivering exceptional client service and his commitment to staying ahead of industry trends ensure that BAK Digital Firm continues to thrive."
-    },
-    {
-        "id": 3,
-        "img": "/team/Ghsjulian.png",
-        "name": "Ghs Julian",
-        "skill": "Full Stack Developer (Custom Coding)",
-        "desc": "A Full stack web application developer and designer. As a full stack developer familiar with MERN STACK development. He is expert in web application builder and API integration with Nodejs. He is also a programmer."
-    },
-    {
-        "id": 4,
-        "img": "/team/Sabbir Ahmed.png",
-        "name": "Sabbir Ahmed",
-        "skill": "Operations Manager (UAE)",
-        "desc": "As the Operations Manager for the UAE, Sabbir Ahmed oversees the day-to-day operations of BAK Digital Firm's UAE-based. His expertise ensures the efficient execution of projects and the delivery of high-quality digital solutions. Sabbir Ahmed's strong understanding of the UAE market and his ability to build relationships with local clients contribute to the agency's success in the region."
-    },
-    {
-        "id": 5,
-        "img": "/team/MD Chowdhury.png",
-        "name": "MD Chowdhury",
-        "skill": "Operations Manager (USA)",
-        "desc": "As the Operations Manager for the USA, MD Chowdhury oversees the day-to-day operations of BAK Digital Firm's US-based team. His expertise in project management, team coordination & ensures the efficient execution of projects and the delivery of high-quality digital solutions. MD Chowdhury's strong understanding of the US market and his ability to build relationships with local clients contribute to the agency's success in the region."
-    },
-    {
-        "id": 6,
         "img": "/team/Saqib MD.png",
         "name": "Saqib MD",
         "skill": "Operations Manager (UK)",
         "desc": "As the Operations Manager for the UK, Saqib MD oversees the day-to-day operations of BAK Digital Firm's UK-based team. His expertise in project management, team coordination and ensures the efficient execution of projects and the delivery of high-quality digital solutions. Saqib's strong understanding of the UK market and his ability to build relationships with local clients contribute to the agency's success in the region."
     },
     {
-        "id": 7,
-        "img": "/team/",
-        "name": "Jibon Chowdhury",
-        "skill": "Project Manager (USA)",
-        "desc": ""
+        "id": 3,
+        "img": "/team/Sabbir Ahmed.png",
+        "name": "Sabbir Ahmed",
+        "skill": "Operations Manager (UAE)",
+        "desc": "As the Operations Manager for the UAE, Sabbir Ahmed oversees the day-to-day operations of BAK Digital Firm's UAE-based. His expertise ensures the efficient execution of projects and the delivery of high-quality digital solutions. Sabbir Ahmed's strong understanding of the UAE market and his ability to build relationships with local clients contribute to the agency's success in the region."
     },
     {
-        "id": 8,
+        "id": 4,
+        "img": "/team/MD Chowdhury.png",
+        "name": "MD Chowdhury",
+        "skill": "Operations Manager (USA)",
+        "desc": "As the Operations Manager for the USA, MD Chowdhury oversees the day-to-day operations of BAK Digital Firm's US-based team. His expertise in project management, team coordination & ensures the efficient execution of projects and the delivery of high-quality digital solutions. MD Chowdhury's strong understanding of the US market and his ability to build relationships with local clients contribute to the agency's success in the region."
+    },
+    {
+        "id": 5,
         "img": "/team/Faiza Bushra.png",
         "name": "Faiza Bushra",
         "skill": "Web Developer (Wordpress CMS)",
-        "desc": ""
+        "desc": "Experienced web developer specializing in WordPress content management systems. Skilled in PHP, HTML, CSS, JavaScript, and WordPress-specific development techniques. Proficient in creating custom themes, plugins, and web applications. Experienced in optimizing websites for performance, SEO, and user experience."
     },
     {
-        "id": 9,
-        "img": "/team/Koli.png",
-        "name": "Tanjia Koly",
-        "skill": "Web Designer (Wordpress CMS)",
-        "desc": ""
+        "id": 6,
+        "img": "/team/Ghsjulian.png",
+        "name": "Ghs Julian",
+        "skill": "Full Stack Developer (Custom Coding)",
+        "desc": "A Full stack web application developer and designer. As a full stack developer familiar with MERN STACK development. He is expert in web application builder and API integration with Nodejs. He is also a programmer."
     },
     {
-        "id": 10,
-        "img": "/team/Abid Redwan.png",
-        "name": "Abid Redwan",
-        "skill": "E-Commerce Specialist (Wordpress, Woocomerc)",
-        "desc": ""
-    },
-    {
-        "id": 11,
+        "id": 7,
         "img": "/team/Raisa Mukta (2).png",
         "name": "Raisa Mukta",
         "skill": "Web Designer (Shopify)",
-        "desc": ""
+        "desc": "Creative and skilled web designer specializing in Shopify e-commerce platforms. Proficient in Shopify theme development, custom coding, and user interface design. Experienced in creating visually appealing and functional online stores that drive sales and enhance customer experience."
     },
     {
-        "id": 12,
+        "id": 8,
+        "img": "/team/Ahia Chowdhury.png",
+        "name": "Ahia Chowdhury",
+        "skill": "Managing Director",
+        "desc": "As Managing Director, Ahia Chowdhury is responsible for the day-to-day operations and strategic growth of BAK Digital Firm. His ability to foster a collaborative work environment contribute to the agency's success. Ahia's dedication to delivering exceptional client service and his commitment to staying ahead of industry trends ensure that BAK Digital Firm continues to thrive."
+    },
+    {
+        "id": 9,
+        "img": "/team/Abid Redwan.png",
+        "name": "Abid Redwan",
+        "skill": "E-Commerce Specialist (Wordpress, Woocomerc)",
+        "desc": "Results-driven e-commerce specialist with expertise in WordPress and WooCommerce platforms. Skilled in online store setup, product management, marketing strategies, and order fulfillment. Experienced in optimizing e-commerce websites for SEO, user experience, and conversions. Proven track record of driving online sales and building successful e-commerce businesses."
+    },
+    {
+        "id": 10,
+        "img": "/team/Koli.png",
+        "name": "Tanjia Koly",
+        "skill": "Web Designer (Wordpress CMS)",
+        "desc": "Creative and skilled web designer specializing in WordPress content management systems. Proficient in WordPress theme development, custom coding, and user interface design. Experienced in creating visually appealing and functional websites for various industries and purposes. Skilled in optimizing websites for SEO, user experience, and conversions."
+    },
+    {
+        "id": 11,
         "img": "/team/Shimu Sanjan.png",
         "name": "Shimu Sanjan",
         "skill": "Video Editor",
-        "desc": ""
+        "desc": "Skilled video editor with a keen eye for detail and a passion for storytelling. Proficient in industry-standard editing software, including Adobe Premiere Pro and Final Cut Pro. Experienced in editing various types of videos, such as corporate videos, commercials, documentaries, and social media content."
     },
     {
-        "id": 13,
-        "img": "/team/",
+        "id": 12,
+        "img": "/team/Sheikh Shammi.png",
         "name": "Sheikh Shammi",
         "skill": "Graphics Designer",
         "desc": ""
     },
     {
-        "id": 14,
+        "id": 13,
         "img": "/team/Sagor Sheikh.png",
         "name": "Sagor Sheikh",
         "skill": "Audio Composer",
-        "desc": ""
+        "desc": "Creative and skilled audio composer with a passion for crafting original music for various projects. Proficient in music theory, composition techniques, and audio production software. Experienced in composing music for films, games, advertisements, and other media."
     },
     {
-        "id": 15,
+        "id": 14,
         "img": "/team/Tania Tanjim.png",
         "name": "Tania Tanjim",
         "skill": "Seach Engine Speacilist (SEO)",
-        "desc": ""
+        "desc": "Experienced in optimizing websites for search engines to improve visibility and drive organic traffic. Skilled in keyword research, on-page optimization, link building, and content creation. Proven track record of increasing search engine rankings and driving conversions."
     },
     {
-        "id": 16,
+        "id": 15,
         "img": "/team/Kayium.png",
         "name": "Kayium",
         "skill": "Article Writer",
-        "desc": ""
+        "desc": "Proficient in crafting engaging and informative articles on diverse topics. Skilled in research, writing, and editing content that meets specific audience needs and SEO best practices. Experienced in producing high-quality articles for blogs, websites, and other publications."
     },
     {
-        "id": 17,
-        "img": "/team/",
+        "id": 16,
+        "img": "/team/Abdullah.png",
         "name": "Abdullah",
         "skill": "Digital Marketing Expert",
-        "desc": ""
+        "desc": "Results-driven digital marketing professional with expertise in developing and implementing comprehensive strategies to achieve online marketing goals. Skilled in SEO, PPC, social media marketing, email marketing, content marketing, and analytics. Proven track record of driving website traffic, increasing conversions, and building brand awareness."
     }
 ]
