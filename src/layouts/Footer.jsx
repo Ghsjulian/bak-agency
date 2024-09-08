@@ -31,9 +31,9 @@ const Footer = () => {
     const [isLoadin, setLoading] = useState(false);
     const [email, setEmail] = useState("");
     const btnRef = useRef(null);
-   // const baseURL = "http://localhost:8080/mail/subscribe.php";
+    // const baseURL = "http://localhost:8080/mail/subscribe.php";
     const baseURL = "http://bakdif.com/mail/subscribe.php";
-    
+
     const sendMail = async e => {
         e.preventDefault();
         if (email !== "") {
@@ -117,17 +117,20 @@ const Footer = () => {
                 </div>
                 <div className="flex-row">
                     <h3>Contact Us</h3>
+
                     <li>
-                        <NavLink to="#">Bangladesh Mobile : +8809696132246</NavLink>
+                        <NavLink to="#">
+                            Bangladesh : +8809696132246
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">Dubai Mobile : 071543543980</NavLink>
+                        <NavLink to="#">U.A.E : 071543543980</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#"> USA Mobile : 7169483740</NavLink>
+                        <NavLink to="#"> U.S.A : 7169483740</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">Email : info@bakdif.com</NavLink>
+                        <NavLink to="#">U.K : </NavLink>
                     </li>
                 </div>
             </div>

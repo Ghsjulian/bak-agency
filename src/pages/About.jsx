@@ -17,7 +17,7 @@ const About = () => {
                         data-aos="zoom-in"
                         className="image"
                     >
-                        <img src="/images/about_2.png" />
+                        <img src="/images/About Us.png" />
                     </div>
                     <div data-aos="zoom-in" id="content" className="form">
                         <h2 style={{ marginTop: "3.7rem" }}>

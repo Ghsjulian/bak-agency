@@ -173,13 +173,14 @@ const Contact = () => {
                 <h2>Contact With Us </h2>
                 <div className="two-row">
                     <div data-aos="zoom-in" className="image">
-                        <img src="/images/contact_1.png" />
+                        <img src="/images/Contact Us.svg" />
                         <p className="text">
                             Feel free to reach out to us at any time. Our
                             dedicated team is always ready to assist you
                             promptly. Connect with us directly for immediate
                             assistance and let's stay in touch.
                         </p>
+                       {/* 
                         <h3>More Contact Details : </h3>
                         <p className="addr">
                             USA Address- 1096 Genesee st buffalo NY 14211
@@ -193,6 +194,7 @@ const Contact = () => {
                             UAE Address- Hind Mohammed Ali Alowais Building,
                             Naif, 203, Deira, Dubai Mobile- 071543543980
                         </p>
+                        */}
                     </div>
                     <div data-aos="zoom-in" className="form">
                         {/*
