@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import axios from "axios";
 import { NavLink } from "react-router-dom";
 import facebook from "../assets/icons/facebook.png";
 import google from "../assets/icons/google.png";
@@ -27,15 +28,48 @@ const Footer = () => {
     const goToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     };
+    const [isLoadin, setLoading] = useState(false);
+    const [email, setEmail] = useState("");
+    const btnRef = useRef(null);
+   // const baseURL = "http://localhost:8080/mail/subscribe.php";
+    const baseURL = "http://bakdif.com/mail/subscribe.php";
+    
+    const sendMail = async e => {
+        e.preventDefault();
+        if (email !== "") {
+            try {
+                setLoading(true);
+                axios
+                    .post(baseURL, {
+                        payloads: "__ghs_julian__",
+                        client_email: email
+                    })
+                    .then(response => {
+                        setEmail("");
+                        setLoading(false);
+                        btnRef.current.textContent = "Subscribed";
+                        alert("Email Subscribed Successfully!");
+                    });
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    };
     return (
         <footer>
             <div className="top-flex">
                 <div className="email-area">
                     <input
+                        onChange={e => {
+                            setEmail(e.target.value);
+                        }}
+                        value={email}
                         type="email"
                         placeholder="Enter Your Email Address"
                     />
-                    <button class="subscribe">Subscribe </button>
+                    <button ref={btnRef} onClick={sendMail} class="subscribe">
+                        {isLoadin ? "Wait..." : "Subscribe"}
+                    </button>
                 </div>
                 <NavLink id="contact" to="/contact">
                     Get In Touch

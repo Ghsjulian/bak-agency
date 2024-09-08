@@ -23,8 +23,8 @@ const Contact = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [isSent, setSent] = useState(false);
-    // const baseURL = "http://bakdif.com/mail/contact.php";
-    const baseURL = "http://localhost:8080/mail/contact.php";
+     const baseURL = "http://bakdif.com/mail/contact.php";
+    // const baseURL = "http://localhost:8080/mail/contact.php";
     const handleContact = async e => {
         e.preventDefault();
         if (

@@ -13,15 +13,7 @@ $request = $_SERVER["REQUEST_METHOD"];
 if ($request === "POST") {
   $data = json_decode(file_get_contents("php://input"), true);
   // echo json_encode($data);
-  $clent_name = $data["clent_name"];
-  $client_phone = $data["client_phone"];
   $client_email = $data["client_email"];
-  $client_address = $data["client_address"];
-  $client_country = $data["client_country"];
-  $client_service = $data["client_service"];
-  $client_messanger = $data["client_messanger"];
-  $instant_type = $data["instant_type"];
-  $client_message = $data["client_message"];
   $mail = new PHPMailer();
   $mail->isSMTP();
   $mail->SMTPDebug = 2;
@@ -33,31 +25,17 @@ if ($request === "POST") {
   // Set the sender email address to your Hostinger email address
   $mail->setFrom("info@bakdif.com", "Bakdif Farm");
   // Set the reply-to email address to the client's email address
-  $mail->addReplyTo($client_email, $clent_name);
+  $mail->addReplyTo($client_email, "Client Name");
   // Set the recipient email address to your Hostinger email address
   $mail->addAddress("info@bakdif.com", "Server");
-  $mail->Subject = "Email For - $client_service";
+  $mail->Subject = "New Subscription From Client";
 
   $mail->Body = "
-  
-Subject: Email For - $client_service
-
 Dear Bakdif Team,
 
-$client_message
+New Email Subscription From Client.
 
-Client Phone         :   $client_phone
-Client Mobile        :   $client_phone
-Client Email         :   $client_email
-Client Address       :   $client_address
-Client Service       :   $client_service
-Client Instant Name  :   $client_messanger
-Client Instant Chat  :   $instant_type
-
-Please let me know if you have recived my email or reply me here.
-
-Best Regards From Clients,
-$clent_name
+Client Email : $client_email
   
   ";
 
