@@ -207,9 +207,7 @@ const TermsCondition = () => {
                     You can contact us:
                 </p>
                 <ul>
-                    <li>
-                        <p>By email: sales@digitalmarketingbd.com</p>
-                    </li>
+                   
                     <li>
                         <p>
                             By visiting this page on our website:{" "}
