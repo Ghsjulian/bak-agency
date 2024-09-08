@@ -169,18 +169,13 @@ const Contact = () => {
 
     return (
         <>
-            <div data-aos="zoom-in" id="page" className="section">
+            <div data-aos="zoom-in" id="page" className="section contact-section">
                 <h2>Contact With Us </h2>
-                <div className="two-row">
+                <div id="contact-section" className="two-row">
                     <div data-aos="zoom-in" className="image">
                         <img src="/images/Contact Us.svg" />
-                        <p className="text">
-                            Feel free to reach out to us at any time. Our
-                            dedicated team is always ready to assist you
-                            promptly. Connect with us directly for immediate
-                            assistance and let's stay in touch.
-                        </p>
-                       {/* 
+
+                        {/* 
                         <h3>More Contact Details : </h3>
                         <p className="addr">
                             USA Address- 1096 Genesee st buffalo NY 14211
@@ -206,6 +201,12 @@ const Contact = () => {
                             assistance and let's stay in touch.
                         </p>
                         */}
+                        <p className="text">
+                            Feel free to reach out to us at any time. Our
+                            dedicated team is always ready to assist you
+                            promptly. Connect with us directly for immediate
+                            assistance and let's stay in touch.
+                        </p>
                         <h3>Fill Out This Form </h3>
                         <span
                             id="error-message"
