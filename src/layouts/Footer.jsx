@@ -124,14 +124,12 @@ const Footer = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">U.A.E : 071543543980</NavLink>
+                        <NavLink to="#">U.A.E : +97071543543980</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#"> U.S.A : 7169483740</NavLink>
+                        <NavLink to="#"> U.S.A : +17169483740</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="#">U.K : </NavLink>
-                    </li>
+                  
                 </div>
             </div>
             {/* Footer Contact Information here */}
