@@ -23,7 +23,7 @@ const Contact = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [isSent, setSent] = useState(false);
-     const baseURL = "http://bakdif.com/mail/contact.php";
+    const baseURL = "http://bakdif.com/mail/contact.php";
     // const baseURL = "http://localhost:8080/mail/contact.php";
     const handleContact = async e => {
         e.preventDefault();
@@ -70,7 +70,7 @@ const Contact = () => {
                         messageRef.current.style.display = "block";
                         messageRef.current.classList.remove("error");
                         messageRef.current.classList.add("success");
-                        sendRef.current.textContent = "Email Sent"
+                        sendRef.current.textContent = "Email Sent";
                         messageRef.current.textContent =
                             "Your Email Has Been Successfully Sent !";
                         setClientCountry("");
@@ -116,7 +116,7 @@ const Contact = () => {
                 "Please Fill Out The Contact Form !";
         }
         setTimeout(() => {
-            sendRef.current.textContent = "Send Now"
+            sendRef.current.textContent = "Send Now";
             messageRef.current.style.display = "none";
             messageRef.current.textContent = "";
         }, 3000);
@@ -179,6 +179,19 @@ const Contact = () => {
                             dedicated team is always ready to assist you
                             promptly. Connect with us directly for immediate
                             assistance and let's stay in touch.
+                        </p>
+                        <h3>More Contact Details : </h3>
+                        <p className="addr">
+                            USA Address- 1096 Genesee st buffalo NY 14211
+                            Mobile- 7169483740
+                        </p>
+                        <p className="addr">
+                            Bangladesh Address- Matarkapon Moulvibazar, Sylhet,
+                            Bangladesh Mobile- Pore dicchi
+                        </p>
+                        <p className="addr">
+                            UAE Address- Hind Mohammed Ali Alowais Building,
+                            Naif, 203, Deira, Dubai Mobile- 071543543980
                         </p>
                     </div>
                     <div data-aos="zoom-in" className="form">
@@ -309,7 +322,11 @@ const Contact = () => {
                             placeholder="Type Your Message..."
                             value={userMessage}
                         ></textarea>
-                        <button ref={sendRef} onClick={handleContact} className="send-btn">
+                        <button
+                            ref={sendRef}
+                            onClick={handleContact}
+                            className="send-btn"
+                        >
                             {isSent ? "Sending..." : "Send Now"}
                         </button>
                     </div>

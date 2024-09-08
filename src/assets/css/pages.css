@@ -24,6 +24,19 @@
     object-fit: contain;
     margin: 1.5rem auto;
 }
+.two-row .image h3 {
+    color: #525a60;
+    text-align: justify;
+    margin: 1rem 0;
+    font-size: 25px;
+}
+.two-row .image .addr {
+    margin: 0.9rem 0;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #525a60;
+}
 .two-row .image p {
     width: 100%;
     margin: 0.5rem 0;
