@@ -187,7 +187,7 @@ const Contact = () => {
                         </p>
                         <p className="addr">
                             Bangladesh Address- Matarkapon Moulvibazar, Sylhet,
-                            Bangladesh Mobile- Pore dicchi
+                            Bangladesh Mobile- +8809696132246
                         </p>
                         <p className="addr">
                             UAE Address- Hind Mohammed Ali Alowais Building,
