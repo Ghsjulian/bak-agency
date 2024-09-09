@@ -87,7 +87,7 @@ const Contact = () => {
             } catch (error) {
                 let height = window.innerHeight;
                 let width = window.innerWidth;
-                let mobileHeight = 780;
+                let mobileHeight = 20;
                 let desk = 150;
                 window.scrollTo({
                     top: width > 400 ? desk : mobileHeight,
@@ -103,7 +103,7 @@ const Contact = () => {
         } else {
             let height = window.innerHeight;
             let width = window.innerWidth;
-            let mobileHeight = 780;
+            let mobileHeight = 20;
             let desk = 150;
             window.scrollTo({
                 top: width > 400 ? desk : mobileHeight,
@@ -170,10 +170,14 @@ const Contact = () => {
     return (
         <>
             <div data-aos="zoom-in" id="page" className="section contact-section">
-                <h2>Contact With Us </h2>
+                <img
+                    className="heading-img"
+                    src="/images/Contact Header.png"
+                    alt="Heading Image Here"
+                />
                 <div id="contact-section" className="two-row">
                     <div data-aos="zoom-in" className="image">
-                        <img src="/images/Contact Us.svg" />
+                        <img src="/images/Contact Us (1).svg" />
 
                         {/* 
                         <h3>More Contact Details : </h3>

@@ -210,9 +210,9 @@ const TermsCondition = () => {
                    
                     <li>
                         <p>
-                            By visiting this page on our website:{" "}
+                            By visiting this page on our website:
                             <a
-                                href="https://www.digitalmarketingbd.com"
+                                href="https://www.bakdif.com"
                                 target="_blank"
                                 rel="external nofollow noopener"
                             >

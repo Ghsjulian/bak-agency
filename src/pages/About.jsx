@@ -11,13 +11,18 @@ const About = () => {
     return (
         <>
             <div id="page" className="section">
+                <img
+                    className="heading-img"
+                    src="/images/About us Header.png"
+                    alt="Heading Image Here"
+                />
                 <div className="two-row">
                     <div
                         style={{ marginTop: "3.7rem" }}
                         data-aos="zoom-in"
                         className="image"
                     >
-                        <img src="/images/About Us.png" />
+                        <img src="/images/About us Image.png" />
                     </div>
                     <div data-aos="zoom-in" id="content" className="form">
                         <h2 style={{ marginTop: "3.7rem" }}>

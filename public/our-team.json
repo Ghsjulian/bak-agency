@@ -1,24 +1,17 @@
 [
     {
-        "id": 0,
-        "img": "/team/Bakdif.png",
-        "name": "Bakdif Team",
-        "skill": "",
-        "desc" : ""
-    },
-    {
         "id": 1,
         "img": "/team/Kamal Hussain.png",
         "name": "Kamal Hussain",
         "skill": "Managing Director",
-        "desc": "As the Executive Director, Kamal oversees BAK Digital Firm's strategic direction. His industry expertise and leadership drive innovation and client success."
+        "desc": "Kamal Hussain leads with strategic vision, overseeing operations and implementing business strategies. He excels in driving growth, optimizing performance, and maintaining strong stakeholder relationships to achieve long-term success."
     },
         {
         "id": 8,
         "img": "/team/Ahia Chowdhury.png",
         "name": "Ahia Chowdhury",
         "skill": "Operation Manager",
-        "desc": "As Managing Director, Ahia Chowdhury is responsible for the day-to-day operations and strategic growth of BAK Digital Firm. His ability to foster a collaborative work environment contribute to the agency's success. Ahia's dedication to delivering exceptional client service and his commitment to staying ahead of industry trends ensure that BAK Digital Firm continues to thrive."
+        "desc": "Ahia Chowdhury ensures smooth and efficient operations by overseeing daily activities and implementing effective processes. He excels in improving productivity, managing resources, and maintaining high-quality standards to drive organizational success."
     },
     
     {
@@ -26,7 +19,7 @@
         "img": "/team/Saqib MD.png",
         "name": "Saqib MD",
         "skill": "Operations Manager (UK)",
-        "desc": "As the Operations Manager for the UK, Saqib MD oversees the day-to-day operations of BAK Digital Firm's UK-based team. His expertise in project management, team coordination and ensures the efficient execution of projects and the delivery of high-quality digital solutions. Saqib's strong understanding of the UK market and his ability to build relationships with local clients contribute to the agency's success in the region."
+        "desc": "Saqib MD manages the daily operations of BAK Digital Firm’s UK clients, leveraging his project management and team coordination skills. He ensures projects are executed efficiently and high-quality digital solutions are delivered. Saqib’s deep knowledge of the UK market and his talent for building client relationships drive the agency’s regional success."
     },
     {
         "id": 3,
@@ -40,13 +33,13 @@
         "img": "/team/MD Chowdhury.png",
         "name": "MD Chowdhury",
         "skill": "Operations Manager (USA)",
-        "desc": "As the Operations Manager for the USA, MD Chowdhury oversees the day-to-day operations of BAK Digital Firm's US-based team. His expertise in project management, team coordination & ensures the efficient execution of projects and the delivery of high-quality digital solutions. MD Chowdhury's strong understanding of the US market and his ability to build relationships with local clients contribute to the agency's success in the region."
+        "desc": "MD Chowdhury manages the daily operations of BAK Digital Firm’s US base projects, utilizing his project management and team coordination skills. He ensures efficient project execution and the delivery of top-notch digital solutions. His deep understanding of the US market and knack for building client relationships drive the agency’s regional success."
     },
     {
         "id": 5,
         "img": "/team/Faiza Bushra.png",
         "name": "Faiza Bushra",
-        "skill": "Web Developer (Wordpress CMS)",
+        "skill": "Web Developer (WordPress CMS)",
         "desc": "Experienced web developer specializing in WordPress content management systems. Skilled in PHP, HTML, CSS, JavaScript, and WordPress-specific development techniques. Proficient in creating custom themes, plugins, and web applications. Experienced in optimizing websites for performance, SEO, and user experience."
     },
     {
@@ -67,14 +60,14 @@
         "id": 9,
         "img": "/team/Abid Redwan.png",
         "name": "Abid Redwan",
-        "skill": "E-Commerce Specialist (Wordpress, Woocomerc)",
+        "skill": "E-Commerce Specialist (WordPress, WooCommerce)",
         "desc": "Results-driven e-commerce specialist with expertise in WordPress and WooCommerce platforms. Skilled in online store setup, product management, marketing strategies, and order fulfillment. Experienced in optimizing e-commerce websites for SEO, user experience, and conversions. Proven track record of driving online sales and building successful e-commerce businesses."
     },
     {
         "id": 10,
         "img": "/team/Koli.png",
         "name": "Tanjia Koly",
-        "skill": "Web Designer (Wordpress CMS)",
+        "skill": "Web Designer (WordPress CMS)",
         "desc": "Creative and skilled web designer specializing in WordPress content management systems. Proficient in WordPress theme development, custom coding, and user interface design. Experienced in creating visually appealing and functional websites for various industries and purposes. Skilled in optimizing websites for SEO, user experience, and conversions."
     },
     {

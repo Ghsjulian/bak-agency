@@ -119,9 +119,7 @@ const Footer = () => {
                     <h3>Contact Us</h3>
 
                     <li>
-                        <NavLink to="#">
-                            Bangladesh : +8809696132246
-                        </NavLink>
+                        <NavLink to="#">Bangladesh : +8809696132246</NavLink>
                     </li>
                     <li>
                         <NavLink to="#">U.A.E : +971543543980</NavLink>
@@ -129,13 +127,12 @@ const Footer = () => {
                     <li>
                         <NavLink to="#"> U.S.A : +17169483740</NavLink>
                     </li>
-                  
                 </div>
             </div>
             {/* Footer Contact Information here */}
             <div className="social-flex">
                 <div className="social">
-                    <NavLink to="/">
+                    <NavLink to="https://www.google.com/search?query=bakdif.com">
                         <img src={google} />
                     </NavLink>
                     <NavLink
@@ -157,6 +154,7 @@ const Footer = () => {
                         <img src={github} />
                     </NavLink>
                 </div>
+                <strong>info@bakdif.com</strong>
                 <strong>
                     © Copyright All Reserve <span>Bak Digital Firm</span>
                 </strong>

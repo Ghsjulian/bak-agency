@@ -27,7 +27,11 @@ const OurTeam = () => {
     return (
         <>
             <div data-aos="zoom-in" id="page" className="section">
-                <h2> Our Team Members </h2>
+                <img
+                    className="heading-img"
+                    src="/images/Team Header.png"
+                    alt="Heading Image Here"
+                />
                 <p style={{ marginTop: ".7rem" }} className="text">
                     Meet our team expertises. We have a group of team and we can
                     handle any task byu sharing our experience. Here is our team
@@ -41,7 +45,7 @@ const OurTeam = () => {
                                     <img src={el.img} alt={el.name} />
                                     <h3>{el.name}</h3>
                                     <h4>{el.skill} </h4>
-                                    <p>{el.desc.slice(0,156)}</p>
+                                    <p>{el.desc}</p>
                                 </div>
                             );
                         })}
