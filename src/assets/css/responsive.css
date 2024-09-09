@@ -81,6 +81,9 @@
         width: 100%;
     }
 
+    .form .flex-input :nth-child(2) {
+        order: 1;
+    }
     .section h2 img,
     #what_we_can_do {
         width: 300px;

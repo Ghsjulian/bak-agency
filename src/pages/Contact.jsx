@@ -23,8 +23,33 @@ const Contact = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [isSent, setSent] = useState(false);
+    const [countryCode, setCountryCode] = useState("");
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const phoneRef = useRef(null);
+    const countryRef = useRef(null);
+    const serviceRef = useRef(null);
+    const instantRef = useRef(null);
+    const socialUserRef = useRef(null);
+    const msgRef = useRef(null);
+    const addressRef = useRef(null);
+    const [codes, setCode] = useState([]);
     const baseURL = "http://bakdif.com/mail/contact.php";
     // const baseURL = "http://localhost:8080/mail/contact.php";
+
+    const getCountryCode = async () => {
+        let url = "/calling-code.json";
+        try {
+            setIsLoading(true);
+            const response = await fetch(url);
+            const responseData = await response.json();
+            setCode(responseData);
+            setIsLoading(false);
+        } catch (error) {
+            console.error("Error : ", error);
+        }
+    };
+
     function validatePhoneNumber(phoneNumber) {
         const phoneNumberRegex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
         if (phoneNumberRegex.test(phoneNumber)) {
@@ -42,6 +67,12 @@ const Contact = () => {
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailRegex.test(email);
     }
+    const createError = ref => {
+        ref.current.style.border = "1.5px solid red";
+        setTimeout(() => {
+            ref.current.style.border = "1px solid rgb(0, 86, 101)";
+        }, 3000);
+    };
 
     const createMsg = (type, msg) => {
         messageRef.current.style.display = "block";
@@ -67,77 +98,106 @@ const Contact = () => {
             messageRef.current.textContent = "";
         }, 3000);
     };
-
     const handleContact = async e => {
         e.preventDefault();
-        if (
-            userName &&
-            telephone &&
-            userEmail &&
-            userMessage &&
-            address &&
-            clientMessanger &&
-            instantType &&
-            clientCountry &&
-            clientservice
-        ) {
-            if (!validateEmail(userEmail)) {
-                createMsg(false, "Invalid Email Address!");
-                return;
-            } else if (!validatePhoneNumber(telephone)) {
-                createMsg(false, "Invalid Phone Number!");
-                return;
-            }
-            try {
-                setSent(true);
-                axios
-                    .post(baseURL, {
-                        payloads: "__ghs_julian__",
-                        clent_name: userName,
-                        client_phone: telephone,
-                        client_email: userEmail,
-                        client_address: address,
-                        client_country: clientCountry,
-                        client_service: clientservice,
-                        client_messanger: clientMessanger,
-                        instant_type:
-                            socialRef.current.getAttribute("data") +
-                            instantType,
-                        client_message: userMessage
-                    })
-                    .then(response => {
-                        setSent(false);
-                        let height = window.innerHeight;
-                        let width = window.innerWidth;
-                        let mobileHeight = 780;
-                        let desk = 150;
-                        window.scrollTo({
-                            top: width > 400 ? desk : mobileHeight,
-                            behavior: "smooth"
-                        });
-                        sendRef.current.textContent = "Email Sent";
-                        createMsg(
-                            true,
-                            "Your Email Has Been Successfully Sent !"
-                        );
-                        setClientCountry("");
-                        setService("");
-                        setAddress("");
-                        setClientService("");
-                        setuserEmail("");
-                        setTelephone("");
-                        setMessanger("");
-                        setInstantType("");
-                        setuserName("");
-                        setuserMessage("");
+        if (userName === "") {
+            createError(nameRef);
+            createMsg(false, "Enter Your Full Name");
+            return;
+        }
+        if (telephone === "") {
+            createError(phoneRef);
+            createMsg(false, "Enter Your Phone Number");
+            return;
+        }
+        if (userEmail === "") {
+            createError(emailRef);
+            createMsg(false, "Enter Your Email Address");
+            return;
+        }
+        if (userMessage === "") {
+            createError(msgRef);
+            createMsg(false, "Enter Your Message");
+            return;
+        }
+        if (address === "") {
+            createError(addressRef);
+            createMsg(false, "Enter Your Address");
+            return;
+        }
+        if (clientMessanger === "") {
+            createError(socialRef);
+            createMsg(false, "Select Your Instant Chat Type");
+            return;
+        }
+        if (instantType === "") {
+            createError(instantRef);
+            createMsg(false, "Enter Your Instant User");
+            return;
+        }
+        if (clientCountry === "") {
+            createError(countryRef);
+            createMsg(false, "Select Your Country");
+            return;
+        }
+        if (clientservice === "") {
+            createError(serviceRef);
+            createMsg(false, "Select A Service");
+            return;
+        }
+        if (!validateEmail(userEmail)) {
+            createError(emailRef);
+            createMsg(false, "Invalid Email Address!");
+            return;
+        }
+        if (!validatePhoneNumber(telephone)) {
+            createError(phoneRef);
+            createMsg(false, "Invalid Phone Number!");
+            return;
+        }
+        try {
+            setSent(true);
+            axios
+                .post(baseURL, {
+                    payloads: "__ghs_julian__",
+                    clent_name: userName,
+                    client_phone: countryCode+telephone,
+                    client_email: userEmail,
+                    client_address: address,
+                    client_country: clientCountry,
+                    client_service: clientservice,
+                    client_messanger: clientMessanger,
+                    instant_type:
+                        socialRef.current.getAttribute("data") + instantType,
+                    client_message: userMessage
+                })
+                .then(response => {
+                    setSent(false);
+                    let height = window.innerHeight;
+                    let width = window.innerWidth;
+                    let mobileHeight = 780;
+                    let desk = 150;
+                    window.scrollTo({
+                        top: width > 400 ? desk : mobileHeight,
+                        behavior: "smooth"
                     });
-            } catch (error) {
-                console.log(error);
-                setError(error);
-                createMsg(false, error.message);
-            }
-        } else {
-            createMsg(false, "Please Fill Out The Contact Form !");
+                    sendRef.current.textContent = "Email Sent";
+                    createMsg(true, "Your Email Has Been Successfully Sent !");
+                    setClientCountry("");
+                    setService("");
+                    setAddress("");
+                    setClientService("");
+                    setuserEmail("");
+                    setTelephone("");
+                    setMessanger("");
+                    setInstantType("");
+                    setuserName("");
+                    setuserMessage("");
+                });
+        } catch (error) {
+            console.log(error);
+            setError(error);
+            createMsg(false, error.message);
         }
     };
 
@@ -181,6 +241,7 @@ const Contact = () => {
     useEffect(() => {
         getData();
         getService();
+        getCountryCode();
         if (isLoading) {
             return;
         }
@@ -244,6 +305,7 @@ const Contact = () => {
                             className=""
                         ></span>
                         <input
+                            ref={nameRef}
                             type="text"
                             onChange={e => {
                                 setuserName(e.target.value);
@@ -251,18 +313,37 @@ const Contact = () => {
                             placeholder="Enter Your Name"
                             value={userName}
                         />
-
+                        <div ref={phoneRef} className="flex-input">
+                            <select
+                                onChange={e => {
+                                    setCountryCode(e.target.value);
+                                }}
+                                value={countryCode}
+                                id="code"
+                            >
+                                <option>Code</option>
+                                {codes.map((code, index) => {
+                                    return (
+                                        <option key={index + 2}>
+                                            {code.emoji} {code.dial_code}
+                                        </option>
+                                    );
+                                })}
+                            </select>
+                            <input
+                                id="code"
+                                type="tel"
+                                onChange={e => {
+                                    setTelephone(e.target.value);
+                                }}
+                                placeholder="Enter Your Phone Number"
+                                value={telephone}
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                required
+                            />
+                        </div>
                         <input
-                            type="tel"
-                            onChange={e => {
-                                setTelephone(e.target.value);
-                            }}
-                            placeholder="Enter Your Phone Number"
-                            value={telephone}
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            required
-                        />
-                        <input
+                            ref={emailRef}
                             type="email"
                             onChange={e => {
                                 setuserEmail(e.target.value);
@@ -271,6 +352,7 @@ const Contact = () => {
                             value={userEmail}
                         />
                         <input
+                            ref={addressRef}
                             type="text"
                             onChange={e => {
                                 setAddress(e.target.value);
@@ -280,6 +362,7 @@ const Contact = () => {
                         />
 
                         <select
+                            ref={serviceRef}
                             onChange={e => {
                                 setClientService(e.target.value);
                             }}
@@ -300,6 +383,7 @@ const Contact = () => {
                         </select>
 
                         <select
+                            ref={countryRef}
                             onChange={e => {
                                 setClientCountry(e.target.value);
                             }}
@@ -342,6 +426,7 @@ const Contact = () => {
                         </select>
                         {isSelect && (
                             <input
+                                ref={instantRef}
                                 type="text"
                                 onChange={e => {
                                     setInstantType(e.target.value);
@@ -351,6 +436,7 @@ const Contact = () => {
                             />
                         )}
                         <textarea
+                            ref={msgRef}
                             onChange={e => {
                                 setuserMessage(e.target.value);
                             }}

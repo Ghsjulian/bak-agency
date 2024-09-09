@@ -112,6 +112,27 @@
     text-transform: capitalize;
 }
 
+.form .flex-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--btn-bg);
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    width: 90%;
+}
+.form .flex-input #code {
+    border: none;
+    outline: none;
+    padding: 0 0.8rem;
+}
+.flex-input :nth-child(1) {
+    width: 80px;
+}
+.firm .input-error {
+    border: 1px solid #f23c08;
+}
+
 .form textarea {
     width: 90%;
     height: 90px;
