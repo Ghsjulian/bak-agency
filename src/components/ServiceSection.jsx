@@ -58,7 +58,7 @@ const ServiceSection = () => {
                     data-aos="zoom-in"
                     className="col"
                 >
-                    <img src={coding} />
+                    <img src="/images/ecom-icon.png" />
                     <h4>E Commerce Solutions</h4>
                     <p className="p-text">
                         Expert coding and IT solutions for businesses, driving

@@ -188,183 +188,6 @@ main .hide {
 }
 
 /* FOOTER STYLING HERE */
-/*
-footer {
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 1rem 0.7rem;
-    display: flex;
-    flex-direction: column;
-    background: #005124;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    bottom: 0;
-    overflow: hidden;
-}
-footer .subscribe {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0.5rem auto;
-}
-.subscribe input {
-    outline: none;
-    width: 70%;
-    font-weight: 600;
-    margin: 0.3rem 0.8rem;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: 1px solid #e2f4ff;
-}
-.subscribe button {
-    outline: none;
-    background: transparent;
-    margin: 0.3rem 0.2rem;
-    padding: 0.5rem 0.5rem;
-    border-radius: 8px;
-    font-weight: 600;
-    border: 1px solid #e2f4ff;
-    color: #e2f4ff;
-    transition: 0.3s ease-in;
-}
-footer #join {
-    color: #ffffff;
-    margin: 0.2rem auto;
-}
-.subscribe button:hover {
-    background: #0089dd;
-}
-footer .footer-flex {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: 0.5rem 0;
-}
-.footer-flex .flex-row {
-    text-align: justify;
-    align-items: center;
-    margin: 0.5rem auto;
-}
-.flex-row h3 {
-    color: #fff450;
-    margin: 0.3rem 0.5rem;
-}
-.flex-row li {
-    margin: 0.5rem 0.5rem;
-    text-align: justify;
-    justify-content: center;
-    list-style: none;
-    list-style-type: none;
-}
-.flex-row li a {
-    display: inline;
-    padding: 0.5rem 0;
-    font-size: 17px;
-    font-weight: 300;
-    color: #ffffff;
-}
-
-footer .bootom-flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    text-align: center;
-}
-.bootom-flex .bootom-row {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: justify;
-}
-.bootom-row li {
-    list-style-type :none;
-    color: #fff;
-    text-align: justify;
-}
-@media (max-width: 768px) {
-    
-    footer .footer-flex {
-        width: 100%;
-        text-align: justify;
-        flex-direction: column;
-        margin: 0.5rem 0;
-        padding: 0 0;
-    }
-    .flex-row h3 {
-        text-align: left;
-        margin: 0.5rem 0.5rem;
-    }
-    footer .footer-flex .flex-row {
-        width: 100%;
-    }
-}
-
-footer .social {
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem 0;
-    margin: 0.5rem auto;
-    align-items: center;
-    text-align: center;
-}
-
-.social a {
-    text-decoration: none;
-    margin: 0.3rem 1rem;
-    display: block;
-    border-radius: 50%;
-    border: none;
-}
-
-.social a img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0.5rem;
-    padding: 0.3rem;
-}
-
-footer strong {
-    margin: 0.3rem auto;
-    color: #ffffff;
-    font-weight: 800;
-}
-
-footer strong span {
-    color: #f9f34a;
-}
-
-footer p {
-    color: rgb(21, 21, 21);
-    font-weight: 500;
-    margin: 0.3rem auto;
-}
-
-footer p a {
-    margin: 0.2rem;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    color: rgb(0, 196, 63);
-    transition: 0.3s ease-in;
-}
-
-footer p a:hover {
-    translate: scale(1.1);
-    color: rgb(196, 61, 0);
-}
-*/
 /* Footer Styling Here */
 footer {
     position: relative;
@@ -414,7 +237,7 @@ footer .top-flex {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
-    background: rgb(22, 188, 255);
+    background: #0a9ac7;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -425,19 +248,21 @@ footer .top-flex {
     border: 1px solid transparent;
     text-decoration: none;
     border-radius: 8px;
-    background: rgb(203, 96, 0);
-    color: #ffff;
+    background: #c43908;
+    color: #fff;
     font-weight: 600;
     padding: 0.6rem 1rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .top-flex .subscribe:hover {
-    background: transparent;
+    background: rgb(22, 188, 255);
+    color: #fff;
     border: 1px solid rgb(22, 188, 255);
 }
 .top-flex #contact:hover {
-    background: transparent;
+    color: #fff;
+    background: rgb(203, 96, 0);
     border: 1px solid rgb(203, 96, 0);
 }
 footer .mid-flex {

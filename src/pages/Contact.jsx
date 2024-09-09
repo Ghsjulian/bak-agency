@@ -25,6 +25,49 @@ const Contact = () => {
     const [isSent, setSent] = useState(false);
     const baseURL = "http://bakdif.com/mail/contact.php";
     // const baseURL = "http://localhost:8080/mail/contact.php";
+    function validatePhoneNumber(phoneNumber) {
+        const phoneNumberRegex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
+        if (phoneNumberRegex.test(phoneNumber)) {
+            return true;
+        }
+        return false;
+    }
+    /**
+     * Validates an email address.
+     *
+     * @param {string} email - The email address to validate.
+     * @returns {boolean} True if the email is valid, false otherwise.
+     */
+    function validateEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    }
+
+    const createMsg = (type, msg) => {
+        messageRef.current.style.display = "block";
+        let height = window.innerHeight;
+        let width = window.innerWidth;
+        let mobileHeight = 400;
+        let desk = 150;
+        window.scrollTo({
+            top: width > 400 ? desk : mobileHeight,
+            behavior: "smooth"
+        });
+        if (type) {
+            messageRef.current.classList.remove("error");
+            messageRef.current.classList.add("success");
+            messageRef.current.textContent = msg;
+        } else {
+            messageRef.current.classList.remove("success");
+            messageRef.current.classList.add("error");
+            messageRef.current.textContent = msg;
+        }
+        setTimeout(() => {
+            messageRef.current.style.display = "none";
+            messageRef.current.textContent = "";
+        }, 3000);
+    };
+
     const handleContact = async e => {
         e.preventDefault();
         if (
@@ -38,6 +81,13 @@ const Contact = () => {
             clientCountry &&
             clientservice
         ) {
+            if (!validateEmail(userEmail)) {
+                createMsg(false, "Invalid Email Address!");
+                return;
+            } else if (!validatePhoneNumber(telephone)) {
+                createMsg(false, "Invalid Phone Number!");
+                return;
+            }
             try {
                 setSent(true);
                 axios
@@ -65,14 +115,11 @@ const Contact = () => {
                             top: width > 400 ? desk : mobileHeight,
                             behavior: "smooth"
                         });
-                        //alert(JSON.stringify(response.data.message));
-                        // console.log(response.data);
-                        messageRef.current.style.display = "block";
-                        messageRef.current.classList.remove("error");
-                        messageRef.current.classList.add("success");
                         sendRef.current.textContent = "Email Sent";
-                        messageRef.current.textContent =
-                            "Your Email Has Been Successfully Sent !";
+                        createMsg(
+                            true,
+                            "Your Email Has Been Successfully Sent !"
+                        );
                         setClientCountry("");
                         setService("");
                         setAddress("");
@@ -85,41 +132,13 @@ const Contact = () => {
                         setuserMessage("");
                     });
             } catch (error) {
-                let height = window.innerHeight;
-                let width = window.innerWidth;
-                let mobileHeight = 20;
-                let desk = 150;
-                window.scrollTo({
-                    top: width > 400 ? desk : mobileHeight,
-                    behavior: "smooth"
-                });
                 console.log(error);
                 setError(error);
-                messageRef.current.style.display = "block";
-                messageRef.current.classList.remove("success");
-                messageRef.current.classList.add("error");
-                messageRef.current.textContent = error.message;
+                createMsg(false, error.message);
             }
         } else {
-            let height = window.innerHeight;
-            let width = window.innerWidth;
-            let mobileHeight = 20;
-            let desk = 150;
-            window.scrollTo({
-                top: width > 400 ? desk : mobileHeight,
-                behavior: "smooth"
-            });
-            messageRef.current.style.display = "block";
-            messageRef.current.classList.remove("success");
-            messageRef.current.classList.add("error");
-            messageRef.current.textContent =
-                "Please Fill Out The Contact Form !";
+            createMsg(false, "Please Fill Out The Contact Form !");
         }
-        setTimeout(() => {
-            sendRef.current.textContent = "Send Now";
-            messageRef.current.style.display = "none";
-            messageRef.current.textContent = "";
-        }, 3000);
     };
 
     const [countries, setCountry] = useState([]);
@@ -166,10 +185,16 @@ const Contact = () => {
             return;
         }
     }, []);
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
     return (
         <>
-            <div data-aos="zoom-in" id="page" className="section contact-section">
+            <div
+                data-aos="zoom-in"
+                id="page"
+                className="section contact-section"
+            >
                 <img
                     className="heading-img"
                     src="/images/Contact Header.png"
@@ -226,13 +251,16 @@ const Contact = () => {
                             placeholder="Enter Your Name"
                             value={userName}
                         />
+
                         <input
-                            type="number"
+                            type="tel"
                             onChange={e => {
                                 setTelephone(e.target.value);
                             }}
                             placeholder="Enter Your Phone Number"
                             value={telephone}
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required
                         />
                         <input
                             type="email"

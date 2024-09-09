@@ -131,22 +131,22 @@
 .form .send-btn {
     width: 120px;
     outline: none;
-    border: none;
+    border: 1px solid var(--btn-bg);
     margin: 0.5rem auto;
     padding: 0.6rem 1rem;
-    background: var(--btn-bg);
-    color: #ffffff;
+    background: transparent;
+    color: var(--btn-bg);
     border-radius: 8px;
     font-size: 17px;
     font-weight: 600;
-    border: 1px solid transparent;
+    cursor: pointer;
     transition: 0.3s ease-in;
 }
 
 .form .send-btn:hover {
-    background: transparent;
+    background: var(--btn-bg);
     border: 1px solid var(--btn-bg);
-    color: var(--btn-bg);
+    color: #fff;
 }
 
 .blogs h4 {
