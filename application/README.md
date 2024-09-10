@@ -1,5 +1,5 @@
 <center>
-<img style="border-radius:50%" align="center" src="/demo/Ghsjulian.png" width="250" height="250"><br>
+<img style="border-radius:50%" align="center" src="/public/demo/Ghsjulian.png" width="250" height="250"><br>
 <h3>Web Developer And Designer</h3>
 <h2>Ghs Julian</h2>
 </center>
