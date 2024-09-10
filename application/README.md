@@ -1,7 +1,7 @@
 <center>
 <img style="border-radius:50%" align="center" src="/demo/Ghsjulian.png" width="250" height="250"><br>
 <h3>Web Developer And Designer</h3>
-<h2 align="center">Ghs Julian</h2>
+<h2>Ghs Julian</h2>
 </center>
 <br>
 <h3>Project Name : Bak Digital Firm Agency</h3>
