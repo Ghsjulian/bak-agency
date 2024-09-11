@@ -118,14 +118,17 @@ const Footer = () => {
                 <div className="flex-row">
                     <h3>Contact Us</h3>
 
+                   <li>
+                        <NavLink to="#"> U.S.A : +17169483740</NavLink>
+                    </li>
                     <li>
-                        <NavLink to="#">Bangladesh : +8809696132246</NavLink>
+                        <NavLink to="#"> U.K : +447434743310</NavLink>
                     </li>
                     <li>
                         <NavLink to="#">U.A.E : +971543543980</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="#"> U.S.A : +17169483740</NavLink>
+                     <li>
+                        <NavLink to="#">Bangladesh : +8809696132246</NavLink>
                     </li>
                 </div>
             </div>
